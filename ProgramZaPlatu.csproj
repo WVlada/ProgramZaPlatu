@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{7836717A-DAEE-431D-9326-5704F1D46893}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProgramZaPlatu</RootNamespace>
+    <AssemblyName>ProgramZaPlatu</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <NoWin32Manifest>False</NoWin32Manifest>
+    <SignAssembly>False</SignAssembly>
+    <DelaySign>False</DelaySign>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>False</RunCodeAnalysis>
+    <SourceAnalysisOverrideSettingsFile>C:\Documents and Settings\jelena\Application Data\ICSharpCode/SharpDevelop4\Settings.SourceAnalysis</SourceAnalysisOverrideSettingsFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <BaseAddress>4194304</BaseAddress>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.SQLite">
+      <HintPath>System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DodajNovogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DodajNovogForm.Designer.cs">
+      <DependentUpon>DodajNovogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormaPPPpd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormaPPPpd.Designer.cs">
+      <DependentUpon>FormaPPPpd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IzmeniOznacenog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IzmeniOznacenog.Designer.cs">
+      <DependentUpon>IzmeniOznacenog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OdabirFirmeiPodnosioca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OdabirFirmeiPodnosioca.Designer.cs">
+      <DependentUpon>OdabirFirmeiPodnosioca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Racunica.cs" />
+    <Compile Include="SpisakZaposlenih.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpisakZaposlenih.Designer.cs">
+      <DependentUpon>SpisakZaposlenih.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpisakZaposlenih.Designer1.cs">
+      <DependentUpon>SpisakZaposlenih.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="SviPodaci.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DodajNovogForm.resx">
+      <DependentUpon>DodajNovogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormaPPPpd.resx">
+      <DependentUpon>FormaPPPpd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IzmeniOznacenog.resx">
+      <DependentUpon>IzmeniOznacenog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OdabirFirmeiPodnosioca.resx">
+      <DependentUpon>OdabirFirmeiPodnosioca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpisakZaposlenih.resx">
+      <DependentUpon>SpisakZaposlenih.cs</DependentUpon>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SpisakZaposlenih.Designer1.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ArrowXML.png" />
+    <None Include="code.html" />
+    <None Include="DownArrow.png" />
+    <None Include="Forward Arrow.png" />
+    <None Include="slike\edit_zaposlenog.png">
+      <Link>edit_zaposlenog.png</Link>
+    </None>
+    <None Include="slike\nazad.png">
+      <Link>nazad.png</Link>
+    </None>
+    <None Include="slike\plus.png">
+      <Link>plus.png</Link>
+    </None>
+    <None Include="xml\stope.xml">
+      <Link>stope.xml</Link>
+    </None>
+    <None Include="xml\Vrsteugovora.xml">
+      <Link>Vrsteugovora.xml</Link>
+    </None>
+    <None Include="xml\Zaposleni.xml">
+      <Link>Zaposleni.xml</Link>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

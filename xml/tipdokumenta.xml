@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TipoviDokumenta>
+	
+	<Dokument>
+	<Tip>ЈМБГ</Tip>
+	</Dokument>
+	
+	<Dokument>
+	<Tip>Избегличка легитимација</Tip>
+	</Dokument>
+	
+	<Dokument>
+	<Tip>Пасош</Tip>
+	</Dokument>
+	
+	<Dokument>
+	<Tip>Посебна ознака</Tip>
+	</Dokument>
+	
+	<Dokument>
+	<Tip>Остало</Tip>
+	</Dokument>
+	
+</TipoviDokumenta>

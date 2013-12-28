@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stopezarade type="float">
+  <porez>10.00</porez>
+  <piozaposleni>13.00</piozaposleni>
+  <zdravstvozaposeni>6.15</zdravstvozaposeni>
+  <nezaposlenostzaposleni>0.75</nezaposlenostzaposleni>
+  <pioposlodavac>11.00</pioposlodavac>
+  <zdravstvoposlodavac>6.15</zdravstvoposlodavac>
+  <nezaposlenostposlodavac>0.75</nezaposlenostposlodavac>
+</stopezarade>

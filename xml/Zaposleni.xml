@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Zaposleni>
+  <Profile>
+    <Prezime>Ступар</Prezime>
+    <Ime>Милан</Ime>
+    <TipDokumenta>Остало</TipDokumenta>
+    <IDBroj>43423234234</IDBroj>
+    <Opstina>Вршац</Opstina>
+    <BrojOpstine>Вршац</BrojOpstine>
+  </Profile>
+  <Profile>
+    <Prezime>Буквић</Prezime>
+    <Ime>Сергеј</Ime>
+    <TipDokumenta>Посебна ознака</TipDokumenta>
+    <IDBroj>456464654654</IDBroj>
+    <Opstina>Вршац</Opstina>
+    <BrojOpstine>Вршац</BrojOpstine>
+  </Profile>
+  <Profile>
+    <Prezime>Буквић</Prezime>
+    <Ime>Владимир</Ime>
+    <TipDokumenta>Остало</TipDokumenta>
+    <IDBroj>11231321</IDBroj>
+    <Opstina>Нови Београд</Opstina>
+    <BrojOpstine>843-500000-52</BrojOpstine>
+  </Profile>
+</Zaposleni>

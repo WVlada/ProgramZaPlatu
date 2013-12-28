@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Vrsteugovora>
+	<Ugovor kategorija="Зарада">
+		<Tip>Запослени без олакшица</Tip>
+		<NajnizaOsnovica>23000</NajnizaOsnovica>
+		<NajvisaOsnovica>310000</NajvisaOsnovica>
+		<PoreskoUmanjenje>11000</PoreskoUmanjenje>
+		<porez>10.00</porez>
+		<piozaposleni>13.00</piozaposleni>
+		<zdravstvozaposeni>6.15</zdravstvozaposeni>
+		<nezaposlenostzaposleni>0.75</nezaposlenostzaposleni>
+		<pioposlodavac>11.00</pioposlodavac>
+		<zdravstvoposlodavac>6.15</zdravstvoposlodavac>
+		<nezaposlenostposlodavac>0.75</nezaposlenostposlodavac>
+	</Ugovor>
+	<Ugovor kategorija="Зарада">
+		<Tip>Зарада приправника млађег од 30 година Чл.21.в Ст.1</Tip>
+		<NajnizaOsnovica>23000</NajnizaOsnovica>
+		<NajvisaOsnovica>310000</NajvisaOsnovica>
+		<PoreskoUmanjenje>11000</PoreskoUmanjenje>
+		<porez>10.00</porez>
+		<piozaposleni>13.00</piozaposleni>
+		<zdravstvozaposeni>6.15</zdravstvozaposeni>
+		<nezaposlenostzaposleni>0.75</nezaposlenostzaposleni>
+		<pioposlodavac>0.00</pioposlodavac>
+		<zdravstvoposlodavac>0.00</zdravstvoposlodavac>
+		<nezaposlenostposlodavac>0.00</nezaposlenostposlodavac>
+	</Ugovor>
+	<Ugovor kategorija="Зарада">
+		<Tip>Зарада лица млађег од 30 година Чл.21.в Ст.2</Tip>
+		<NajnizaOsnovica>23000</NajnizaOsnovica>
+		<NajvisaOsnovica>310000</NajvisaOsnovica>
+		<PoreskoUmanjenje>11000</PoreskoUmanjenje>
+		<porez>10.00</porez>
+		<piozaposleni>13.00</piozaposleni>
+		<zdravstvozaposeni>6.15</zdravstvozaposeni>
+		<nezaposlenostzaposleni>0.75</nezaposlenostzaposleni>
+		<pioposlodavac>0.00</pioposlodavac>
+		<zdravstvoposlodavac>0.00</zdravstvoposlodavac>
+		<nezaposlenostposlodavac>0.00</nezaposlenostposlodavac>
+	</Ugovor>
+	<Ugovor kategorija="Зарада">
+		<Tip>Зарада инвалидног лица Чл.21.г</Tip>
+		<NajnizaOsnovica>23000</NajnizaOsnovica>
+		<NajvisaOsnovica>310000</NajvisaOsnovica>
+		<PoreskoUmanjenje>11000</PoreskoUmanjenje>
+		<porez>10.00</porez>
+		<piozaposleni>13.00</piozaposleni>
+		<zdravstvozaposeni>6.15</zdravstvozaposeni>
+		<nezaposlenostzaposleni>0.75</nezaposlenostzaposleni>
+		<pioposlodavac>0.00</pioposlodavac>
+		<zdravstvoposlodavac>0.00</zdravstvoposlodavac>
+		<nezaposlenostposlodavac>0.00</nezaposlenostposlodavac>
+	</Ugovor>
+	<Ugovor kategorija="Зарада">
+		<Tip>Зарада лица старијег од 50 година Чл.21.д</Tip>
+		<NajnizaOsnovica>23000</NajnizaOsnovica>
+		<NajvisaOsnovica>310000</NajvisaOsnovica>
+		<PoreskoUmanjenje>11000</PoreskoUmanjenje>
+		<porez>10.00</porez>
+		<piozaposleni>13.00</piozaposleni>
+		<zdravstvozaposeni>6.15</zdravstvozaposeni>
+		<nezaposlenostzaposleni>0.75</nezaposlenostzaposleni>
+		<pioposlodavac>0.00</pioposlodavac>
+		<zdravstvoposlodavac>0.00</zdravstvoposlodavac>
+		<nezaposlenostposlodavac>0.00</nezaposlenostposlodavac>
+	</Ugovor>
+	<Ugovor kategorija="Зарада">
+		<Tip>Зарада лица старијег од 45 и млађег од 50 година Чл.21.д</Tip>
+		<NajnizaOsnovica>23000</NajnizaOsnovica>
+		<NajvisaOsnovica>310000</NajvisaOsnovica>
+		<PoreskoUmanjenje>11000</PoreskoUmanjenje>
+		<porez>10.00</porez>
+		<piozaposleni>13.00</piozaposleni>
+		<zdravstvozaposeni>6.15</zdravstvozaposeni>
+		<nezaposlenostzaposleni>0.75</nezaposlenostzaposleni>
+		<pioposlodavac>2.20</pioposlodavac>
+		<zdravstvoposlodavac>0.0123</zdravstvoposlodavac>
+		<nezaposlenostposlodavac>0.0015</nezaposlenostposlodavac>
+	</Ugovor>
+	<Ugovor kategorija="Зарада">
+		<Tip>Део месеца на боловању на терет послодавца</Tip>
+		<NajnizaOsnovica>23000</NajnizaOsnovica>
+		<NajvisaOsnovica>310000</NajvisaOsnovica>
+		<PoreskoUmanjenje>5000</PoreskoUmanjenje>
+		<porez>10.00</porez>
+		<piozaposleni>13.00</piozaposleni>
+		<zdravstvozaposeni>6.15</zdravstvozaposeni>
+		<nezaposlenostzaposleni>0.75</nezaposlenostzaposleni>
+		<pioposlodavac>11.00</pioposlodavac>
+		<zdravstvoposlodavac>6.15</zdravstvoposlodavac>
+		<nezaposlenostposlodavac>0.75</nezaposlenostposlodavac>
+	</Ugovor>
+	<Ugovor kategorija="Зарада">
+		<Tip>Накнада запосленог за боловање на терет послодавца</Tip>
+		<NajnizaOsnovica>23000</NajnizaOsnovica>
+		<NajvisaOsnovica>310000</NajvisaOsnovica>
+		<PoreskoUmanjenje>6000</PoreskoUmanjenje>
+		<porez>10.00</porez>
+		<piozaposleni>13.00</piozaposleni>
+		<zdravstvozaposeni>6.15</zdravstvozaposeni>
+		<nezaposlenostzaposleni>0.75</nezaposlenostzaposleni>
+		<pioposlodavac>11.00</pioposlodavac>
+		<zdravstvoposlodavac>6.15</zdravstvoposlodavac>
+		<nezaposlenostposlodavac>0.75</nezaposlenostposlodavac>
+	</Ugovor>
+	<Ugovor kategorija="Зарада">
+		<Tip>Део месеца на породиљском</Tip>
+		<NajnizaOsnovica>23000</NajnizaOsnovica>
+		<NajvisaOsnovica>310000</NajvisaOsnovica>
+		<PoreskoUmanjenje>5000</PoreskoUmanjenje>
+		<porez>10.00</porez>
+		<piozaposleni>13.00</piozaposleni>
+		<zdravstvozaposeni>6.15</zdravstvozaposeni>
+		<nezaposlenostzaposleni>0.75</nezaposlenostzaposleni>
+		<pioposlodavac>11.00</pioposlodavac>
+		<zdravstvoposlodavac>6.15</zdravstvoposlodavac>
+		<nezaposlenostposlodavac>0.75</nezaposlenostposlodavac>
+	</Ugovor>
+	<Ugovor kategorija="Зарада">
+		<Tip>Накнада запосленог за породиљско</Tip>
+		<NajnizaOsnovica>23000</NajnizaOsnovica>
+		<NajvisaOsnovica>310000</NajvisaOsnovica>
+		<PoreskoUmanjenje>6000</PoreskoUmanjenje>
+		<porez>10.00</porez>
+		<piozaposleni>13.00</piozaposleni>
+		<zdravstvozaposeni>6.15</zdravstvozaposeni>
+		<nezaposlenostzaposleni>0.75</nezaposlenostzaposleni>
+		<pioposlodavac>11.00</pioposlodavac>
+		<zdravstvoposlodavac>6.15</zdravstvoposlodavac>
+		<nezaposlenostposlodavac>0.75</nezaposlenostposlodavac>
+	</Ugovor>
+	<Ugovor kategorija="Зарада">
+		<Tip>50% код једног, 50% код другог послодавца</Tip>
+		<NajnizaOsnovica>23000</NajnizaOsnovica>
+		<NajvisaOsnovica>310000</NajvisaOsnovica>
+		<PoreskoUmanjenje>5500</PoreskoUmanjenje>
+		<porez>10.00</porez>
+		<piozaposleni>13.00</piozaposleni>
+		<zdravstvozaposeni>6.15</zdravstvozaposeni>
+		<nezaposlenostzaposleni>0.75</nezaposlenostzaposleni>
+		<pioposlodavac>11.00</pioposlodavac>
+		<zdravstvoposlodavac>6.15</zdravstvoposlodavac>
+		<nezaposlenostposlodavac>0.75</nezaposlenostposlodavac>
+	</Ugovor>
+	<Ugovor kategorija="Зарада">
+		<Tip>50% код једног послодавца</Tip>
+		<NajnizaOsnovica>11500</NajnizaOsnovica>
+		<NajvisaOsnovica>310000</NajvisaOsnovica>
+		<PoreskoUmanjenje>5500</PoreskoUmanjenje>
+		<porez>10.00</porez>
+		<piozaposleni>13.00</piozaposleni>
+		<zdravstvozaposeni>6.15</zdravstvozaposeni>
+		<nezaposlenostzaposleni>0.75</nezaposlenostzaposleni>
+		<pioposlodavac>11.00</pioposlodavac>
+		<zdravstvoposlodavac>6.15</zdravstvoposlodavac>
+		<nezaposlenostposlodavac>0.75</nezaposlenostposlodavac>
+	</Ugovor>
+	<Ugovor kategorija="Зарада">
+		<Tip>Пензионер који је поново засновао радни однос</Tip>
+		<NajnizaOsnovica>23000</NajnizaOsnovica>
+		<NajvisaOsnovica>310000</NajvisaOsnovica>
+		<PoreskoUmanjenje>11000</PoreskoUmanjenje>
+		<porez>10.00</porez>
+		<piozaposleni>13.00</piozaposleni>
+		<zdravstvozaposeni>0.00</zdravstvozaposeni>
+		<nezaposlenostzaposleni>0.00</nezaposlenostzaposleni>
+		<pioposlodavac>11.00</pioposlodavac>
+		<zdravstvoposlodavac>0.00</zdravstvoposlodavac>
+		<nezaposlenostposlodavac>0.00</nezaposlenostposlodavac>
+	</Ugovor>
+	<Ugovor kategorija="Зарада">
+		<Tip>Запослени упућен на рад у иностранство</Tip>
+		<NajnizaOsnovica>46000</NajnizaOsnovica>
+		<NajvisaOsnovica>310000</NajvisaOsnovica>
+		<PoreskoUmanjenje>11000</PoreskoUmanjenje>
+		<porez>0.00</porez>
+		<piozaposleni>13.00</piozaposleni>
+		<zdravstvozaposeni>6.15</zdravstvozaposeni>
+		<nezaposlenostzaposleni>0.75</nezaposlenostzaposleni>
+		<pioposlodavac>11.00</pioposlodavac>
+		<zdravstvoposlodavac>6.15</zdravstvoposlodavac>
+		<nezaposlenostposlodavac>0.75</nezaposlenostposlodavac>
+	</Ugovor>
+	<Ugovor kategorija="Зарада">
+		<Tip>Запослени са бенефицираним радним стажом први део месеца</Tip>
+		<NajnizaOsnovica>23000</NajnizaOsnovica>
+		<NajvisaOsnovica>310000</NajvisaOsnovica>
+		<PoreskoUmanjenje>4500</PoreskoUmanjenje>
+		<porez>0.00</porez>
+		<piozaposleni>13.00</piozaposleni>
+		<zdravstvozaposeni>0.00</zdravstvozaposeni>
+		<nezaposlenostzaposleni>0.00</nezaposlenostzaposleni>
+		<pioposlodavac>11.00</pioposlodavac>
+		<zdravstvoposlodavac>0.00</zdravstvoposlodavac>
+		<nezaposlenostposlodavac>0.00</nezaposlenostposlodavac>
+	</Ugovor>
+	<Ugovor kategorija="Остало">
+		<Tip>Уговор о делу</Tip>
+		<NajnizaOsnovica>500000</NajnizaOsnovica>
+		<NajvisaOsnovica>5000000</NajvisaOsnovica>
+		<PoreskoUmanjenje>11000</PoreskoUmanjenje>
+		<porez>10.00</porez>
+		<piozaposleni>13.00</piozaposleni>
+		<zdravstvozaposeni>6.15</zdravstvozaposeni>
+		<nezaposlenostzaposleni>0.75</nezaposlenostzaposleni>
+		<pioposlodavac>11.00</pioposlodavac>
+		<zdravstvoposlodavac>6.15</zdravstvoposlodavac>
+		<nezaposlenostposlodavac>0.75</nezaposlenostposlodavac>
+	</Ugovor>
+</Vrsteugovora>
