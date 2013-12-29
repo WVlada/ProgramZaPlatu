@@ -41,24 +41,22 @@ namespace ProgramZaPlatu
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblNaslov2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
+            this.cboObracunskaGodina = new System.Windows.Forms.ComboBox();
+            this.cboObracunskiMesec = new System.Windows.Forms.ComboBox();
+            this.lblDatumPlacanja = new System.Windows.Forms.Label();
             this.lblmmgggg = new System.Windows.Forms.Label();
             this.lblddmmgggg = new System.Windows.Forms.Label();
             this.cboVrstaPrijave = new System.Windows.Forms.ComboBox();
-            this.txtmaskDatumNastankaPoreskeObaveze = new System.Windows.Forms.MaskedTextBox();
             this.lblDatumNastankaPoreskeObaveze = new System.Windows.Forms.Label();
-            this.txtmaskedDatumPlacanja = new System.Windows.Forms.MaskedTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lblObracunskiPeriod = new System.Windows.Forms.Label();
             this.lblVrstaPrijave = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.txtJMBGPodnosiocaPrijave = new System.Windows.Forms.TextBox();
             this.lblJMBGPodnosiocaPrijave = new System.Windows.Forms.Label();
-            this.txtRadnoVreme = new System.Windows.Forms.TextBox();
             this.lblRadnoVreme = new System.Windows.Forms.Label();
             this.txtPIBiliJMBG = new System.Windows.Forms.TextBox();
             this.txtPIBIsplatioca = new System.Windows.Forms.Label();
-            this.txtTipIsplatioca = new System.Windows.Forms.TextBox();
             this.lblTipIsplatioca = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.txtEmail = new System.Windows.Forms.TextBox();
@@ -107,8 +105,14 @@ namespace ProgramZaPlatu
             this.panel7 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.lblUkupno = new System.Windows.Forms.Label();
-            this.cboObracunskiMesec = new System.Windows.Forms.ComboBox();
-            this.cboObracunskaGodina = new System.Windows.Forms.ComboBox();
+            this.cboDatumNastankaDAN = new System.Windows.Forms.ComboBox();
+            this.cboDatumNastankaMESEC = new System.Windows.Forms.ComboBox();
+            this.cboDatumNastankaGODINA = new System.Windows.Forms.ComboBox();
+            this.cboDatumPlacanjaGODINA = new System.Windows.Forms.ComboBox();
+            this.cboDatumPlacanjaMESEC = new System.Windows.Forms.ComboBox();
+            this.cboDatumPlacanjaDAN = new System.Windows.Forms.ComboBox();
+            this.cboTipIsplatioca = new System.Windows.Forms.ComboBox();
+            this.cboRadnoVreme = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -124,7 +128,7 @@ namespace ProgramZaPlatu
             this.lblNaslov.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lblNaslov.Location = new System.Drawing.Point(3, 11);
             this.lblNaslov.Name = "lblNaslov";
-            this.lblNaslov.Size = new System.Drawing.Size(695, 16);
+            this.lblNaslov.Size = new System.Drawing.Size(603, 16);
             this.lblNaslov.TabIndex = 0;
             this.lblNaslov.Text = "ПОЈЕДИНАЧНА ПОРЕСКА ПРИЈАВА О ОБРАЧУНАТИМ ПОРЕЗИМА И ДОПРИНОСИМА";
             this.lblNaslov.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -153,33 +157,72 @@ namespace ProgramZaPlatu
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Info;
+            this.panel2.Controls.Add(this.cboDatumPlacanjaGODINA);
+            this.panel2.Controls.Add(this.cboDatumPlacanjaMESEC);
+            this.panel2.Controls.Add(this.cboDatumPlacanjaDAN);
+            this.panel2.Controls.Add(this.cboDatumNastankaGODINA);
+            this.panel2.Controls.Add(this.cboDatumNastankaMESEC);
+            this.panel2.Controls.Add(this.cboDatumNastankaDAN);
             this.panel2.Controls.Add(this.cboObracunskaGodina);
             this.panel2.Controls.Add(this.cboObracunskiMesec);
-            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.lblDatumPlacanja);
             this.panel2.Controls.Add(this.lblmmgggg);
             this.panel2.Controls.Add(this.lblddmmgggg);
             this.panel2.Controls.Add(this.cboVrstaPrijave);
-            this.panel2.Controls.Add(this.txtmaskDatumNastankaPoreskeObaveze);
             this.panel2.Controls.Add(this.lblDatumNastankaPoreskeObaveze);
-            this.panel2.Controls.Add(this.txtmaskedDatumPlacanja);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.lblObracunskiPeriod);
             this.panel2.Controls.Add(this.lblVrstaPrijave);
             this.panel2.Location = new System.Drawing.Point(2, 47);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(459, 101);
+            this.panel2.Size = new System.Drawing.Size(565, 101);
             this.panel2.TabIndex = 2;
             // 
-            // label3
+            // cboObracunskaGodina
             // 
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(360, 82);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(96, 17);
-            this.label3.TabIndex = 13;
-            this.label3.Text = "дд - мм - гггг";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.cboObracunskaGodina.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboObracunskaGodina.FormattingEnabled = true;
+            this.cboObracunskaGodina.Items.AddRange(new object[] {
+            "2013",
+            "2014",
+            "2015"});
+            this.cboObracunskaGodina.Location = new System.Drawing.Point(149, 61);
+            this.cboObracunskaGodina.Name = "cboObracunskaGodina";
+            this.cboObracunskaGodina.Size = new System.Drawing.Size(50, 21);
+            this.cboObracunskaGodina.TabIndex = 12;
+            // 
+            // cboObracunskiMesec
+            // 
+            this.cboObracunskiMesec.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboObracunskiMesec.FormattingEnabled = true;
+            this.cboObracunskiMesec.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"});
+            this.cboObracunskiMesec.Location = new System.Drawing.Point(98, 61);
+            this.cboObracunskiMesec.Name = "cboObracunskiMesec";
+            this.cboObracunskiMesec.Size = new System.Drawing.Size(45, 21);
+            this.cboObracunskiMesec.TabIndex = 14;
+            // 
+            // lblDatumPlacanja
+            // 
+            this.lblDatumPlacanja.BackColor = System.Drawing.Color.Transparent;
+            this.lblDatumPlacanja.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDatumPlacanja.Location = new System.Drawing.Point(402, 81);
+            this.lblDatumPlacanja.Name = "lblDatumPlacanja";
+            this.lblDatumPlacanja.Size = new System.Drawing.Size(160, 17);
+            this.lblDatumPlacanja.TabIndex = 13;
+            this.lblDatumPlacanja.Text = "дд      -      мм      -      гггг";
+            this.lblDatumPlacanja.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblmmgggg
             // 
@@ -196,11 +239,11 @@ namespace ProgramZaPlatu
             // 
             this.lblddmmgggg.BackColor = System.Drawing.Color.Transparent;
             this.lblddmmgggg.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblddmmgggg.Location = new System.Drawing.Point(236, 82);
+            this.lblddmmgggg.Location = new System.Drawing.Point(228, 82);
             this.lblddmmgggg.Name = "lblddmmgggg";
-            this.lblddmmgggg.Size = new System.Drawing.Size(93, 16);
+            this.lblddmmgggg.Size = new System.Drawing.Size(160, 16);
             this.lblddmmgggg.TabIndex = 12;
-            this.lblddmmgggg.Text = "дд - мм - гггг";
+            this.lblddmmgggg.Text = "дд       -     мм       -       гггг";
             this.lblddmmgggg.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // cboVrstaPrijave
@@ -215,46 +258,30 @@ namespace ProgramZaPlatu
             "5"});
             this.cboVrstaPrijave.Location = new System.Drawing.Point(29, 61);
             this.cboVrstaPrijave.Name = "cboVrstaPrijave";
-            this.cboVrstaPrijave.Size = new System.Drawing.Size(40, 24);
+            this.cboVrstaPrijave.Size = new System.Drawing.Size(30, 21);
             this.cboVrstaPrijave.TabIndex = 8;
-            // 
-            // txtmaskDatumNastankaPoreskeObaveze
-            // 
-            this.txtmaskDatumNastankaPoreskeObaveze.Location = new System.Drawing.Point(239, 63);
-            this.txtmaskDatumNastankaPoreskeObaveze.Mask = "00  -  00  -  0000";
-            this.txtmaskDatumNastankaPoreskeObaveze.Name = "txtmaskDatumNastankaPoreskeObaveze";
-            this.txtmaskDatumNastankaPoreskeObaveze.Size = new System.Drawing.Size(90, 22);
-            this.txtmaskDatumNastankaPoreskeObaveze.TabIndex = 7;
             // 
             // lblDatumNastankaPoreskeObaveze
             // 
             this.lblDatumNastankaPoreskeObaveze.Location = new System.Drawing.Point(221, 13);
             this.lblDatumNastankaPoreskeObaveze.Name = "lblDatumNastankaPoreskeObaveze";
-            this.lblDatumNastankaPoreskeObaveze.Size = new System.Drawing.Size(122, 38);
+            this.lblDatumNastankaPoreskeObaveze.Size = new System.Drawing.Size(151, 38);
             this.lblDatumNastankaPoreskeObaveze.TabIndex = 6;
             this.lblDatumNastankaPoreskeObaveze.Text = "Датум настанка пореске обавезе";
             this.lblDatumNastankaPoreskeObaveze.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // txtmaskedDatumPlacanja
-            // 
-            this.txtmaskedDatumPlacanja.Location = new System.Drawing.Point(363, 63);
-            this.txtmaskedDatumPlacanja.Mask = "00  -  00  -  0000";
-            this.txtmaskedDatumPlacanja.Name = "txtmaskedDatumPlacanja";
-            this.txtmaskedDatumPlacanja.Size = new System.Drawing.Size(93, 22);
-            this.txtmaskedDatumPlacanja.TabIndex = 5;
-            // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(362, 10);
+            this.label1.Location = new System.Drawing.Point(402, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 41);
+            this.label1.Size = new System.Drawing.Size(144, 41);
             this.label1.TabIndex = 4;
             this.label1.Text = "Датум плаћања";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblObracunskiPeriod
             // 
-            this.lblObracunskiPeriod.Location = new System.Drawing.Point(95, 8);
+            this.lblObracunskiPeriod.Location = new System.Drawing.Point(98, 8);
             this.lblObracunskiPeriod.Name = "lblObracunskiPeriod";
             this.lblObracunskiPeriod.Size = new System.Drawing.Size(101, 43);
             this.lblObracunskiPeriod.TabIndex = 2;
@@ -273,24 +300,25 @@ namespace ProgramZaPlatu
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.Info;
+            this.panel3.Controls.Add(this.cboRadnoVreme);
+            this.panel3.Controls.Add(this.cboTipIsplatioca);
             this.panel3.Controls.Add(this.txtJMBGPodnosiocaPrijave);
             this.panel3.Controls.Add(this.lblJMBGPodnosiocaPrijave);
-            this.panel3.Controls.Add(this.txtRadnoVreme);
             this.panel3.Controls.Add(this.lblRadnoVreme);
             this.panel3.Controls.Add(this.txtPIBiliJMBG);
             this.panel3.Controls.Add(this.txtPIBIsplatioca);
-            this.panel3.Controls.Add(this.txtTipIsplatioca);
             this.panel3.Controls.Add(this.lblTipIsplatioca);
-            this.panel3.Location = new System.Drawing.Point(2, 162);
+            this.panel3.Location = new System.Drawing.Point(2, 173);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(987, 46);
             this.panel3.TabIndex = 3;
             // 
             // txtJMBGPodnosiocaPrijave
             // 
+            this.txtJMBGPodnosiocaPrijave.Enabled = false;
             this.txtJMBGPodnosiocaPrijave.Location = new System.Drawing.Point(825, 19);
             this.txtJMBGPodnosiocaPrijave.Name = "txtJMBGPodnosiocaPrijave";
-            this.txtJMBGPodnosiocaPrijave.Size = new System.Drawing.Size(116, 22);
+            this.txtJMBGPodnosiocaPrijave.Size = new System.Drawing.Size(116, 20);
             this.txtJMBGPodnosiocaPrijave.TabIndex = 7;
             this.txtJMBGPodnosiocaPrijave.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -303,14 +331,6 @@ namespace ProgramZaPlatu
             this.lblJMBGPodnosiocaPrijave.Text = "ЈМБГ подносиоца појединачне пореске пријаве";
             this.lblJMBGPodnosiocaPrijave.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // txtRadnoVreme
-            // 
-            this.txtRadnoVreme.Location = new System.Drawing.Point(504, 16);
-            this.txtRadnoVreme.Name = "txtRadnoVreme";
-            this.txtRadnoVreme.Size = new System.Drawing.Size(27, 22);
-            this.txtRadnoVreme.TabIndex = 5;
-            this.txtRadnoVreme.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // lblRadnoVreme
             // 
             this.lblRadnoVreme.Location = new System.Drawing.Point(394, 13);
@@ -322,9 +342,10 @@ namespace ProgramZaPlatu
             // 
             // txtPIBiliJMBG
             // 
+            this.txtPIBiliJMBG.Enabled = false;
             this.txtPIBiliJMBG.Location = new System.Drawing.Point(275, 14);
             this.txtPIBiliJMBG.Name = "txtPIBiliJMBG";
-            this.txtPIBiliJMBG.Size = new System.Drawing.Size(113, 22);
+            this.txtPIBiliJMBG.Size = new System.Drawing.Size(113, 20);
             this.txtPIBiliJMBG.TabIndex = 3;
             // 
             // txtPIBIsplatioca
@@ -335,13 +356,6 @@ namespace ProgramZaPlatu
             this.txtPIBIsplatioca.TabIndex = 2;
             this.txtPIBIsplatioca.Text = "ПИБ или ЈМБГ";
             this.txtPIBIsplatioca.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtTipIsplatioca
-            // 
-            this.txtTipIsplatioca.Location = new System.Drawing.Point(119, 16);
-            this.txtTipIsplatioca.Name = "txtTipIsplatioca";
-            this.txtTipIsplatioca.Size = new System.Drawing.Size(28, 22);
-            this.txtTipIsplatioca.TabIndex = 1;
             // 
             // lblTipIsplatioca
             // 
@@ -367,32 +381,34 @@ namespace ProgramZaPlatu
             this.panel4.Controls.Add(this.lblTelefonKontaktOsobe);
             this.panel4.Controls.Add(this.txtMaticniBroj);
             this.panel4.Controls.Add(this.lblMaticniBroj);
-            this.panel4.Location = new System.Drawing.Point(2, 214);
+            this.panel4.Location = new System.Drawing.Point(2, 225);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(987, 51);
             this.panel4.TabIndex = 4;
             // 
             // txtEmail
             // 
+            this.txtEmail.Enabled = false;
             this.txtEmail.Location = new System.Drawing.Point(795, 26);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(100, 22);
+            this.txtEmail.Size = new System.Drawing.Size(108, 20);
             this.txtEmail.TabIndex = 11;
             // 
             // txtSediste
             // 
+            this.txtSediste.Enabled = false;
             this.txtSediste.Location = new System.Drawing.Point(795, 3);
             this.txtSediste.Name = "txtSediste";
-            this.txtSediste.Size = new System.Drawing.Size(63, 22);
+            this.txtSediste.Size = new System.Drawing.Size(63, 20);
             this.txtSediste.TabIndex = 10;
             // 
             // lblEmail
             // 
-            this.lblEmail.Location = new System.Drawing.Point(685, 22);
+            this.lblEmail.Location = new System.Drawing.Point(726, 22);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(100, 23);
+            this.lblEmail.Size = new System.Drawing.Size(63, 23);
             this.lblEmail.TabIndex = 9;
-            this.lblEmail.Text = "Е-маил";
+            this.lblEmail.Text = "Е - маил";
             this.lblEmail.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblSediste
@@ -406,19 +422,19 @@ namespace ProgramZaPlatu
             // 
             // txtUlicaiBroj
             // 
-            this.txtUlicaiBroj.Location = new System.Drawing.Point(450, 28);
+            this.txtUlicaiBroj.Enabled = false;
+            this.txtUlicaiBroj.Location = new System.Drawing.Point(450, 24);
             this.txtUlicaiBroj.Name = "txtUlicaiBroj";
-            this.txtUlicaiBroj.Size = new System.Drawing.Size(156, 22);
+            this.txtUlicaiBroj.Size = new System.Drawing.Size(156, 20);
             this.txtUlicaiBroj.TabIndex = 7;
-            this.txtUlicaiBroj.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtNaziv
             // 
+            this.txtNaziv.Enabled = false;
             this.txtNaziv.Location = new System.Drawing.Point(450, 2);
             this.txtNaziv.Name = "txtNaziv";
-            this.txtNaziv.Size = new System.Drawing.Size(156, 22);
+            this.txtNaziv.Size = new System.Drawing.Size(156, 20);
             this.txtNaziv.TabIndex = 6;
-            this.txtNaziv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lblUlicaIBroj
             // 
@@ -442,7 +458,7 @@ namespace ProgramZaPlatu
             // 
             this.txtmaskTelefonKontakOsobe.Location = new System.Drawing.Point(146, 25);
             this.txtmaskTelefonKontakOsobe.Name = "txtmaskTelefonKontakOsobe";
-            this.txtmaskTelefonKontakOsobe.Size = new System.Drawing.Size(100, 22);
+            this.txtmaskTelefonKontakOsobe.Size = new System.Drawing.Size(100, 20);
             this.txtmaskTelefonKontakOsobe.TabIndex = 3;
             // 
             // lblTelefonKontaktOsobe
@@ -456,10 +472,12 @@ namespace ProgramZaPlatu
             // 
             // txtMaticniBroj
             // 
+            this.txtMaticniBroj.Enabled = false;
             this.txtMaticniBroj.Location = new System.Drawing.Point(146, 3);
             this.txtMaticniBroj.Name = "txtMaticniBroj";
-            this.txtMaticniBroj.Size = new System.Drawing.Size(90, 22);
+            this.txtMaticniBroj.Size = new System.Drawing.Size(90, 20);
             this.txtMaticniBroj.TabIndex = 1;
+            this.txtMaticniBroj.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lblMaticniBroj
             // 
@@ -475,7 +493,7 @@ namespace ProgramZaPlatu
             this.panel5.BackColor = System.Drawing.SystemColors.Info;
             this.panel5.Controls.Add(this.textBox1);
             this.panel5.Controls.Add(this.lblNajnizaOsnovica);
-            this.panel5.Location = new System.Drawing.Point(778, 118);
+            this.panel5.Location = new System.Drawing.Point(778, 128);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(211, 38);
             this.panel5.TabIndex = 5;
@@ -484,8 +502,9 @@ namespace ProgramZaPlatu
             // 
             this.textBox1.Location = new System.Drawing.Point(134, 8);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(34, 22);
+            this.textBox1.Size = new System.Drawing.Size(34, 20);
             this.textBox1.TabIndex = 12;
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lblNajnizaOsnovica
             // 
@@ -508,19 +527,21 @@ namespace ProgramZaPlatu
             this.panel6.Controls.Add(this.txtIDBrojIzmenePrijave);
             this.panel6.Location = new System.Drawing.Point(619, 74);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(370, 40);
+            this.panel6.Size = new System.Drawing.Size(370, 48);
             this.panel6.TabIndex = 6;
             // 
             // txtOsnov
             // 
             this.txtOsnov.Location = new System.Drawing.Point(330, 6);
             this.txtOsnov.Name = "txtOsnov";
-            this.txtOsnov.Size = new System.Drawing.Size(28, 22);
+            this.txtOsnov.Size = new System.Drawing.Size(28, 20);
             this.txtOsnov.TabIndex = 11;
+            this.txtOsnov.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lblOsnov
             // 
-            this.lblOsnov.Location = new System.Drawing.Point(322, 21);
+            this.lblOsnov.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOsnov.Location = new System.Drawing.Point(322, 25);
             this.lblOsnov.Name = "lblOsnov";
             this.lblOsnov.Size = new System.Drawing.Size(45, 20);
             this.lblOsnov.TabIndex = 11;
@@ -530,10 +551,10 @@ namespace ProgramZaPlatu
             // lblBrojResenjaOdlukeSuda
             // 
             this.lblBrojResenjaOdlukeSuda.BackColor = System.Drawing.Color.Transparent;
-            this.lblBrojResenjaOdlukeSuda.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblBrojResenjaOdlukeSuda.Location = new System.Drawing.Point(159, 25);
+            this.lblBrojResenjaOdlukeSuda.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblBrojResenjaOdlukeSuda.Location = new System.Drawing.Point(170, 27);
             this.lblBrojResenjaOdlukeSuda.Name = "lblBrojResenjaOdlukeSuda";
-            this.lblBrojResenjaOdlukeSuda.Size = new System.Drawing.Size(165, 15);
+            this.lblBrojResenjaOdlukeSuda.Size = new System.Drawing.Size(146, 15);
             this.lblBrojResenjaOdlukeSuda.TabIndex = 10;
             this.lblBrojResenjaOdlukeSuda.Text = "Број решења / одлуке суда";
             this.lblBrojResenjaOdlukeSuda.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -542,16 +563,17 @@ namespace ProgramZaPlatu
             // 
             this.txtBrojResenjaOdlukeSuda.Location = new System.Drawing.Point(186, 6);
             this.txtBrojResenjaOdlukeSuda.Name = "txtBrojResenjaOdlukeSuda";
-            this.txtBrojResenjaOdlukeSuda.Size = new System.Drawing.Size(100, 22);
+            this.txtBrojResenjaOdlukeSuda.Size = new System.Drawing.Size(100, 20);
             this.txtBrojResenjaOdlukeSuda.TabIndex = 9;
+            this.txtBrojResenjaOdlukeSuda.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lblIDBrojIzmenePrijave
             // 
             this.lblIDBrojIzmenePrijave.BackColor = System.Drawing.Color.Transparent;
-            this.lblIDBrojIzmenePrijave.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblIDBrojIzmenePrijave.Location = new System.Drawing.Point(3, 25);
+            this.lblIDBrojIzmenePrijave.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblIDBrojIzmenePrijave.Location = new System.Drawing.Point(3, 27);
             this.lblIDBrojIzmenePrijave.Name = "lblIDBrojIzmenePrijave";
-            this.lblIDBrojIzmenePrijave.Size = new System.Drawing.Size(165, 15);
+            this.lblIDBrojIzmenePrijave.Size = new System.Drawing.Size(169, 15);
             this.lblIDBrojIzmenePrijave.TabIndex = 8;
             this.lblIDBrojIzmenePrijave.Text = "Идентификациони број пријаве";
             this.lblIDBrojIzmenePrijave.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -560,8 +582,9 @@ namespace ProgramZaPlatu
             // 
             this.txtIDBrojIzmenePrijave.Location = new System.Drawing.Point(37, 6);
             this.txtIDBrojIzmenePrijave.Name = "txtIDBrojIzmenePrijave";
-            this.txtIDBrojIzmenePrijave.Size = new System.Drawing.Size(100, 22);
+            this.txtIDBrojIzmenePrijave.Size = new System.Drawing.Size(100, 20);
             this.txtIDBrojIzmenePrijave.TabIndex = 1;
+            this.txtIDBrojIzmenePrijave.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // listView1
             // 
@@ -585,7 +608,7 @@ namespace ProgramZaPlatu
             this.columnHeader17,
             this.columnHeader18});
             this.listView1.GridLines = true;
-            this.listView1.Location = new System.Drawing.Point(2, 284);
+            this.listView1.Location = new System.Drawing.Point(2, 299);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(984, 151);
             this.listView1.TabIndex = 7;
@@ -705,8 +728,9 @@ namespace ProgramZaPlatu
             // 
             this.txtIzmenaPrijave.Location = new System.Drawing.Point(109, 5);
             this.txtIzmenaPrijave.Name = "txtIzmenaPrijave";
-            this.txtIzmenaPrijave.Size = new System.Drawing.Size(28, 22);
+            this.txtIzmenaPrijave.Size = new System.Drawing.Size(28, 20);
             this.txtIzmenaPrijave.TabIndex = 9;
+            this.txtIzmenaPrijave.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel7
             // 
@@ -730,18 +754,59 @@ namespace ProgramZaPlatu
             // 
             // lblUkupno
             // 
-            this.lblUkupno.Location = new System.Drawing.Point(589, 438);
+            this.lblUkupno.Location = new System.Drawing.Point(589, 453);
             this.lblUkupno.Name = "lblUkupno";
             this.lblUkupno.Size = new System.Drawing.Size(53, 23);
             this.lblUkupno.TabIndex = 11;
             this.lblUkupno.Text = "Укупно";
             this.lblUkupno.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // cboObracunskiMesec
+            // cboDatumNastankaDAN
             // 
-            this.cboObracunskiMesec.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboObracunskiMesec.FormattingEnabled = true;
-            this.cboObracunskiMesec.Items.AddRange(new object[] {
+            this.cboDatumNastankaDAN.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboDatumNastankaDAN.FormattingEnabled = true;
+            this.cboDatumNastankaDAN.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31"});
+            this.cboDatumNastankaDAN.Location = new System.Drawing.Point(228, 61);
+            this.cboDatumNastankaDAN.Name = "cboDatumNastankaDAN";
+            this.cboDatumNastankaDAN.Size = new System.Drawing.Size(41, 21);
+            this.cboDatumNastankaDAN.TabIndex = 15;
+            // 
+            // cboDatumNastankaMESEC
+            // 
+            this.cboDatumNastankaMESEC.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboDatumNastankaMESEC.FormattingEnabled = true;
+            this.cboDatumNastankaMESEC.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -754,28 +819,134 @@ namespace ProgramZaPlatu
             "10",
             "11",
             "12"});
-            this.cboObracunskiMesec.Location = new System.Drawing.Point(98, 61);
-            this.cboObracunskiMesec.Name = "cboObracunskiMesec";
-            this.cboObracunskiMesec.Size = new System.Drawing.Size(45, 24);
-            this.cboObracunskiMesec.TabIndex = 14;
+            this.cboDatumNastankaMESEC.Location = new System.Drawing.Point(275, 61);
+            this.cboDatumNastankaMESEC.Name = "cboDatumNastankaMESEC";
+            this.cboDatumNastankaMESEC.Size = new System.Drawing.Size(41, 21);
+            this.cboDatumNastankaMESEC.TabIndex = 16;
             // 
-            // cboObracunskaGodina
+            // cboDatumNastankaGODINA
             // 
-            this.cboObracunskaGodina.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboObracunskaGodina.FormattingEnabled = true;
-            this.cboObracunskaGodina.Items.AddRange(new object[] {
+            this.cboDatumNastankaGODINA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboDatumNastankaGODINA.FormattingEnabled = true;
+            this.cboDatumNastankaGODINA.Items.AddRange(new object[] {
             "2013",
             "2014",
             "2015"});
-            this.cboObracunskaGodina.Location = new System.Drawing.Point(149, 61);
-            this.cboObracunskaGodina.Name = "cboObracunskaGodina";
-            this.cboObracunskaGodina.Size = new System.Drawing.Size(60, 24);
-            this.cboObracunskaGodina.TabIndex = 12;
+            this.cboDatumNastankaGODINA.Location = new System.Drawing.Point(322, 61);
+            this.cboDatumNastankaGODINA.Name = "cboDatumNastankaGODINA";
+            this.cboDatumNastankaGODINA.Size = new System.Drawing.Size(50, 21);
+            this.cboDatumNastankaGODINA.TabIndex = 17;
+            // 
+            // cboDatumPlacanjaGODINA
+            // 
+            this.cboDatumPlacanjaGODINA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboDatumPlacanjaGODINA.FormattingEnabled = true;
+            this.cboDatumPlacanjaGODINA.Items.AddRange(new object[] {
+            "2013",
+            "2014",
+            "2015"});
+            this.cboDatumPlacanjaGODINA.Location = new System.Drawing.Point(496, 61);
+            this.cboDatumPlacanjaGODINA.Name = "cboDatumPlacanjaGODINA";
+            this.cboDatumPlacanjaGODINA.Size = new System.Drawing.Size(50, 21);
+            this.cboDatumPlacanjaGODINA.TabIndex = 20;
+            // 
+            // cboDatumPlacanjaMESEC
+            // 
+            this.cboDatumPlacanjaMESEC.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboDatumPlacanjaMESEC.FormattingEnabled = true;
+            this.cboDatumPlacanjaMESEC.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"});
+            this.cboDatumPlacanjaMESEC.Location = new System.Drawing.Point(449, 61);
+            this.cboDatumPlacanjaMESEC.Name = "cboDatumPlacanjaMESEC";
+            this.cboDatumPlacanjaMESEC.Size = new System.Drawing.Size(41, 21);
+            this.cboDatumPlacanjaMESEC.TabIndex = 19;
+            // 
+            // cboDatumPlacanjaDAN
+            // 
+            this.cboDatumPlacanjaDAN.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboDatumPlacanjaDAN.FormattingEnabled = true;
+            this.cboDatumPlacanjaDAN.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31"});
+            this.cboDatumPlacanjaDAN.Location = new System.Drawing.Point(402, 61);
+            this.cboDatumPlacanjaDAN.Name = "cboDatumPlacanjaDAN";
+            this.cboDatumPlacanjaDAN.Size = new System.Drawing.Size(41, 21);
+            this.cboDatumPlacanjaDAN.TabIndex = 18;
+            // 
+            // cboTipIsplatioca
+            // 
+            this.cboTipIsplatioca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboTipIsplatioca.FormattingEnabled = true;
+            this.cboTipIsplatioca.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"});
+            this.cboTipIsplatioca.Location = new System.Drawing.Point(111, 15);
+            this.cboTipIsplatioca.Name = "cboTipIsplatioca";
+            this.cboTipIsplatioca.Size = new System.Drawing.Size(30, 21);
+            this.cboTipIsplatioca.TabIndex = 21;
+            // 
+            // cboRadnoVreme
+            // 
+            this.cboRadnoVreme.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboRadnoVreme.FormattingEnabled = true;
+            this.cboRadnoVreme.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3"});
+            this.cboRadnoVreme.Location = new System.Drawing.Point(496, 14);
+            this.cboRadnoVreme.Name = "cboRadnoVreme";
+            this.cboRadnoVreme.Size = new System.Drawing.Size(30, 21);
+            this.cboRadnoVreme.TabIndex = 22;
             // 
             // FormaPPPpd
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(984, 462);
+            this.ClientSize = new System.Drawing.Size(984, 485);
             this.Controls.Add(this.lblUkupno);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.listView1);
@@ -795,7 +966,6 @@ namespace ProgramZaPlatu
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormaPPPpdFormClosing);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
@@ -809,7 +979,7 @@ namespace ProgramZaPlatu
             this.ResumeLayout(false);
 
 		}
-		private System.Windows.Forms.Label label3;
+		private System.Windows.Forms.Label lblDatumPlacanja;
 		private System.Windows.Forms.Label lblmmgggg;
 		private System.Windows.Forms.Label lblddmmgggg;
 		private System.Windows.Forms.ComboBox cboVrstaPrijave;
@@ -838,20 +1008,16 @@ namespace ProgramZaPlatu
 		private System.Windows.Forms.Label lblIDBrojIzmenePrijave;
 		private System.Windows.Forms.Label lblIzmenaPrijave;
 		private System.Windows.Forms.TextBox txtIDBrojIzmenePrijave;
-		private System.Windows.Forms.Label lblDatumNastankaPoreskeObaveze;
-		private System.Windows.Forms.MaskedTextBox txtmaskDatumNastankaPoreskeObaveze;
-		private System.Windows.Forms.Label lblRadnoVreme;
-		private System.Windows.Forms.TextBox txtRadnoVreme;
+        private System.Windows.Forms.Label lblDatumNastankaPoreskeObaveze;
+        private System.Windows.Forms.Label lblRadnoVreme;
 		private System.Windows.Forms.Label lblJMBGPodnosiocaPrijave;
 		private System.Windows.Forms.TextBox txtJMBGPodnosiocaPrijave;
-		private System.Windows.Forms.Label lblTipIsplatioca;
-		private System.Windows.Forms.TextBox txtTipIsplatioca;
+        private System.Windows.Forms.Label lblTipIsplatioca;
 		private System.Windows.Forms.Label txtPIBIsplatioca;
 		private System.Windows.Forms.TextBox txtPIBiliJMBG;
 		private System.Windows.Forms.Label lblVrstaPrijave;
         private System.Windows.Forms.Label lblObracunskiPeriod;
-		private System.Windows.Forms.Label label1;
-		private System.Windows.Forms.MaskedTextBox txtmaskedDatumPlacanja;
+        private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.ColumnHeader columnHeader18;
 		private System.Windows.Forms.ColumnHeader columnHeader17;
 		private System.Windows.Forms.ColumnHeader columnHeader16;
@@ -881,5 +1047,13 @@ namespace ProgramZaPlatu
 		private System.Windows.Forms.Label lblNaslov;
         private System.Windows.Forms.ComboBox cboObracunskaGodina;
         private System.Windows.Forms.ComboBox cboObracunskiMesec;
+        private System.Windows.Forms.ComboBox cboDatumPlacanjaGODINA;
+        private System.Windows.Forms.ComboBox cboDatumPlacanjaMESEC;
+        private System.Windows.Forms.ComboBox cboDatumPlacanjaDAN;
+        private System.Windows.Forms.ComboBox cboDatumNastankaGODINA;
+        private System.Windows.Forms.ComboBox cboDatumNastankaMESEC;
+        private System.Windows.Forms.ComboBox cboDatumNastankaDAN;
+        private System.Windows.Forms.ComboBox cboTipIsplatioca;
+        private System.Windows.Forms.ComboBox cboRadnoVreme;
 	}
 }
