@@ -3,23 +3,24 @@ using System;
 
 namespace ProgramZaPlatu
 {
-	public class SviPodaci
+	public static class SviPodaci
 	{
-		public SviPodaci(string piozap, string pioposl, string zdravzap,string zdravposl,string nezapzap, string nezapposl)
-		{
-			PIOZaposleniIznos = piozap;
-			PIOPoslodavacIznos = pioposl;
-			ZdravstvoZaposleniIznos = zdravzap;
-			ZdravstvoPoslodavacIznos = zdravposl;
-			NezaposlenostZaposleniIznos = nezapzap;
-			NezaposlenostPoslodavacIznos = nezapposl;
-		}
 	
-	string PIOZaposleniIznos;
-	string PIOPoslodavacIznos;
-	string ZdravstvoZaposleniIznos;
-	string ZdravstvoPoslodavacIznos;
-	string NezaposlenostZaposleniIznos;
-	string NezaposlenostPoslodavacIznos;
+    // prva klas podataka
+    public static string Podnosilac;
+    public static string Firma;
+    
+        
+    // podaci zavisni od gore navedenih
+
+
+
+    // druga klasa podataka
+	public static string PIOZaposleniIznos;
+    public static string PIOPoslodavacIznos;
+    public static string ZdravstvoZaposleniIznos;
+    public static string ZdravstvoPoslodavacIznos;
+    public static string NezaposlenostZaposleniIznos;
+    public static string NezaposlenostPoslodavacIznos;
 	}
 }

@@ -7,6 +7,7 @@ using System.IO;
 using System.Linq;
 using System.Data.SQLite;
 
+
 namespace ProgramZaPlatu
 {
 	public partial class MainForm : Form
@@ -106,8 +107,10 @@ namespace ProgramZaPlatu
 			string sql = "select * from Preduzeca where RedniBroj=2";
 			SQLiteCommand komanda = new SQLiteCommand(sql,konekcija);
 			SQLiteDataReader reader = komanda.ExecuteReader();
-			lblFirma.Text = reader.GetValue(0).ToString();
-			konekcija.Close();
+			//lblFirma.Text = reader.GetValue(0).ToString();
+            lblFirma.Text = SviPodaci.Firma;
+            
+            konekcija.Close();
 			}
 		void UcitajStopeSelektovanogUgovora(string selektovaniUgovor)
 			{

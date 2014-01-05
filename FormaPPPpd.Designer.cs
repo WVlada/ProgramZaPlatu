@@ -41,6 +41,12 @@ namespace ProgramZaPlatu
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblNaslov2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.cboDatumPlacanjaGODINA = new System.Windows.Forms.ComboBox();
+            this.cboDatumPlacanjaMESEC = new System.Windows.Forms.ComboBox();
+            this.cboDatumPlacanjaDAN = new System.Windows.Forms.ComboBox();
+            this.cboDatumNastankaGODINA = new System.Windows.Forms.ComboBox();
+            this.cboDatumNastankaMESEC = new System.Windows.Forms.ComboBox();
+            this.cboDatumNastankaDAN = new System.Windows.Forms.ComboBox();
             this.cboObracunskaGodina = new System.Windows.Forms.ComboBox();
             this.cboObracunskiMesec = new System.Windows.Forms.ComboBox();
             this.lblDatumPlacanja = new System.Windows.Forms.Label();
@@ -52,6 +58,8 @@ namespace ProgramZaPlatu
             this.lblObracunskiPeriod = new System.Windows.Forms.Label();
             this.lblVrstaPrijave = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.cboRadnoVreme = new System.Windows.Forms.ComboBox();
+            this.cboTipIsplatioca = new System.Windows.Forms.ComboBox();
             this.txtJMBGPodnosiocaPrijave = new System.Windows.Forms.TextBox();
             this.lblJMBGPodnosiocaPrijave = new System.Windows.Forms.Label();
             this.lblRadnoVreme = new System.Windows.Forms.Label();
@@ -105,14 +113,6 @@ namespace ProgramZaPlatu
             this.panel7 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.lblUkupno = new System.Windows.Forms.Label();
-            this.cboDatumNastankaDAN = new System.Windows.Forms.ComboBox();
-            this.cboDatumNastankaMESEC = new System.Windows.Forms.ComboBox();
-            this.cboDatumNastankaGODINA = new System.Windows.Forms.ComboBox();
-            this.cboDatumPlacanjaGODINA = new System.Windows.Forms.ComboBox();
-            this.cboDatumPlacanjaMESEC = new System.Windows.Forms.ComboBox();
-            this.cboDatumPlacanjaDAN = new System.Windows.Forms.ComboBox();
-            this.cboTipIsplatioca = new System.Windows.Forms.ComboBox();
-            this.cboRadnoVreme = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -177,6 +177,158 @@ namespace ProgramZaPlatu
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(565, 101);
             this.panel2.TabIndex = 2;
+            // 
+            // cboDatumPlacanjaGODINA
+            // 
+            this.cboDatumPlacanjaGODINA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboDatumPlacanjaGODINA.FormattingEnabled = true;
+            this.cboDatumPlacanjaGODINA.Items.AddRange(new object[] {
+            "2013",
+            "2014",
+            "2015"});
+            this.cboDatumPlacanjaGODINA.Location = new System.Drawing.Point(496, 61);
+            this.cboDatumPlacanjaGODINA.Name = "cboDatumPlacanjaGODINA";
+            this.cboDatumPlacanjaGODINA.Size = new System.Drawing.Size(50, 21);
+            this.cboDatumPlacanjaGODINA.TabIndex = 20;
+            // 
+            // cboDatumPlacanjaMESEC
+            // 
+            this.cboDatumPlacanjaMESEC.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboDatumPlacanjaMESEC.FormattingEnabled = true;
+            this.cboDatumPlacanjaMESEC.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"});
+            this.cboDatumPlacanjaMESEC.Location = new System.Drawing.Point(449, 61);
+            this.cboDatumPlacanjaMESEC.Name = "cboDatumPlacanjaMESEC";
+            this.cboDatumPlacanjaMESEC.Size = new System.Drawing.Size(41, 21);
+            this.cboDatumPlacanjaMESEC.TabIndex = 19;
+            // 
+            // cboDatumPlacanjaDAN
+            // 
+            this.cboDatumPlacanjaDAN.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboDatumPlacanjaDAN.FormattingEnabled = true;
+            this.cboDatumPlacanjaDAN.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31"});
+            this.cboDatumPlacanjaDAN.Location = new System.Drawing.Point(402, 61);
+            this.cboDatumPlacanjaDAN.Name = "cboDatumPlacanjaDAN";
+            this.cboDatumPlacanjaDAN.Size = new System.Drawing.Size(41, 21);
+            this.cboDatumPlacanjaDAN.TabIndex = 18;
+            // 
+            // cboDatumNastankaGODINA
+            // 
+            this.cboDatumNastankaGODINA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboDatumNastankaGODINA.FormattingEnabled = true;
+            this.cboDatumNastankaGODINA.Items.AddRange(new object[] {
+            "2013",
+            "2014",
+            "2015"});
+            this.cboDatumNastankaGODINA.Location = new System.Drawing.Point(322, 61);
+            this.cboDatumNastankaGODINA.Name = "cboDatumNastankaGODINA";
+            this.cboDatumNastankaGODINA.Size = new System.Drawing.Size(50, 21);
+            this.cboDatumNastankaGODINA.TabIndex = 17;
+            // 
+            // cboDatumNastankaMESEC
+            // 
+            this.cboDatumNastankaMESEC.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboDatumNastankaMESEC.FormattingEnabled = true;
+            this.cboDatumNastankaMESEC.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"});
+            this.cboDatumNastankaMESEC.Location = new System.Drawing.Point(275, 61);
+            this.cboDatumNastankaMESEC.Name = "cboDatumNastankaMESEC";
+            this.cboDatumNastankaMESEC.Size = new System.Drawing.Size(41, 21);
+            this.cboDatumNastankaMESEC.TabIndex = 16;
+            // 
+            // cboDatumNastankaDAN
+            // 
+            this.cboDatumNastankaDAN.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboDatumNastankaDAN.FormattingEnabled = true;
+            this.cboDatumNastankaDAN.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31"});
+            this.cboDatumNastankaDAN.Location = new System.Drawing.Point(228, 61);
+            this.cboDatumNastankaDAN.Name = "cboDatumNastankaDAN";
+            this.cboDatumNastankaDAN.Size = new System.Drawing.Size(41, 21);
+            this.cboDatumNastankaDAN.TabIndex = 15;
             // 
             // cboObracunskaGodina
             // 
@@ -313,6 +465,36 @@ namespace ProgramZaPlatu
             this.panel3.Size = new System.Drawing.Size(987, 46);
             this.panel3.TabIndex = 3;
             // 
+            // cboRadnoVreme
+            // 
+            this.cboRadnoVreme.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboRadnoVreme.FormattingEnabled = true;
+            this.cboRadnoVreme.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3"});
+            this.cboRadnoVreme.Location = new System.Drawing.Point(496, 14);
+            this.cboRadnoVreme.Name = "cboRadnoVreme";
+            this.cboRadnoVreme.Size = new System.Drawing.Size(30, 21);
+            this.cboRadnoVreme.TabIndex = 22;
+            // 
+            // cboTipIsplatioca
+            // 
+            this.cboTipIsplatioca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboTipIsplatioca.FormattingEnabled = true;
+            this.cboTipIsplatioca.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"});
+            this.cboTipIsplatioca.Location = new System.Drawing.Point(111, 15);
+            this.cboTipIsplatioca.Name = "cboTipIsplatioca";
+            this.cboTipIsplatioca.Size = new System.Drawing.Size(30, 21);
+            this.cboTipIsplatioca.TabIndex = 21;
+            // 
             // txtJMBGPodnosiocaPrijave
             // 
             this.txtJMBGPodnosiocaPrijave.Enabled = false;
@@ -361,7 +543,7 @@ namespace ProgramZaPlatu
             // 
             this.lblTipIsplatioca.Location = new System.Drawing.Point(3, 12);
             this.lblTipIsplatioca.Name = "lblTipIsplatioca";
-            this.lblTipIsplatioca.Size = new System.Drawing.Size(121, 24);
+            this.lblTipIsplatioca.Size = new System.Drawing.Size(102, 24);
             this.lblTipIsplatioca.TabIndex = 0;
             this.lblTipIsplatioca.Text = "Тип исплатиоца";
             this.lblTipIsplatioca.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -760,188 +942,6 @@ namespace ProgramZaPlatu
             this.lblUkupno.TabIndex = 11;
             this.lblUkupno.Text = "Укупно";
             this.lblUkupno.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // cboDatumNastankaDAN
-            // 
-            this.cboDatumNastankaDAN.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboDatumNastankaDAN.FormattingEnabled = true;
-            this.cboDatumNastankaDAN.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"});
-            this.cboDatumNastankaDAN.Location = new System.Drawing.Point(228, 61);
-            this.cboDatumNastankaDAN.Name = "cboDatumNastankaDAN";
-            this.cboDatumNastankaDAN.Size = new System.Drawing.Size(41, 21);
-            this.cboDatumNastankaDAN.TabIndex = 15;
-            // 
-            // cboDatumNastankaMESEC
-            // 
-            this.cboDatumNastankaMESEC.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboDatumNastankaMESEC.FormattingEnabled = true;
-            this.cboDatumNastankaMESEC.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12"});
-            this.cboDatumNastankaMESEC.Location = new System.Drawing.Point(275, 61);
-            this.cboDatumNastankaMESEC.Name = "cboDatumNastankaMESEC";
-            this.cboDatumNastankaMESEC.Size = new System.Drawing.Size(41, 21);
-            this.cboDatumNastankaMESEC.TabIndex = 16;
-            // 
-            // cboDatumNastankaGODINA
-            // 
-            this.cboDatumNastankaGODINA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboDatumNastankaGODINA.FormattingEnabled = true;
-            this.cboDatumNastankaGODINA.Items.AddRange(new object[] {
-            "2013",
-            "2014",
-            "2015"});
-            this.cboDatumNastankaGODINA.Location = new System.Drawing.Point(322, 61);
-            this.cboDatumNastankaGODINA.Name = "cboDatumNastankaGODINA";
-            this.cboDatumNastankaGODINA.Size = new System.Drawing.Size(50, 21);
-            this.cboDatumNastankaGODINA.TabIndex = 17;
-            // 
-            // cboDatumPlacanjaGODINA
-            // 
-            this.cboDatumPlacanjaGODINA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboDatumPlacanjaGODINA.FormattingEnabled = true;
-            this.cboDatumPlacanjaGODINA.Items.AddRange(new object[] {
-            "2013",
-            "2014",
-            "2015"});
-            this.cboDatumPlacanjaGODINA.Location = new System.Drawing.Point(496, 61);
-            this.cboDatumPlacanjaGODINA.Name = "cboDatumPlacanjaGODINA";
-            this.cboDatumPlacanjaGODINA.Size = new System.Drawing.Size(50, 21);
-            this.cboDatumPlacanjaGODINA.TabIndex = 20;
-            // 
-            // cboDatumPlacanjaMESEC
-            // 
-            this.cboDatumPlacanjaMESEC.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboDatumPlacanjaMESEC.FormattingEnabled = true;
-            this.cboDatumPlacanjaMESEC.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12"});
-            this.cboDatumPlacanjaMESEC.Location = new System.Drawing.Point(449, 61);
-            this.cboDatumPlacanjaMESEC.Name = "cboDatumPlacanjaMESEC";
-            this.cboDatumPlacanjaMESEC.Size = new System.Drawing.Size(41, 21);
-            this.cboDatumPlacanjaMESEC.TabIndex = 19;
-            // 
-            // cboDatumPlacanjaDAN
-            // 
-            this.cboDatumPlacanjaDAN.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboDatumPlacanjaDAN.FormattingEnabled = true;
-            this.cboDatumPlacanjaDAN.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"});
-            this.cboDatumPlacanjaDAN.Location = new System.Drawing.Point(402, 61);
-            this.cboDatumPlacanjaDAN.Name = "cboDatumPlacanjaDAN";
-            this.cboDatumPlacanjaDAN.Size = new System.Drawing.Size(41, 21);
-            this.cboDatumPlacanjaDAN.TabIndex = 18;
-            // 
-            // cboTipIsplatioca
-            // 
-            this.cboTipIsplatioca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboTipIsplatioca.FormattingEnabled = true;
-            this.cboTipIsplatioca.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7"});
-            this.cboTipIsplatioca.Location = new System.Drawing.Point(111, 15);
-            this.cboTipIsplatioca.Name = "cboTipIsplatioca";
-            this.cboTipIsplatioca.Size = new System.Drawing.Size(30, 21);
-            this.cboTipIsplatioca.TabIndex = 21;
-            // 
-            // cboRadnoVreme
-            // 
-            this.cboRadnoVreme.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboRadnoVreme.FormattingEnabled = true;
-            this.cboRadnoVreme.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3"});
-            this.cboRadnoVreme.Location = new System.Drawing.Point(496, 14);
-            this.cboRadnoVreme.Name = "cboRadnoVreme";
-            this.cboRadnoVreme.Size = new System.Drawing.Size(30, 21);
-            this.cboRadnoVreme.TabIndex = 22;
             // 
             // FormaPPPpd
             // 

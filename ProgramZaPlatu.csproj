@@ -73,6 +73,12 @@
     <Compile Include="DodajNovogForm.Designer.cs">
       <DependentUpon>DodajNovogForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="DodajNovuFirmu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DodajNovuFirmu.Designer.cs">
+      <DependentUpon>DodajNovuFirmu.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormaPPPpd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +126,9 @@
   <ItemGroup>
     <EmbeddedResource Include="DodajNovogForm.resx">
       <DependentUpon>DodajNovogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DodajNovuFirmu.resx">
+      <DependentUpon>DodajNovuFirmu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormaPPPpd.resx">
       <DependentUpon>FormaPPPpd.cs</DependentUpon>
