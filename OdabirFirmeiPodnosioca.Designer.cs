@@ -125,6 +125,7 @@
             this.btnIzbrisiFirmu.TabIndex = 5;
             this.btnIzbrisiFirmu.Text = "Избриши фирму";
             this.btnIzbrisiFirmu.UseVisualStyleBackColor = true;
+            this.btnIzbrisiFirmu.Click += new System.EventHandler(this.btnIzbrisiFirmu_Click);
             // 
             // btnNoviPodnosilac
             // 
@@ -134,6 +135,7 @@
             this.btnNoviPodnosilac.TabIndex = 6;
             this.btnNoviPodnosilac.Text = "Додај новог подносиоца";
             this.btnNoviPodnosilac.UseVisualStyleBackColor = true;
+            this.btnNoviPodnosilac.Click += new System.EventHandler(this.btnNoviPodnosilac_Click);
             // 
             // btnIzbrisiPodnosioca
             // 
@@ -143,12 +145,14 @@
             this.btnIzbrisiPodnosioca.TabIndex = 7;
             this.btnIzbrisiPodnosioca.Text = "Избриши подносиоца";
             this.btnIzbrisiPodnosioca.UseVisualStyleBackColor = true;
+            this.btnIzbrisiPodnosioca.Click += new System.EventHandler(this.btnIzbrisiPodnosioca_Click);
             // 
             // OdabirFirmeiPodnosioca
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(444, 231);
+            this.ControlBox = false;
             this.Controls.Add(this.btnIzbrisiPodnosioca);
             this.Controls.Add(this.btnNoviPodnosilac);
             this.Controls.Add(this.btnIzbrisiFirmu);

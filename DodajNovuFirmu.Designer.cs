@@ -77,14 +77,14 @@
             this.txtMBFirme.Location = new System.Drawing.Point(12, 142);
             this.txtMBFirme.Name = "txtMBFirme";
             this.txtMBFirme.Size = new System.Drawing.Size(166, 20);
-            this.txtMBFirme.TabIndex = 4;
+            this.txtMBFirme.TabIndex = 5;
             // 
             // txtEmailFirme
             // 
             this.txtEmailFirme.Location = new System.Drawing.Point(12, 116);
             this.txtEmailFirme.Name = "txtEmailFirme";
             this.txtEmailFirme.Size = new System.Drawing.Size(166, 20);
-            this.txtEmailFirme.TabIndex = 5;
+            this.txtEmailFirme.TabIndex = 4;
             // 
             // lblEmail
             // 
@@ -146,7 +146,7 @@
             this.btnОК.Location = new System.Drawing.Point(334, 31);
             this.btnОК.Name = "btnОК";
             this.btnОК.Size = new System.Drawing.Size(75, 49);
-            this.btnОК.TabIndex = 12;
+            this.btnОК.TabIndex = 6;
             this.btnОК.Text = "ОК";
             this.btnОК.UseVisualStyleBackColor = true;
             // 
@@ -155,7 +155,7 @@
             this.btnCancel.Location = new System.Drawing.Point(334, 109);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
-            this.btnCancel.TabIndex = 13;
+            this.btnCancel.TabIndex = 7;
             this.btnCancel.Text = "cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
             // 
@@ -165,6 +165,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(469, 202);
+            this.ControlBox = false;
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnОК);
             this.Controls.Add(this.lblMB);
