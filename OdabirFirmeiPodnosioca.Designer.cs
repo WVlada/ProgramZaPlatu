@@ -39,6 +39,9 @@
             this.btnIzbrisiFirmu = new System.Windows.Forms.Button();
             this.btnNoviPodnosilac = new System.Windows.Forms.Button();
             this.btnIzbrisiPodnosioca = new System.Windows.Forms.Button();
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // btnOdabirFirmeiPodnosiocaOK
@@ -58,7 +61,9 @@
             this.lstViewFirma.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lstViewFirma.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.broj,
-            this.Imefirme});
+            this.Imefirme,
+            this.columnHeader4,
+            this.columnHeader5});
             this.lstViewFirma.FullRowSelect = true;
             this.lstViewFirma.GridLines = true;
             this.lstViewFirma.HideSelection = false;
@@ -78,14 +83,15 @@
             // Imefirme
             // 
             this.Imefirme.Text = "Име фирме";
-            this.Imefirme.Width = 207;
+            this.Imefirme.Width = 80;
             // 
             // lstViewPodnosioci
             // 
             this.lstViewPodnosioci.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lstViewPodnosioci.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
-            this.columnHeader2});
+            this.columnHeader2,
+            this.columnHeader3});
             this.lstViewPodnosioci.FullRowSelect = true;
             this.lstViewPodnosioci.GridLines = true;
             this.lstViewPodnosioci.HideSelection = false;
@@ -105,7 +111,7 @@
             // columnHeader2
             // 
             this.columnHeader2.Text = "Име подносиоца";
-            this.columnHeader2.Width = 207;
+            this.columnHeader2.Width = 120;
             // 
             // btnNovaFirma
             // 
@@ -147,6 +153,21 @@
             this.btnIzbrisiPodnosioca.UseVisualStyleBackColor = true;
             this.btnIzbrisiPodnosioca.Click += new System.EventHandler(this.btnIzbrisiPodnosioca_Click);
             // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "ЈМБГ";
+            this.columnHeader3.Width = 90;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "ПИБ";
+            this.columnHeader4.Width = 75;
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "МБ";
+            this.columnHeader5.Width = 75;
+            // 
             // OdabirFirmeiPodnosioca
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -181,5 +202,8 @@
         private System.Windows.Forms.Button btnIzbrisiFirmu;
         private System.Windows.Forms.Button btnNoviPodnosilac;
         private System.Windows.Forms.Button btnIzbrisiPodnosioca;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
     }
 }

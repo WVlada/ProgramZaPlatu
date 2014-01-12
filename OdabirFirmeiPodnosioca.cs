@@ -40,6 +40,8 @@ namespace ProgramZaPlatu
             {
                 ListViewItem firmice = new ListViewItem(i.ToString());
                 firmice.SubItems.Add(red.GetValue(0).ToString());
+                firmice.SubItems.Add(red.GetValue(3).ToString());
+                firmice.SubItems.Add(red.GetValue(5).ToString());
                 lstViewFirma.Items.Add(firmice);
                 i++;
             }
@@ -48,6 +50,7 @@ namespace ProgramZaPlatu
             {
                 ListViewItem podnosioci = new ListViewItem(j.ToString());
                 podnosioci.SubItems.Add(red.GetValue(1).ToString());
+                podnosioci.SubItems.Add(red.GetValue(2).ToString());// ovako dodajem i JMBG u tabelu
                 lstViewPodnosioci.Items.Add(podnosioci);
                 j++;
             }
@@ -68,17 +71,36 @@ namespace ProgramZaPlatu
             else
             {
                 this.DialogResult = DialogResult.None;
-                MessageBox.Show("Moraju biti odabrani i podnosilac forme i firma!");
+                MessageBox.Show("Moraju biti odabrani i podnosilac forme i firma!", "Грешка");
             }
         }
+        private bool FirmaPostoji(string mb0, string pib0 )
+        {
+            string mb = mb0;
+            string pib = pib0;
 
+            bool y = true;
+
+            foreach (ListViewItem item in lstViewFirma.Items)
+            {
+
+                if (item.SubItems[2].Text == pib || item.SubItems[3].Text == mb)
+                {
+                    y = true;
+                    break;
+                }
+                else
+                    y = false;
+            }
+            return y;
+        }
         private void btnNovaFirma_Click(object sender, EventArgs e)
         {
             DodajNovuFirmu NovaFirma = new DodajNovuFirmu();
             {
                 if (NovaFirma.ShowDialog() == DialogResult.OK)
                     {
-                        if (NovaFirma.txtImeFirme.Text != "" && NovaFirma.txtGradFirme.Text != "" && NovaFirma.txtAdresaFirme.Text != "" && NovaFirma.txtPIBFirme.Text != "" && NovaFirma.txtEmailFirme.Text != "" && NovaFirma.txtMBFirme.Text != "")
+                        if (NovaFirma.txtImeFirme.Text != "" && NovaFirma.txtGradFirme.Text != "" && NovaFirma.txtAdresaFirme.Text != "" && NovaFirma.txtPIBFirme.Text != "" && NovaFirma.txtEmailFirme.Text != "" && NovaFirma.txtMBFirme.Text != "" && FirmaPostoji(NovaFirma.txtMBFirme.Text, NovaFirma.txtPIBFirme.Text) == false)
                             {
                                 SQLiteConnection konekcija = new SQLiteConnection("Data Source=PreduzecaIPodnosioci.s3db;");
                                 konekcija.Open();
@@ -100,44 +122,74 @@ namespace ProgramZaPlatu
 
                                 UcitajFirmeIPodnosioce();
                             }
-                        else
-                        {
-                            MessageBox.Show("Ne sme biti praznih polja prilikom unošenja nove firme");
+                        else if (FirmaPostoji(NovaFirma.txtMBFirme.Text, NovaFirma.txtPIBFirme.Text) == true)
+                           {
+                            MessageBox.Show("Већ постоји фирма у бази података са датим ПИБ-ом и/или МБ-ом","Грешка");
                         }
-                }
-
+                        else 
+                        {
+                            MessageBox.Show("Не сме бити празних поља при уношењу нове фирме", "Грешка");
+                        }
+                 }
             }
-
         }
-
         private void btnIzbrisiFirmu_Click(object sender, EventArgs e)
         {
-            // ovde se PRVI put pune podaci - SVIPodaci za PPD
-            int indexFirma = lstViewFirma.SelectedIndices[0];
-            string FirmaZaBrisanje  = lstViewFirma.Items[indexFirma].SubItems[1].Text;
-            SQLiteConnection konekcija = new SQLiteConnection("Data Source=PreduzecaIPodnosioci.s3db;");
-            konekcija.Open();
+            // mozda malo cudan try catch block - proveriti na kraju da li ostaviti ovako
+            try
+            {
+                int indexFirma = lstViewFirma.SelectedIndices[0];
+                if (indexFirma >= 0)
+                {
+                    string FirmaZaBrisanje = lstViewFirma.Items[indexFirma].SubItems[1].Text;
+                    SQLiteConnection konekcija = new SQLiteConnection("Data Source=PreduzecaIPodnosioci.s3db;");
+                    konekcija.Open();
 
-            string IzbrisiSelektovanuFirmu = "DELETE FROM Preduzeca WHERE ";
-            IzbrisiSelektovanuFirmu += "Naziv = @ImeFirme";
+                    string IzbrisiSelektovanuFirmu = "DELETE FROM Preduzeca WHERE ";
+                    IzbrisiSelektovanuFirmu += "Naziv = @ImeFirme";
 
-            SQLiteCommand komandaDodajFirmu = new SQLiteCommand(IzbrisiSelektovanuFirmu, konekcija);
+                    SQLiteCommand komandaDodajFirmu = new SQLiteCommand(IzbrisiSelektovanuFirmu, konekcija);
 
-            komandaDodajFirmu.Parameters.AddWithValue("@ImeFirme", FirmaZaBrisanje);
+                    komandaDodajFirmu.Parameters.AddWithValue("@ImeFirme", FirmaZaBrisanje);
 
-            komandaDodajFirmu.ExecuteNonQuery();
-            konekcija.Close();
+                    komandaDodajFirmu.ExecuteNonQuery();
+                    konekcija.Close();
 
-            UcitajFirmeIPodnosioce();
+                    UcitajFirmeIPodnosioce();
+                }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Одабери фирму за брисање!","Грешка!");
+            }
+        }
+        
+        private bool PodnosilacPostoji(string s)
+        {
+            string x = s;
+            bool y = true;
 
+            foreach (ListViewItem item in lstViewPodnosioci.Items)
+            {
+
+                if (item.SubItems[2].Text == x)
+                {
+                    y = true;
+                    break;
+                }
+                else
+                    y = false;
+            
+            }
+            return y;
+        }
         private void btnNoviPodnosilac_Click(object sender, EventArgs e)
         {
             DodajNovogPodnosioca NoviPodnosilac = new DodajNovogPodnosioca();
             {
                 if (NoviPodnosilac.ShowDialog() == DialogResult.OK)
                 {
-                    if (NoviPodnosilac.txtImeiPrezime.Text != "" && NoviPodnosilac.txtJMBG.Text != "")
+                    if (NoviPodnosilac.txtImeiPrezime.Text != "" && NoviPodnosilac.txtJMBG.Text.Length == 13 && PodnosilacPostoji(NoviPodnosilac.txtJMBG.Text) == false)
                     {
                         SQLiteConnection konekcija = new SQLiteConnection("Data Source=PreduzecaIPodnosioci.s3db;");
                         konekcija.Open();
@@ -155,33 +207,45 @@ namespace ProgramZaPlatu
 
                         UcitajFirmeIPodnosioce();
                     }
-                    else
+                    else if (NoviPodnosilac.txtImeiPrezime.Text == "" && NoviPodnosilac.txtJMBG.Text.Length != 13)
                     {
-                        MessageBox.Show("Ne sme biti praznih polja prilikom unošenja novog podnosioca");
+                        MessageBox.Show("Не сме бити празних поља при уношењу новог подносиоца");
+                    }
+                    else if (PodnosilacPostoji(NoviPodnosilac.txtJMBG.Text) == true)
+                    {
+                        MessageBox.Show("ЈМБГ мора бити јединствен!","Грешка");
                     }
                 }
             }
         }
-
         private void btnIzbrisiPodnosioca_Click(object sender, EventArgs e)
         {
-            // ovde se PRVI put pune podaci - SVIPodaci za PPD
-            int indexPodnosilac = lstViewPodnosioci.SelectedIndices[0];
-            string PodnosilacZaBrisanje = lstViewPodnosioci.Items[indexPodnosilac].SubItems[1].Text;
-            SQLiteConnection konekcija = new SQLiteConnection("Data Source=PreduzecaIPodnosioci.s3db;");
-            konekcija.Open();
+            try
+            {
+                // ovde se PRVI put pune podaci - SVIPodaci za PPD
+                int indexPodnosilac = lstViewPodnosioci.SelectedIndices[0];
+                if (indexPodnosilac >= 0)
+                {
+                string PodnosilacZaBrisanje = lstViewPodnosioci.Items[indexPodnosilac].SubItems[1].Text;
+                SQLiteConnection konekcija = new SQLiteConnection("Data Source=PreduzecaIPodnosioci.s3db;");
+                konekcija.Open();
 
-            string IzbrisiSelektovanogPodnosioca = "DELETE FROM Podnosioci WHERE ";
-            IzbrisiSelektovanogPodnosioca += "ImeIPrezime = @ImeIPrezime";
+                string IzbrisiSelektovanogPodnosioca = "DELETE FROM Podnosioci WHERE ";
+                IzbrisiSelektovanogPodnosioca += "ImeIPrezime = @ImeIPrezime";
 
-            SQLiteCommand komandaDodajFirmu = new SQLiteCommand(IzbrisiSelektovanogPodnosioca, konekcija);
+                SQLiteCommand komandaDodajFirmu = new SQLiteCommand(IzbrisiSelektovanogPodnosioca, konekcija);
 
-            komandaDodajFirmu.Parameters.AddWithValue("@ImeIPrezime", PodnosilacZaBrisanje);
+                komandaDodajFirmu.Parameters.AddWithValue("@ImeIPrezime", PodnosilacZaBrisanje);
 
-            komandaDodajFirmu.ExecuteNonQuery();
-            konekcija.Close();
+                komandaDodajFirmu.ExecuteNonQuery();
+                konekcija.Close();
 
-            UcitajFirmeIPodnosioce();
+                UcitajFirmeIPodnosioce();
+                }
+            }
+            catch (Exception ex)
+            { MessageBox.Show("Одабери подносиоца за брисање!", "Грешка"); }
         }
+        
     }
 }

@@ -95,6 +95,7 @@ namespace ProgramZaPlatu
             this.lblNetoIznos = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupZaUnos = new System.Windows.Forms.GroupBox();
+            this.btnUnesiUFormu = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.lblMFP = new System.Windows.Forms.Label();
             this.lblBeneficiraniPIO = new System.Windows.Forms.Label();
@@ -126,7 +127,6 @@ namespace ProgramZaPlatu
             this.groupZaposleni = new System.Windows.Forms.GroupBox();
             this.groupIznosZaposleni = new System.Windows.Forms.GroupBox();
             this.groupIznosPoslodavac = new System.Windows.Forms.GroupBox();
-            this.btnUnesiUFormu = new System.Windows.Forms.Button();
             this.tabNetoBruto.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -143,7 +143,7 @@ namespace ProgramZaPlatu
             this.txtNetoIznosLEVO.Location = new System.Drawing.Point(161, 18);
             this.txtNetoIznosLEVO.Margin = new System.Windows.Forms.Padding(2);
             this.txtNetoIznosLEVO.Name = "txtNetoIznosLEVO";
-            this.txtNetoIznosLEVO.Size = new System.Drawing.Size(117, 27);
+            this.txtNetoIznosLEVO.Size = new System.Drawing.Size(117, 23);
             this.txtNetoIznosLEVO.TabIndex = 0;
             this.txtNetoIznosLEVO.Text = "0";
             this.txtNetoIznosLEVO.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -168,8 +168,8 @@ namespace ProgramZaPlatu
             this.txtStopaPorezaLEVO.Margin = new System.Windows.Forms.Padding(2);
             this.txtStopaPorezaLEVO.Name = "txtStopaPorezaLEVO";
             this.txtStopaPorezaLEVO.ReadOnly = true;
-            this.txtStopaPorezaLEVO.Size = new System.Drawing.Size(50, 27);
-            this.txtStopaPorezaLEVO.TabIndex = 2;
+            this.txtStopaPorezaLEVO.Size = new System.Drawing.Size(50, 23);
+            this.txtStopaPorezaLEVO.TabIndex = 20;
             this.txtStopaPorezaLEVO.Text = "0";
             this.txtStopaPorezaLEVO.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -191,8 +191,8 @@ namespace ProgramZaPlatu
             this.txtBrutoIznosDESNO.Margin = new System.Windows.Forms.Padding(2);
             this.txtBrutoIznosDESNO.Name = "txtBrutoIznosDESNO";
             this.txtBrutoIznosDESNO.ReadOnly = true;
-            this.txtBrutoIznosDESNO.Size = new System.Drawing.Size(103, 27);
-            this.txtBrutoIznosDESNO.TabIndex = 5;
+            this.txtBrutoIznosDESNO.Size = new System.Drawing.Size(103, 23);
+            this.txtBrutoIznosDESNO.TabIndex = 13;
             this.txtBrutoIznosDESNO.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtBrutoIznosDESNO.TextChanged += new System.EventHandler(this.TxtBrutoIznosDESNOTextChanged);
             // 
@@ -204,7 +204,7 @@ namespace ProgramZaPlatu
             this.lblBrutoIznos.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblBrutoIznos.Name = "lblBrutoIznos";
             this.lblBrutoIznos.Size = new System.Drawing.Size(106, 22);
-            this.lblBrutoIznos.TabIndex = 6;
+            this.lblBrutoIznos.TabIndex = 66;
             this.lblBrutoIznos.Text = "Бруто износ";
             this.lblBrutoIznos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -214,8 +214,8 @@ namespace ProgramZaPlatu
             this.txtStopaPIOZaposlenogLEVO.Margin = new System.Windows.Forms.Padding(2);
             this.txtStopaPIOZaposlenogLEVO.Name = "txtStopaPIOZaposlenogLEVO";
             this.txtStopaPIOZaposlenogLEVO.ReadOnly = true;
-            this.txtStopaPIOZaposlenogLEVO.Size = new System.Drawing.Size(50, 23);
-            this.txtStopaPIOZaposlenogLEVO.TabIndex = 8;
+            this.txtStopaPIOZaposlenogLEVO.Size = new System.Drawing.Size(50, 20);
+            this.txtStopaPIOZaposlenogLEVO.TabIndex = 14;
             this.txtStopaPIOZaposlenogLEVO.Text = "0";
             this.txtStopaPIOZaposlenogLEVO.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -237,8 +237,8 @@ namespace ProgramZaPlatu
             this.txtStopaZdravstvoZaposlenogLEVO.Margin = new System.Windows.Forms.Padding(2);
             this.txtStopaZdravstvoZaposlenogLEVO.Name = "txtStopaZdravstvoZaposlenogLEVO";
             this.txtStopaZdravstvoZaposlenogLEVO.ReadOnly = true;
-            this.txtStopaZdravstvoZaposlenogLEVO.Size = new System.Drawing.Size(50, 23);
-            this.txtStopaZdravstvoZaposlenogLEVO.TabIndex = 11;
+            this.txtStopaZdravstvoZaposlenogLEVO.Size = new System.Drawing.Size(50, 20);
+            this.txtStopaZdravstvoZaposlenogLEVO.TabIndex = 15;
             this.txtStopaZdravstvoZaposlenogLEVO.Text = "0";
             this.txtStopaZdravstvoZaposlenogLEVO.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -260,8 +260,8 @@ namespace ProgramZaPlatu
             this.txtStopaNezaposlenostiZaposlenogLEVO.Margin = new System.Windows.Forms.Padding(2);
             this.txtStopaNezaposlenostiZaposlenogLEVO.Name = "txtStopaNezaposlenostiZaposlenogLEVO";
             this.txtStopaNezaposlenostiZaposlenogLEVO.ReadOnly = true;
-            this.txtStopaNezaposlenostiZaposlenogLEVO.Size = new System.Drawing.Size(50, 23);
-            this.txtStopaNezaposlenostiZaposlenogLEVO.TabIndex = 14;
+            this.txtStopaNezaposlenostiZaposlenogLEVO.Size = new System.Drawing.Size(50, 20);
+            this.txtStopaNezaposlenostiZaposlenogLEVO.TabIndex = 16;
             this.txtStopaNezaposlenostiZaposlenogLEVO.Text = "0";
             this.txtStopaNezaposlenostiZaposlenogLEVO.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -283,7 +283,7 @@ namespace ProgramZaPlatu
             this.txtStopaPIOPoslodavacLEVO.Margin = new System.Windows.Forms.Padding(2);
             this.txtStopaPIOPoslodavacLEVO.Name = "txtStopaPIOPoslodavacLEVO";
             this.txtStopaPIOPoslodavacLEVO.ReadOnly = true;
-            this.txtStopaPIOPoslodavacLEVO.Size = new System.Drawing.Size(50, 23);
+            this.txtStopaPIOPoslodavacLEVO.Size = new System.Drawing.Size(50, 20);
             this.txtStopaPIOPoslodavacLEVO.TabIndex = 17;
             this.txtStopaPIOPoslodavacLEVO.Text = "0";
             this.txtStopaPIOPoslodavacLEVO.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -306,8 +306,8 @@ namespace ProgramZaPlatu
             this.txtStopaZdravstvoPoslodavacLEVO.Margin = new System.Windows.Forms.Padding(2);
             this.txtStopaZdravstvoPoslodavacLEVO.Name = "txtStopaZdravstvoPoslodavacLEVO";
             this.txtStopaZdravstvoPoslodavacLEVO.ReadOnly = true;
-            this.txtStopaZdravstvoPoslodavacLEVO.Size = new System.Drawing.Size(50, 23);
-            this.txtStopaZdravstvoPoslodavacLEVO.TabIndex = 20;
+            this.txtStopaZdravstvoPoslodavacLEVO.Size = new System.Drawing.Size(50, 20);
+            this.txtStopaZdravstvoPoslodavacLEVO.TabIndex = 18;
             this.txtStopaZdravstvoPoslodavacLEVO.Text = "0";
             this.txtStopaZdravstvoPoslodavacLEVO.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -329,8 +329,8 @@ namespace ProgramZaPlatu
             this.txtStopaNezaposlenostPoslodavacLEVO.Margin = new System.Windows.Forms.Padding(2);
             this.txtStopaNezaposlenostPoslodavacLEVO.Name = "txtStopaNezaposlenostPoslodavacLEVO";
             this.txtStopaNezaposlenostPoslodavacLEVO.ReadOnly = true;
-            this.txtStopaNezaposlenostPoslodavacLEVO.Size = new System.Drawing.Size(50, 23);
-            this.txtStopaNezaposlenostPoslodavacLEVO.TabIndex = 23;
+            this.txtStopaNezaposlenostPoslodavacLEVO.Size = new System.Drawing.Size(50, 20);
+            this.txtStopaNezaposlenostPoslodavacLEVO.TabIndex = 19;
             this.txtStopaNezaposlenostPoslodavacLEVO.Text = "0";
             this.txtStopaNezaposlenostPoslodavacLEVO.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -404,7 +404,7 @@ namespace ProgramZaPlatu
             this.txtIznosPorezaDESNO.Margin = new System.Windows.Forms.Padding(2);
             this.txtIznosPorezaDESNO.Name = "txtIznosPorezaDESNO";
             this.txtIznosPorezaDESNO.ReadOnly = true;
-            this.txtIznosPorezaDESNO.Size = new System.Drawing.Size(103, 27);
+            this.txtIznosPorezaDESNO.Size = new System.Drawing.Size(103, 23);
             this.txtIznosPorezaDESNO.TabIndex = 28;
             this.txtIznosPorezaDESNO.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtIznosPorezaDESNO.TextChanged += new System.EventHandler(this.TxtIznosPorezaDESNOTextChanged);
@@ -427,7 +427,7 @@ namespace ProgramZaPlatu
             this.txtIznosPioZaposleniDESNO.Margin = new System.Windows.Forms.Padding(2);
             this.txtIznosPioZaposleniDESNO.Name = "txtIznosPioZaposleniDESNO";
             this.txtIznosPioZaposleniDESNO.ReadOnly = true;
-            this.txtIznosPioZaposleniDESNO.Size = new System.Drawing.Size(81, 27);
+            this.txtIznosPioZaposleniDESNO.Size = new System.Drawing.Size(81, 23);
             this.txtIznosPioZaposleniDESNO.TabIndex = 30;
             this.txtIznosPioZaposleniDESNO.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtIznosPioZaposleniDESNO.TextChanged += new System.EventHandler(this.TxtIznosPioZaposleniDESNOTextChanged);
@@ -450,7 +450,7 @@ namespace ProgramZaPlatu
             this.txtIznosZdravstvoZaposleniDESNO.Margin = new System.Windows.Forms.Padding(2);
             this.txtIznosZdravstvoZaposleniDESNO.Name = "txtIznosZdravstvoZaposleniDESNO";
             this.txtIznosZdravstvoZaposleniDESNO.ReadOnly = true;
-            this.txtIznosZdravstvoZaposleniDESNO.Size = new System.Drawing.Size(81, 27);
+            this.txtIznosZdravstvoZaposleniDESNO.Size = new System.Drawing.Size(81, 23);
             this.txtIznosZdravstvoZaposleniDESNO.TabIndex = 32;
             this.txtIznosZdravstvoZaposleniDESNO.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtIznosZdravstvoZaposleniDESNO.TextChanged += new System.EventHandler(this.TxtIznosZdravZaposleniDESNOTextChanged);
@@ -473,7 +473,7 @@ namespace ProgramZaPlatu
             this.txtIznosNezaposlenostZaposleniDESNO.Margin = new System.Windows.Forms.Padding(2);
             this.txtIznosNezaposlenostZaposleniDESNO.Name = "txtIznosNezaposlenostZaposleniDESNO";
             this.txtIznosNezaposlenostZaposleniDESNO.ReadOnly = true;
-            this.txtIznosNezaposlenostZaposleniDESNO.Size = new System.Drawing.Size(81, 27);
+            this.txtIznosNezaposlenostZaposleniDESNO.Size = new System.Drawing.Size(81, 23);
             this.txtIznosNezaposlenostZaposleniDESNO.TabIndex = 34;
             this.txtIznosNezaposlenostZaposleniDESNO.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtIznosNezaposlenostZaposleniDESNO.TextChanged += new System.EventHandler(this.TxtIznosNezapZaposleniDESNOTextChanged);
@@ -496,7 +496,7 @@ namespace ProgramZaPlatu
             this.txtIznosPIOPoslodavacDESNO.Margin = new System.Windows.Forms.Padding(2);
             this.txtIznosPIOPoslodavacDESNO.Name = "txtIznosPIOPoslodavacDESNO";
             this.txtIznosPIOPoslodavacDESNO.ReadOnly = true;
-            this.txtIznosPIOPoslodavacDESNO.Size = new System.Drawing.Size(81, 27);
+            this.txtIznosPIOPoslodavacDESNO.Size = new System.Drawing.Size(81, 23);
             this.txtIznosPIOPoslodavacDESNO.TabIndex = 36;
             this.txtIznosPIOPoslodavacDESNO.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtIznosPIOPoslodavacDESNO.TextChanged += new System.EventHandler(this.TxtIznosPIOPoslodavacDESNOTextChanged);
@@ -507,7 +507,7 @@ namespace ProgramZaPlatu
             this.txtIznosZdravstvoPoslodavacDESNO.Margin = new System.Windows.Forms.Padding(2);
             this.txtIznosZdravstvoPoslodavacDESNO.Name = "txtIznosZdravstvoPoslodavacDESNO";
             this.txtIznosZdravstvoPoslodavacDESNO.ReadOnly = true;
-            this.txtIznosZdravstvoPoslodavacDESNO.Size = new System.Drawing.Size(81, 27);
+            this.txtIznosZdravstvoPoslodavacDESNO.Size = new System.Drawing.Size(81, 23);
             this.txtIznosZdravstvoPoslodavacDESNO.TabIndex = 37;
             this.txtIznosZdravstvoPoslodavacDESNO.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtIznosZdravstvoPoslodavacDESNO.TextChanged += new System.EventHandler(this.TxtIznosZdravPoslodavacDESNOTextChanged);
@@ -518,7 +518,7 @@ namespace ProgramZaPlatu
             this.txtIznosNezaposlenostPoslodavacDESNO.Margin = new System.Windows.Forms.Padding(2);
             this.txtIznosNezaposlenostPoslodavacDESNO.Name = "txtIznosNezaposlenostPoslodavacDESNO";
             this.txtIznosNezaposlenostPoslodavacDESNO.ReadOnly = true;
-            this.txtIznosNezaposlenostPoslodavacDESNO.Size = new System.Drawing.Size(81, 27);
+            this.txtIznosNezaposlenostPoslodavacDESNO.Size = new System.Drawing.Size(81, 23);
             this.txtIznosNezaposlenostPoslodavacDESNO.TabIndex = 38;
             this.txtIznosNezaposlenostPoslodavacDESNO.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtIznosNezaposlenostPoslodavacDESNO.TextChanged += new System.EventHandler(this.TxtIznosNezapPoslodavacDESNOTextChanged);
@@ -577,7 +577,7 @@ namespace ProgramZaPlatu
             this.txtIznosPoreskogUmanjenjaLEVO.Margin = new System.Windows.Forms.Padding(2);
             this.txtIznosPoreskogUmanjenjaLEVO.Name = "txtIznosPoreskogUmanjenjaLEVO";
             this.txtIznosPoreskogUmanjenjaLEVO.ReadOnly = true;
-            this.txtIznosPoreskogUmanjenjaLEVO.Size = new System.Drawing.Size(75, 27);
+            this.txtIznosPoreskogUmanjenjaLEVO.Size = new System.Drawing.Size(75, 23);
             this.txtIznosPoreskogUmanjenjaLEVO.TabIndex = 44;
             this.txtIznosPoreskogUmanjenjaLEVO.Text = "0";
             this.txtIznosPoreskogUmanjenjaLEVO.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -614,7 +614,7 @@ namespace ProgramZaPlatu
             this.cboTipDohotka.Location = new System.Drawing.Point(28, 40);
             this.cboTipDohotka.Margin = new System.Windows.Forms.Padding(2);
             this.cboTipDohotka.Name = "cboTipDohotka";
-            this.cboTipDohotka.Size = new System.Drawing.Size(217, 27);
+            this.cboTipDohotka.Size = new System.Drawing.Size(217, 24);
             this.cboTipDohotka.TabIndex = 47;
             this.cboTipDohotka.SelectedIndexChanged += new System.EventHandler(this.CboTipDohotkaSelectedIndexChanged);
             // 
@@ -625,7 +625,7 @@ namespace ProgramZaPlatu
             this.cboImeZaposlenog.Location = new System.Drawing.Point(28, 12);
             this.cboImeZaposlenog.Margin = new System.Windows.Forms.Padding(2);
             this.cboImeZaposlenog.Name = "cboImeZaposlenog";
-            this.cboImeZaposlenog.Size = new System.Drawing.Size(215, 27);
+            this.cboImeZaposlenog.Size = new System.Drawing.Size(215, 24);
             this.cboImeZaposlenog.TabIndex = 48;
             this.cboImeZaposlenog.SelectedIndexChanged += new System.EventHandler(this.CboImeZaposlenogSelectedIndexChanged);
             // 
@@ -650,7 +650,7 @@ namespace ProgramZaPlatu
             this.txtNajnizaOsnovicaLEVO.Margin = new System.Windows.Forms.Padding(2);
             this.txtNajnizaOsnovicaLEVO.Name = "txtNajnizaOsnovicaLEVO";
             this.txtNajnizaOsnovicaLEVO.ReadOnly = true;
-            this.txtNajnizaOsnovicaLEVO.Size = new System.Drawing.Size(75, 27);
+            this.txtNajnizaOsnovicaLEVO.Size = new System.Drawing.Size(75, 23);
             this.txtNajnizaOsnovicaLEVO.TabIndex = 50;
             this.txtNajnizaOsnovicaLEVO.Text = "0";
             this.txtNajnizaOsnovicaLEVO.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -674,7 +674,7 @@ namespace ProgramZaPlatu
             this.txtNajvisaOsnovicaLEVO.Margin = new System.Windows.Forms.Padding(2);
             this.txtNajvisaOsnovicaLEVO.Name = "txtNajvisaOsnovicaLEVO";
             this.txtNajvisaOsnovicaLEVO.ReadOnly = true;
-            this.txtNajvisaOsnovicaLEVO.Size = new System.Drawing.Size(75, 27);
+            this.txtNajvisaOsnovicaLEVO.Size = new System.Drawing.Size(75, 23);
             this.txtNajvisaOsnovicaLEVO.TabIndex = 52;
             this.txtNajvisaOsnovicaLEVO.Text = "0";
             this.txtNajvisaOsnovicaLEVO.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -710,7 +710,7 @@ namespace ProgramZaPlatu
             this.cboVrstaUgovora.Location = new System.Drawing.Point(28, 71);
             this.cboVrstaUgovora.Margin = new System.Windows.Forms.Padding(2);
             this.cboVrstaUgovora.Name = "cboVrstaUgovora";
-            this.cboVrstaUgovora.Size = new System.Drawing.Size(455, 27);
+            this.cboVrstaUgovora.Size = new System.Drawing.Size(455, 24);
             this.cboVrstaUgovora.TabIndex = 55;
             this.cboVrstaUgovora.SelectedIndexChanged += new System.EventHandler(this.CboVrstaUgovoraSelectedIndexChanged);
             // 
@@ -742,10 +742,10 @@ namespace ProgramZaPlatu
             this.tabPage1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage1.BackgroundImage")));
             this.tabPage1.Controls.Add(this.txtNetoIznosLEVO);
             this.tabPage1.Controls.Add(this.lblNetoIznosTab);
-            this.tabPage1.Location = new System.Drawing.Point(4, 28);
+            this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(283, 54);
+            this.tabPage1.Size = new System.Drawing.Size(318, 57);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "За познат НЕТО";
             // 
@@ -755,10 +755,10 @@ namespace ProgramZaPlatu
             this.tabPage2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage2.BackgroundImage")));
             this.tabPage2.Controls.Add(this.txtBrutoIznosLEVO);
             this.tabPage2.Controls.Add(this.lblBrutoIznosTab);
-            this.tabPage2.Location = new System.Drawing.Point(4, 28);
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(318, 54);
+            this.tabPage2.Size = new System.Drawing.Size(318, 57);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "За познат БРУТО";
             // 
@@ -766,7 +766,7 @@ namespace ProgramZaPlatu
             // 
             this.txtBrutoIznosLEVO.Location = new System.Drawing.Point(160, 18);
             this.txtBrutoIznosLEVO.Name = "txtBrutoIznosLEVO";
-            this.txtBrutoIznosLEVO.Size = new System.Drawing.Size(117, 27);
+            this.txtBrutoIznosLEVO.Size = new System.Drawing.Size(117, 23);
             this.txtBrutoIznosLEVO.TabIndex = 1;
             this.txtBrutoIznosLEVO.Text = "0.00";
             this.txtBrutoIznosLEVO.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -787,7 +787,7 @@ namespace ProgramZaPlatu
             this.txtNetoIznosDESNO.Location = new System.Drawing.Point(716, 37);
             this.txtNetoIznosDESNO.Name = "txtNetoIznosDESNO";
             this.txtNetoIznosDESNO.ReadOnly = true;
-            this.txtNetoIznosDESNO.Size = new System.Drawing.Size(103, 27);
+            this.txtNetoIznosDESNO.Size = new System.Drawing.Size(103, 23);
             this.txtNetoIznosDESNO.TabIndex = 58;
             this.txtNetoIznosDESNO.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtNetoIznosDESNO.TextChanged += new System.EventHandler(this.TxtNetoIznosDESNOTextChanged);
@@ -867,6 +867,15 @@ namespace ProgramZaPlatu
             this.groupZaUnos.TabIndex = 61;
             this.groupZaUnos.TabStop = false;
             this.groupZaUnos.Text = "Подаци за унос у пријаву";
+            // 
+            // btnUnesiUFormu
+            // 
+            this.btnUnesiUFormu.Location = new System.Drawing.Point(472, 98);
+            this.btnUnesiUFormu.Name = "btnUnesiUFormu";
+            this.btnUnesiUFormu.Size = new System.Drawing.Size(121, 50);
+            this.btnUnesiUFormu.TabIndex = 76;
+            this.btnUnesiUFormu.Text = "Унеси у форму";
+            this.btnUnesiUFormu.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
@@ -1016,8 +1025,8 @@ namespace ProgramZaPlatu
             // 
             this.txtBeneficiraniPIOZaPPD.Location = new System.Drawing.Point(345, 178);
             this.txtBeneficiraniPIOZaPPD.Name = "txtBeneficiraniPIOZaPPD";
-            this.txtBeneficiraniPIOZaPPD.Size = new System.Drawing.Size(100, 27);
-            this.txtBeneficiraniPIOZaPPD.TabIndex = 41;
+            this.txtBeneficiraniPIOZaPPD.Size = new System.Drawing.Size(100, 23);
+            this.txtBeneficiraniPIOZaPPD.TabIndex = 11;
             this.txtBeneficiraniPIOZaPPD.Text = "0";
             this.txtBeneficiraniPIOZaPPD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtBeneficiraniPIOZaPPD.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBeneficiraniPIOZaPPD_KeyPress);
@@ -1027,8 +1036,8 @@ namespace ProgramZaPlatu
             // 
             this.txtNezaposlenostZaPPD.Location = new System.Drawing.Point(345, 125);
             this.txtNezaposlenostZaPPD.Name = "txtNezaposlenostZaPPD";
-            this.txtNezaposlenostZaPPD.Size = new System.Drawing.Size(100, 27);
-            this.txtNezaposlenostZaPPD.TabIndex = 40;
+            this.txtNezaposlenostZaPPD.Size = new System.Drawing.Size(100, 23);
+            this.txtNezaposlenostZaPPD.TabIndex = 10;
             this.txtNezaposlenostZaPPD.Text = "0";
             this.txtNezaposlenostZaPPD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtNezaposlenostZaPPD.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNezaposlenostZaPPD_KeyPress);
@@ -1038,8 +1047,8 @@ namespace ProgramZaPlatu
             // 
             this.txtZdravstvoZaPPD.Location = new System.Drawing.Point(345, 72);
             this.txtZdravstvoZaPPD.Name = "txtZdravstvoZaPPD";
-            this.txtZdravstvoZaPPD.Size = new System.Drawing.Size(100, 27);
-            this.txtZdravstvoZaPPD.TabIndex = 39;
+            this.txtZdravstvoZaPPD.Size = new System.Drawing.Size(100, 23);
+            this.txtZdravstvoZaPPD.TabIndex = 9;
             this.txtZdravstvoZaPPD.Text = "0";
             this.txtZdravstvoZaPPD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtZdravstvoZaPPD.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtZdravstvoZaPPD_KeyPress);
@@ -1049,8 +1058,8 @@ namespace ProgramZaPlatu
             // 
             this.txtPIOZaPPD.Location = new System.Drawing.Point(345, 19);
             this.txtPIOZaPPD.Name = "txtPIOZaPPD";
-            this.txtPIOZaPPD.Size = new System.Drawing.Size(100, 27);
-            this.txtPIOZaPPD.TabIndex = 38;
+            this.txtPIOZaPPD.Size = new System.Drawing.Size(100, 23);
+            this.txtPIOZaPPD.TabIndex = 8;
             this.txtPIOZaPPD.Text = "0";
             this.txtPIOZaPPD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtPIOZaPPD.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPIOZaPPD_KeyPress);
@@ -1060,8 +1069,8 @@ namespace ProgramZaPlatu
             // 
             this.txtMFPZaPPD.Location = new System.Drawing.Point(6, 193);
             this.txtMFPZaPPD.Name = "txtMFPZaPPD";
-            this.txtMFPZaPPD.Size = new System.Drawing.Size(72, 27);
-            this.txtMFPZaPPD.TabIndex = 37;
+            this.txtMFPZaPPD.Size = new System.Drawing.Size(72, 23);
+            this.txtMFPZaPPD.TabIndex = 12;
             this.txtMFPZaPPD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtMFPZaPPD.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMFPZaPPD_KeyPress);
             this.txtMFPZaPPD.Leave += new System.EventHandler(this.TxtMFPZaPPDLeave);
@@ -1070,8 +1079,8 @@ namespace ProgramZaPlatu
             // 
             this.txtOsnovicaZaDoprinoseZaPPD.Location = new System.Drawing.Point(202, 178);
             this.txtOsnovicaZaDoprinoseZaPPD.Name = "txtOsnovicaZaDoprinoseZaPPD";
-            this.txtOsnovicaZaDoprinoseZaPPD.Size = new System.Drawing.Size(100, 27);
-            this.txtOsnovicaZaDoprinoseZaPPD.TabIndex = 36;
+            this.txtOsnovicaZaDoprinoseZaPPD.Size = new System.Drawing.Size(100, 23);
+            this.txtOsnovicaZaDoprinoseZaPPD.TabIndex = 7;
             this.txtOsnovicaZaDoprinoseZaPPD.Text = "0";
             this.txtOsnovicaZaDoprinoseZaPPD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtOsnovicaZaDoprinoseZaPPD.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtOsnovicaZaDoprinoseZaPPD_KeyPress);
@@ -1081,8 +1090,8 @@ namespace ProgramZaPlatu
             // 
             this.txtPorezZaPPD.Location = new System.Drawing.Point(202, 125);
             this.txtPorezZaPPD.Name = "txtPorezZaPPD";
-            this.txtPorezZaPPD.Size = new System.Drawing.Size(100, 27);
-            this.txtPorezZaPPD.TabIndex = 35;
+            this.txtPorezZaPPD.Size = new System.Drawing.Size(100, 23);
+            this.txtPorezZaPPD.TabIndex = 6;
             this.txtPorezZaPPD.Text = "0";
             this.txtPorezZaPPD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtPorezZaPPD.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPorezZaPPD_KeyPress);
@@ -1092,8 +1101,8 @@ namespace ProgramZaPlatu
             // 
             this.txtOsnovicaZaPorezZaPPD.Location = new System.Drawing.Point(202, 72);
             this.txtOsnovicaZaPorezZaPPD.Name = "txtOsnovicaZaPorezZaPPD";
-            this.txtOsnovicaZaPorezZaPPD.Size = new System.Drawing.Size(100, 27);
-            this.txtOsnovicaZaPorezZaPPD.TabIndex = 34;
+            this.txtOsnovicaZaPorezZaPPD.Size = new System.Drawing.Size(100, 23);
+            this.txtOsnovicaZaPorezZaPPD.TabIndex = 5;
             this.txtOsnovicaZaPorezZaPPD.Text = "0";
             this.txtOsnovicaZaPorezZaPPD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtOsnovicaZaPorezZaPPD.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtOsnovicaZaPorezZaPPD_KeyPress);
@@ -1103,8 +1112,8 @@ namespace ProgramZaPlatu
             // 
             this.txtBrutoPrihodZaPPD.Location = new System.Drawing.Point(202, 19);
             this.txtBrutoPrihodZaPPD.Name = "txtBrutoPrihodZaPPD";
-            this.txtBrutoPrihodZaPPD.Size = new System.Drawing.Size(100, 27);
-            this.txtBrutoPrihodZaPPD.TabIndex = 33;
+            this.txtBrutoPrihodZaPPD.Size = new System.Drawing.Size(100, 23);
+            this.txtBrutoPrihodZaPPD.TabIndex = 4;
             this.txtBrutoPrihodZaPPD.Text = "0";
             this.txtBrutoPrihodZaPPD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtBrutoPrihodZaPPD.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBrutoPrihodZaPPD_KeyPress);
@@ -1114,8 +1123,8 @@ namespace ProgramZaPlatu
             // 
             this.txtBrojSati.Location = new System.Drawing.Point(6, 160);
             this.txtBrojSati.Name = "txtBrojSati";
-            this.txtBrojSati.Size = new System.Drawing.Size(35, 27);
-            this.txtBrojSati.TabIndex = 32;
+            this.txtBrojSati.Size = new System.Drawing.Size(35, 23);
+            this.txtBrojSati.TabIndex = 3;
             this.txtBrojSati.Text = "176";
             this.txtBrojSati.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -1123,8 +1132,8 @@ namespace ProgramZaPlatu
             // 
             this.txtBrojDana.Location = new System.Drawing.Point(6, 128);
             this.txtBrojDana.Name = "txtBrojDana";
-            this.txtBrojDana.Size = new System.Drawing.Size(35, 27);
-            this.txtBrojDana.TabIndex = 31;
+            this.txtBrojDana.Size = new System.Drawing.Size(35, 23);
+            this.txtBrojDana.TabIndex = 2;
             this.txtBrojDana.Text = "31";
             this.txtBrojDana.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -1132,8 +1141,8 @@ namespace ProgramZaPlatu
             // 
             this.txtSifraVrstePrihoda.Location = new System.Drawing.Point(13, 74);
             this.txtSifraVrstePrihoda.Name = "txtSifraVrstePrihoda";
-            this.txtSifraVrstePrihoda.Size = new System.Drawing.Size(165, 27);
-            this.txtSifraVrstePrihoda.TabIndex = 30;
+            this.txtSifraVrstePrihoda.Size = new System.Drawing.Size(165, 23);
+            this.txtSifraVrstePrihoda.TabIndex = 1;
             this.txtSifraVrstePrihoda.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lblPrezime
@@ -1228,15 +1237,6 @@ namespace ProgramZaPlatu
             this.groupIznosPoslodavac.TabIndex = 0;
             this.groupIznosPoslodavac.TabStop = false;
             this.groupIznosPoslodavac.Text = "Износи / послодавац";
-            // 
-            // btnUnesiUFormu
-            // 
-            this.btnUnesiUFormu.Location = new System.Drawing.Point(472, 98);
-            this.btnUnesiUFormu.Name = "btnUnesiUFormu";
-            this.btnUnesiUFormu.Size = new System.Drawing.Size(121, 50);
-            this.btnUnesiUFormu.TabIndex = 76;
-            this.btnUnesiUFormu.Text = "Унеси у форму";
-            this.btnUnesiUFormu.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
