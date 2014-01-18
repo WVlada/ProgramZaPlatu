@@ -10,18 +10,18 @@
   </Profile>
   <Profile>
     <Prezime>Буквић</Prezime>
-    <Ime>Сергеј</Ime>
-    <TipDokumenta>Посебна ознака</TipDokumenta>
-    <IDBroj>456464654654</IDBroj>
-    <Opstina>Вршац</Opstina>
-    <BrojOpstine>Вршац</BrojOpstine>
-  </Profile>
-  <Profile>
-    <Prezime>Буквић</Prezime>
     <Ime>Владимир</Ime>
     <TipDokumenta>Остало</TipDokumenta>
     <IDBroj>11231321</IDBroj>
     <Opstina>Нови Београд</Opstina>
     <BrojOpstine>843-500000-52</BrojOpstine>
+  </Profile>
+  <Profile>
+    <Prezime>Буквић</Prezime>
+    <Ime>Сергеј</Ime>
+    <TipDokumenta>Избегличка легитимација</TipDokumenta>
+    <IDBroj>456464654654</IDBroj>
+    <Opstina>Вршац</Opstina>
+    <BrojOpstine>Вршац</BrojOpstine>
   </Profile>
 </Zaposleni>

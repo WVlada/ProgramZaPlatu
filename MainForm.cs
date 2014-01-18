@@ -74,11 +74,9 @@ namespace ProgramZaPlatu
 				}
 				// string tipUgovora = tip["Ugovor"].Value.ToString(); //["Ugovor"].GetAttribute("kategorija");
 				// ListaTipova.Add(tipUgovora);
-			
-			//	ListaTipova.Distinct().ToArray();
-			//ListaTipova.ToArray();
-			
-		    cboTipDohotka.DataSource = ListaTipova.Distinct().ToArray();;	
+				//	ListaTipova.Distinct().ToArray();
+			    //ListaTipova.ToArray();
+			    cboTipDohotka.DataSource = ListaTipova.Distinct().ToArray();;	
 		}
 		void LoadImenaZaposlenih()
 		{
@@ -127,16 +125,16 @@ namespace ProgramZaPlatu
 				XmlNode Vrsta = docStope.SelectSingleNode("/Vrsteugovora/Ugovor[Tip=\""+VrstaUgovora+"\"]");
 				
 				//ucitavanje stopa u textboxove
-				txtNajnizaOsnovicaLEVO.Text	 =	Vrsta.FirstChild.NextSibling.InnerText;
-				txtNajvisaOsnovicaLEVO.Text	 =	Vrsta.FirstChild.NextSibling.NextSibling.InnerText;
-				txtIznosPoreskogUmanjenjaLEVO.Text = Vrsta.FirstChild.NextSibling.NextSibling.NextSibling.InnerText;
-				txtStopaPorezaLEVO.Text 	 =  Vrsta.FirstChild.NextSibling.NextSibling.NextSibling.NextSibling.InnerText;
-				txtStopaPIOZaposlenogLEVO.Text 	 = 	Vrsta.FirstChild.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.InnerText;
-				txtStopaZdravstvoZaposlenogLEVO.Text = 	Vrsta.FirstChild.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.InnerText;
-				txtStopaNezaposlenostiZaposlenogLEVO.Text = 	Vrsta.FirstChild.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.InnerText;
-				txtStopaPIOPoslodavacLEVO.Text 	 =	Vrsta.FirstChild.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.InnerText;
-				txtStopaZdravstvoPoslodavacLEVO.Text 	 =	Vrsta.FirstChild.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.InnerText;
-				txtStopaNezaposlenostPoslodavacLEVO.Text 	 =	Vrsta.FirstChild.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.InnerText;
+				txtNajnizaOsnovicaLEVO.Text	              =	Vrsta.FirstChild.NextSibling.InnerText;
+				txtNajvisaOsnovicaLEVO.Text	              =	Vrsta.FirstChild.NextSibling.NextSibling.InnerText;
+				txtIznosPoreskogUmanjenjaLEVO.Text        = Vrsta.FirstChild.NextSibling.NextSibling.NextSibling.InnerText;
+				txtStopaPorezaLEVO.Text 	              = Vrsta.FirstChild.NextSibling.NextSibling.NextSibling.NextSibling.InnerText;
+				txtStopaPIOZaposlenogLEVO.Text 	          = Vrsta.FirstChild.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.InnerText;
+				txtStopaZdravstvoZaposlenogLEVO.Text      = Vrsta.FirstChild.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.InnerText;
+				txtStopaNezaposlenostiZaposlenogLEVO.Text = Vrsta.FirstChild.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.InnerText;
+				txtStopaPIOPoslodavacLEVO.Text 	          =	Vrsta.FirstChild.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.InnerText;
+				txtStopaZdravstvoPoslodavacLEVO.Text 	  =	Vrsta.FirstChild.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.InnerText;
+				txtStopaNezaposlenostPoslodavacLEVO.Text  =	Vrsta.FirstChild.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.InnerText;
 				}
 			}
 		void BtnIzracunajClick(object sender, EventArgs e)
@@ -145,32 +143,31 @@ namespace ProgramZaPlatu
 			if (tabNetoBruto.SelectedIndex == 0)
 				{
 			decimal q1  = Convert.ToDecimal(txtNetoIznosLEVO.Text);
-			decimal w1 	= Convert.ToDecimal(txtStopaPorezaLEVO.Text)		/Convert.ToDecimal(100);
-			decimal e1 	= Convert.ToDecimal(txtStopaPIOZaposlenogLEVO.Text)		/Convert.ToDecimal(100);
-			decimal r1 	= Convert.ToDecimal(txtStopaZdravstvoZaposlenogLEVO.Text)	/Convert.ToDecimal(100);
+			decimal w1 	= Convert.ToDecimal(txtStopaPorezaLEVO.Text)		            /Convert.ToDecimal(100);
+			decimal e1 	= Convert.ToDecimal(txtStopaPIOZaposlenogLEVO.Text)		        /Convert.ToDecimal(100);
+			decimal r1 	= Convert.ToDecimal(txtStopaZdravstvoZaposlenogLEVO.Text)	    /Convert.ToDecimal(100);
 			decimal t1 	= Convert.ToDecimal(txtStopaNezaposlenostiZaposlenogLEVO.Text)	/Convert.ToDecimal(100);
-			decimal y1 	= Convert.ToDecimal(txtStopaPIOPoslodavacLEVO.Text)		/Convert.ToDecimal(100);
+			decimal y1 	= Convert.ToDecimal(txtStopaPIOPoslodavacLEVO.Text)		        /Convert.ToDecimal(100);
 			decimal u1 	= Convert.ToDecimal(txtStopaZdravstvoPoslodavacLEVO.Text)		/Convert.ToDecimal(100);
-			decimal i1 	= Convert.ToDecimal(txtStopaNezaposlenostPoslodavacLEVO.Text)		/Convert.ToDecimal(100);
+			decimal i1 	= Convert.ToDecimal(txtStopaNezaposlenostPoslodavacLEVO.Text)	/Convert.ToDecimal(100);
 			decimal o1 	= Convert.ToDecimal(txtIznosPoreskogUmanjenjaLEVO.Text);
 			decimal m1  = Convert.ToDecimal(txtNajnizaOsnovicaLEVO.Text);
 			decimal n1  = Convert.ToDecimal(txtNajvisaOsnovicaLEVO.Text);
 			Racunica Racun = new Racunica(q1,w1,e1,r1,t1,y1,u1,i1,o1,m1,n1);
 			
-			txtIznosPorezaDESNO.Text 		 = Racun.IznosPoreza.ToString();
-			txtIznosPioZaposleniDESNO.Text 	 = Racun.IznosPIOZaposleni.ToString(); 
-			txtIznosZdravstvoZaposleniDESNO.Text  = Racun.IznosZdravstvoZaposleni.ToString();
+			txtIznosPorezaDESNO.Text 		          = Racun.IznosPoreza.ToString();
+			txtIznosPioZaposleniDESNO.Text 	          = Racun.IznosPIOZaposleni.ToString(); 
+			txtIznosZdravstvoZaposleniDESNO.Text      = Racun.IznosZdravstvoZaposleni.ToString();
 			txtIznosNezaposlenostZaposleniDESNO.Text  = Racun.IznosNezaposlenostZaposleni.ToString();
 			
-			txtIznosPIOPoslodavacDESNO.Text 	 = Racun.IznosPIOPoslodavac.ToString();
-			txtIznosZdravstvoPoslodavacDESNO.Text = Racun.IznosZdravstvoPoslodavac.ToString();
+			txtIznosPIOPoslodavacDESNO.Text 	      = Racun.IznosPIOPoslodavac.ToString();
+			txtIznosZdravstvoPoslodavacDESNO.Text     = Racun.IznosZdravstvoPoslodavac.ToString();
 			txtIznosNezaposlenostPoslodavacDESNO.Text = Racun.IznosNezaposlenostPoslodavac.ToString();
 			
 			txtBrutoIznosDESNO.Text = Racun.IznosBrutoIznos.ToString();
-			txtNetoIznosDESNO.Text = Racun.IznosNetoIznos.ToString();
+			txtNetoIznosDESNO.Text  = Racun.IznosNetoIznos.ToString();
 
-				}
-			
+            }
 			else if (tabNetoBruto.SelectedIndex == 1)
 				{//IMPLREMENTIRATI
 				}
@@ -196,6 +193,8 @@ namespace ProgramZaPlatu
             lista.Add(txtPIOZaPPD);
             lista.Add(txtZdravstvoZaPPD);
             FormatUmestoPojedinacnogTekstChangea(lista);
+            txtOsnovicaZaPorezZaPPD.Text = String.Format("{0:0,0.00}", double.Parse(txtOsnovicaZaPorezZaPPD.Text));//ovo sam stavio posebno jer ne moze drugacije
+	
         }
         void CboImeZaposlenogSelectedIndexChanged(object sender, EventArgs e)
         {
@@ -467,6 +466,101 @@ namespace ProgramZaPlatu
             }
         }
 #endregion
+
+        private void btnPromeniStope_Click(object sender, EventArgs e)
+        {
+            if (cboVrstaUgovora.Text != "")
+            {
+                PromeniStope FormaZaPromenu = new PromeniStope();
+                //koja je trenutno oznacena vrsta ugovora?
+                string selektovaniUgovor = cboVrstaUgovora.Text;
+                string FajlStopePath = @"..\\..\\xml\Vrsteugovora.xml";
+                XmlDocument docStope = new XmlDocument();
+                if (File.Exists(FajlStopePath))
+                    {
+                    docStope.Load(FajlStopePath);
+
+                    XmlNode Vrsta = docStope.SelectSingleNode("/Vrsteugovora/Ugovor[Tip=\"" + selektovaniUgovor + "\"]");
+
+                    //ucitavanje podataka u textboxove
+                    FormaZaPromenu.txtNazivObracunaIZMENA.Text = Vrsta.FirstChild.InnerText;
+                    FormaZaPromenu.txtNajnizaOsnovicaIZMENA.Text = Vrsta.FirstChild.NextSibling.InnerText;
+                    FormaZaPromenu.txtNajvisaOsnovicaIZMENA.Text = Vrsta.FirstChild.NextSibling.NextSibling.InnerText;
+                    FormaZaPromenu.txtPoreskoOslobodjenjeIZMENA.Text = Vrsta.FirstChild.NextSibling.NextSibling.NextSibling.InnerText;
+                    FormaZaPromenu.txtStopaPorezaIZMENA.Text = Vrsta.FirstChild.NextSibling.NextSibling.NextSibling.NextSibling.InnerText;
+                    FormaZaPromenu.txtStopaPIOZaposlenogIZMENA.Text = Vrsta.FirstChild.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.InnerText;
+                    FormaZaPromenu.txtStopaZdravstvoZaposlenogIZMENA.Text = Vrsta.FirstChild.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.InnerText;
+                    FormaZaPromenu.txtStopaNezaposlenostiZaposlenogIZMENA.Text = Vrsta.FirstChild.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.InnerText;
+                    FormaZaPromenu.txtStopaPIOPoslodavacIZMENA.Text = Vrsta.FirstChild.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.InnerText;
+                    FormaZaPromenu.txtStopaZdravstvoPoslodavacIZMENA.Text = Vrsta.FirstChild.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.InnerText;
+                    FormaZaPromenu.txtStopaNezaposlenostPoslodavacIZMENA.Text = Vrsta.FirstChild.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.InnerText;
+                    FormaZaPromenu.txtOznakaTipaZaradeIZMENA.Text = Vrsta.FirstChild.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.InnerText;
+                    }
+                FormaZaPromenu.ShowDialog();
+                
+                if (FormaZaPromenu.DialogResult == DialogResult.OK)
+                {
+                    if (FormaZaPromenu.txtNazivObracunaIZMENA.Text != "" && FormaZaPromenu.txtStopaPIOPoslodavacIZMENA.Text != "" && FormaZaPromenu.txtStopaZdravstvoPoslodavacIZMENA.Text != "" && FormaZaPromenu.txtStopaNezaposlenostPoslodavacIZMENA.Text != "" && FormaZaPromenu.txtStopaPIOZaposlenogIZMENA.Text != "" && FormaZaPromenu.txtStopaZdravstvoZaposlenogIZMENA.Text != "" && FormaZaPromenu.txtStopaNezaposlenostiZaposlenogIZMENA.Text != "" && FormaZaPromenu.txtStopaPorezaIZMENA.Text != "" && FormaZaPromenu.txtNajvisaOsnovicaIZMENA.Text != "" && FormaZaPromenu.txtNajnizaOsnovicaIZMENA.Text != "" && FormaZaPromenu.txtOznakaTipaZaradeIZMENA.Text != "")
+                    {
+                        string PathDoVrsteUgovora = @"..\\..\\xml\Vrsteugovora.xml";
+                        XmlDocument IzmenaDocument = new XmlDocument();
+                        IzmenaDocument.Load(PathDoVrsteUgovora);
+                        XmlNode NodeZaBrisanje;
+                        XmlNode Root = IzmenaDocument.DocumentElement;
+                        
+                        string KojiMenjam = cboVrstaUgovora.Text;
+                        string xpath = string.Format("descendant::Ugovor[Tip='" + KojiMenjam + "']");
+                        
+                        NodeZaBrisanje = Root.SelectSingleNode(xpath);
+                        XmlNode Parent = NodeZaBrisanje.ParentNode;
+                        
+                        Parent.RemoveChild(NodeZaBrisanje);
+
+                        XmlElement Element = IzmenaDocument.CreateElement("Ugovor");
+
+                        string atribut;
+                        if (FormaZaPromenu.radioZarada.Checked == true)
+                        { atribut = "Зарада"; }
+                        else
+                        { atribut = "Остало"; }
+
+                        Element.SetAttribute("kategorija", atribut); 
+
+                        string IzmenaUgovora = "<Tip>"          + FormaZaPromenu.txtNazivObracunaIZMENA.Text + "</Tip>" +
+                                    "<NajnizaOsnovica>"         + FormaZaPromenu.txtNajnizaOsnovicaIZMENA.Text + "</NajnizaOsnovica>" +
+                                    "<NajvisaOsnovica>"         + FormaZaPromenu.txtNajvisaOsnovicaIZMENA.Text + "</NajvisaOsnovica>" +
+                                    "<PoreskoUmanjenje>"        + FormaZaPromenu.txtPoreskoOslobodjenjeIZMENA.Text + "</PoreskoUmanjenje>" +
+                                    "<porez>"                   + FormaZaPromenu.txtStopaPorezaIZMENA.Text + "</porez>" +
+                                    "<piozaposleni>"            + FormaZaPromenu.txtStopaPIOZaposlenogIZMENA.Text + "</piozaposleni>"+
+                                    "<zdravstvozaposeni>"       + FormaZaPromenu.txtStopaZdravstvoZaposlenogIZMENA.Text + "</zdravstvozaposeni>" +
+                                    "<nezaposlenostzaposleni>"  + FormaZaPromenu.txtStopaNezaposlenostiZaposlenogIZMENA.Text + "</nezaposlenostzaposleni>" +
+                                    "<pioposlodavac>"           + FormaZaPromenu.txtStopaPIOPoslodavacIZMENA.Text + "</pioposlodavac>"+
+                                    "<zdravstvoposlodavac>"     + FormaZaPromenu.txtStopaZdravstvoPoslodavacIZMENA.Text + "</zdravstvoposlodavac>" +
+                                    "<nezaposlenostposlodavac>" + FormaZaPromenu.txtStopaNezaposlenostPoslodavacIZMENA.Text + "</nezaposlenostposlodavac>" +
+                                    "<sifra>"                   + FormaZaPromenu.txtOznakaTipaZaradeIZMENA.Text + "</sifra>";
+
+                        Element.InnerXml = IzmenaUgovora;
+                        IzmenaDocument.DocumentElement.AppendChild(Element);
+                        IzmenaDocument.Save(PathDoVrsteUgovora);
+                        
+                        // ovo sam unosio zbog refresha
+                        string CistoZaRefresh = cboTipDohotka.SelectedItem.ToString();
+                        LoadVrstaUgovora(CistoZaRefresh);
+                        cboVrstaUgovora.Text = FormaZaPromenu.txtNazivObracunaIZMENA.Text;
+                        UcitajStopeSelektovanogUgovora(FormaZaPromenu.txtNazivObracunaIZMENA.Text);
+                    }
+                    else
+                        {
+                            MessageBox.Show("Не сме бити празних поља при снимању измена", "Информација");
+                        }
+                    }
+            }
+            else
+            {
+                MessageBox.Show("Претходно мора бити одабран неки тип зараде ", "Информација");
+            }
+            
+        }
 
     }
 }

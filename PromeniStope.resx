@@ -117,28 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="podnosilac" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\podnosilac.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  
-  <data name="nazad" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\slike\nazad.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  
-  <data name="OkChange" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\slike\OkChange.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="plava pozadina" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\plava pozadina.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="minus2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\slike\minus2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="6685.image_2599AB36" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\plava pozadina.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="plava pozadina1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\plava pozadina.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  </root>
+</root>

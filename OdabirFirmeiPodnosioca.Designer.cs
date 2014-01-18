@@ -32,22 +32,22 @@
             this.lstViewFirma = new System.Windows.Forms.ListView();
             this.broj = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Imefirme = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lstViewPodnosioci = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnNovaFirma = new System.Windows.Forms.Button();
             this.btnIzbrisiFirmu = new System.Windows.Forms.Button();
             this.btnNoviPodnosilac = new System.Windows.Forms.Button();
             this.btnIzbrisiPodnosioca = new System.Windows.Forms.Button();
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // btnOdabirFirmeiPodnosiocaOK
             // 
             this.btnOdabirFirmeiPodnosiocaOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnOdabirFirmeiPodnosiocaOK.Location = new System.Drawing.Point(365, 88);
+            this.btnOdabirFirmeiPodnosiocaOK.Location = new System.Drawing.Point(364, 114);
             this.btnOdabirFirmeiPodnosiocaOK.Margin = new System.Windows.Forms.Padding(2);
             this.btnOdabirFirmeiPodnosiocaOK.Name = "btnOdabirFirmeiPodnosiocaOK";
             this.btnOdabirFirmeiPodnosiocaOK.Size = new System.Drawing.Size(68, 57);
@@ -85,6 +85,16 @@
             this.Imefirme.Text = "Име фирме";
             this.Imefirme.Width = 80;
             // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "ПИБ";
+            this.columnHeader4.Width = 75;
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "МБ";
+            this.columnHeader5.Width = 75;
+            // 
             // lstViewPodnosioci
             // 
             this.lstViewPodnosioci.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -95,7 +105,7 @@
             this.lstViewPodnosioci.FullRowSelect = true;
             this.lstViewPodnosioci.GridLines = true;
             this.lstViewPodnosioci.HideSelection = false;
-            this.lstViewPodnosioci.Location = new System.Drawing.Point(12, 120);
+            this.lstViewPodnosioci.Location = new System.Drawing.Point(12, 168);
             this.lstViewPodnosioci.MultiSelect = false;
             this.lstViewPodnosioci.Name = "lstViewPodnosioci";
             this.lstViewPodnosioci.Size = new System.Drawing.Size(245, 102);
@@ -112,6 +122,11 @@
             // 
             this.columnHeader2.Text = "Име подносиоца";
             this.columnHeader2.Width = 120;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "ЈМБГ";
+            this.columnHeader3.Width = 90;
             // 
             // btnNovaFirma
             // 
@@ -135,7 +150,7 @@
             // 
             // btnNoviPodnosilac
             // 
-            this.btnNoviPodnosilac.Location = new System.Drawing.Point(263, 120);
+            this.btnNoviPodnosilac.Location = new System.Drawing.Point(263, 168);
             this.btnNoviPodnosilac.Name = "btnNoviPodnosilac";
             this.btnNoviPodnosilac.Size = new System.Drawing.Size(75, 51);
             this.btnNoviPodnosilac.TabIndex = 6;
@@ -145,7 +160,7 @@
             // 
             // btnIzbrisiPodnosioca
             // 
-            this.btnIzbrisiPodnosioca.Location = new System.Drawing.Point(263, 177);
+            this.btnIzbrisiPodnosioca.Location = new System.Drawing.Point(263, 228);
             this.btnIzbrisiPodnosioca.Name = "btnIzbrisiPodnosioca";
             this.btnIzbrisiPodnosioca.Size = new System.Drawing.Size(75, 42);
             this.btnIzbrisiPodnosioca.TabIndex = 7;
@@ -153,26 +168,13 @@
             this.btnIzbrisiPodnosioca.UseVisualStyleBackColor = true;
             this.btnIzbrisiPodnosioca.Click += new System.EventHandler(this.btnIzbrisiPodnosioca_Click);
             // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "ЈМБГ";
-            this.columnHeader3.Width = 90;
-            // 
-            // columnHeader4
-            // 
-            this.columnHeader4.Text = "ПИБ";
-            this.columnHeader4.Width = 75;
-            // 
-            // columnHeader5
-            // 
-            this.columnHeader5.Text = "МБ";
-            this.columnHeader5.Width = 75;
-            // 
             // OdabirFirmeiPodnosioca
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(444, 231);
+            this.BackgroundImage = global::ProgramZaPlatu.Properties.Resources.podnosilac;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(443, 282);
             this.ControlBox = false;
             this.Controls.Add(this.btnIzbrisiPodnosioca);
             this.Controls.Add(this.btnNoviPodnosilac);

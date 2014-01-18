@@ -59,16 +59,19 @@
             // lblImeiPrezime
             // 
             this.lblImeiPrezime.AutoSize = true;
-            this.lblImeiPrezime.Location = new System.Drawing.Point(179, 42);
+            this.lblImeiPrezime.BackColor = System.Drawing.Color.Transparent;
+            this.lblImeiPrezime.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblImeiPrezime.ForeColor = System.Drawing.Color.Black;
+            this.lblImeiPrezime.Location = new System.Drawing.Point(39, 62);
             this.lblImeiPrezime.Name = "lblImeiPrezime";
-            this.lblImeiPrezime.Size = new System.Drawing.Size(85, 13);
+            this.lblImeiPrezime.Size = new System.Drawing.Size(107, 17);
             this.lblImeiPrezime.TabIndex = 2;
             this.lblImeiPrezime.Text = "Име и презиме";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(179, 100);
+            this.label2.Location = new System.Drawing.Point(70, 120);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(34, 13);
             this.label2.TabIndex = 3;
@@ -77,7 +80,7 @@
             // btnOK
             // 
             this.btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnOK.Location = new System.Drawing.Point(295, 26);
+            this.btnOK.Location = new System.Drawing.Point(271, 26);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(75, 44);
             this.btnOK.TabIndex = 4;
@@ -87,7 +90,7 @@
             // btnCancel
             // 
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.Location = new System.Drawing.Point(295, 94);
+            this.btnCancel.Location = new System.Drawing.Point(271, 94);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 5;
@@ -96,7 +99,7 @@
             // 
             // pctJMBG
             // 
-            this.pctJMBG.Location = new System.Drawing.Point(219, 97);
+            this.pctJMBG.Location = new System.Drawing.Point(199, 97);
             this.pctJMBG.Name = "pctJMBG";
             this.pctJMBG.Size = new System.Drawing.Size(20, 20);
             this.pctJMBG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -107,8 +110,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(414, 221);
+            this.ClientSize = new System.Drawing.Size(382, 182);
             this.ControlBox = false;
             this.Controls.Add(this.pctJMBG);
             this.Controls.Add(this.btnCancel);
@@ -117,6 +121,7 @@
             this.Controls.Add(this.lblImeiPrezime);
             this.Controls.Add(this.txtJMBG);
             this.Controls.Add(this.txtImeiPrezime);
+            this.DoubleBuffered = true;
             this.Name = "DodajNovogPodnosioca";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Додавање новог подносиоца пријаве";

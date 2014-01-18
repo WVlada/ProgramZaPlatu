@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ProgramZaPlatu.Properties {
+namespace ProgramZaPlatu {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace ProgramZaPlatu.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    internal class SpisakZaposlenih {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources() {
+        internal SpisakZaposlenih() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace ProgramZaPlatu.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ProgramZaPlatu.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ProgramZaPlatu.SpisakZaposlenih", typeof(SpisakZaposlenih).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -63,9 +63,9 @@ namespace ProgramZaPlatu.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _6685_image_2599AB36 {
+        internal static System.Drawing.Bitmap btnDodajNovog_BackgroundImage {
             get {
-                object obj = ResourceManager.GetObject("6685.image_2599AB36", resourceCulture);
+                object obj = ResourceManager.GetObject("btnDodajNovog.BackgroundImage", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace ProgramZaPlatu.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap minus2 {
+        internal static System.Drawing.Bitmap btnIzbrisiOznacenog_BackgroundImage {
             get {
-                object obj = ResourceManager.GetObject("minus2", resourceCulture);
+                object obj = ResourceManager.GetObject("btnIzbrisiOznacenog.BackgroundImage", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace ProgramZaPlatu.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap nazad {
+        internal static System.Drawing.Bitmap btnNazad_BackgroundImage {
             get {
-                object obj = ResourceManager.GetObject("nazad", resourceCulture);
+                object obj = ResourceManager.GetObject("btnNazad.BackgroundImage", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,40 +93,20 @@ namespace ProgramZaPlatu.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap OkChange {
+        internal static System.Drawing.Bitmap btnPromeniPodatkeSelektovanog_BackgroundImage {
             get {
-                object obj = ResourceManager.GetObject("OkChange", resourceCulture);
+                object obj = ResourceManager.GetObject("btnPromeniPodatkeSelektovanog.BackgroundImage", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        ///   Looks up a localized resource of type System.Drawing.Point similar to {X=17,Y=17}.
         /// </summary>
-        internal static System.Drawing.Bitmap plava_pozadina {
+        internal static System.Drawing.Point contextMenuStripZaposleni_TrayLocation {
             get {
-                object obj = ResourceManager.GetObject("plava pozadina", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap plava_pozadina1 {
-            get {
-                object obj = ResourceManager.GetObject("plava pozadina1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap podnosilac {
-            get {
-                object obj = ResourceManager.GetObject("podnosilac", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                object obj = ResourceManager.GetObject("contextMenuStripZaposleni.TrayLocation", resourceCulture);
+                return ((System.Drawing.Point)(obj));
             }
         }
     }

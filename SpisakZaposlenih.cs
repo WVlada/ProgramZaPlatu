@@ -166,12 +166,13 @@ namespace ProgramZaPlatu
 						parent.RemoveChild(NodeZaBrisanje);
 				
 						XmlElement element = PromeniZaposlenogDoc.CreateElement("Profile");
-						string strNoviZaposleni = 	"<Prezime>" + frmIzmeni.txtPrezimePromena.Text + "</Prezime>" +
-											"<Ime>" + frmIzmeni.txtImePromena.Text + "</Ime>" +
-											"<TipDokumenta>" + TipDokumenta + "</TipDokumenta>" +
-											"<IDBroj>" + frmIzmeni.txtIDBrojPromena.Text + "</IDBroj>" +
-											"<Opstina>" + frmIzmeni.txtOpstinaPromena.Text + "</Opstina>" +
-											"<BrojOpstine>"	+ frmIzmeni.txtBrojOpstinePromena.Text + "</BrojOpstine>";
+						
+                        string strNoviZaposleni = 	"<Prezime>" + frmIzmeni.txtPrezimePromena.Text + "</Prezime>" +
+											        "<Ime>" + frmIzmeni.txtImePromena.Text + "</Ime>" +
+											        "<TipDokumenta>" + TipDokumenta + "</TipDokumenta>" +
+											        "<IDBroj>" + frmIzmeni.txtIDBrojPromena.Text + "</IDBroj>" +
+											        "<Opstina>" + frmIzmeni.txtOpstinaPromena.Text + "</Opstina>" +
+											        "<BrojOpstine>"	+ frmIzmeni.txtBrojOpstinePromena.Text + "</BrojOpstine>";
 						
 						element.InnerXml = strNoviZaposleni;
 						PromeniZaposlenogDoc.DocumentElement.AppendChild(element);

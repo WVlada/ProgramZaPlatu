@@ -128,7 +128,7 @@ namespace ProgramZaPlatu
             this.lblNaslov.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lblNaslov.Location = new System.Drawing.Point(3, 11);
             this.lblNaslov.Name = "lblNaslov";
-            this.lblNaslov.Size = new System.Drawing.Size(603, 16);
+            this.lblNaslov.Size = new System.Drawing.Size(665, 16);
             this.lblNaslov.TabIndex = 0;
             this.lblNaslov.Text = "ПОЈЕДИНАЧНА ПОРЕСКА ПРИЈАВА О ОБРАЧУНАТИМ ПОРЕЗИМА И ДОПРИНОСИМА";
             this.lblNaslov.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -175,7 +175,7 @@ namespace ProgramZaPlatu
             this.panel2.Controls.Add(this.lblVrstaPrijave);
             this.panel2.Location = new System.Drawing.Point(2, 47);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(565, 101);
+            this.panel2.Size = new System.Drawing.Size(583, 111);
             this.panel2.TabIndex = 2;
             // 
             // cboDatumPlacanjaGODINA
@@ -186,9 +186,9 @@ namespace ProgramZaPlatu
             "2013",
             "2014",
             "2015"});
-            this.cboDatumPlacanjaGODINA.Location = new System.Drawing.Point(496, 61);
+            this.cboDatumPlacanjaGODINA.Location = new System.Drawing.Point(514, 61);
             this.cboDatumPlacanjaGODINA.Name = "cboDatumPlacanjaGODINA";
-            this.cboDatumPlacanjaGODINA.Size = new System.Drawing.Size(50, 21);
+            this.cboDatumPlacanjaGODINA.Size = new System.Drawing.Size(60, 24);
             this.cboDatumPlacanjaGODINA.TabIndex = 20;
             // 
             // cboDatumPlacanjaMESEC
@@ -208,9 +208,9 @@ namespace ProgramZaPlatu
             "10",
             "11",
             "12"});
-            this.cboDatumPlacanjaMESEC.Location = new System.Drawing.Point(449, 61);
+            this.cboDatumPlacanjaMESEC.Location = new System.Drawing.Point(458, 61);
             this.cboDatumPlacanjaMESEC.Name = "cboDatumPlacanjaMESEC";
-            this.cboDatumPlacanjaMESEC.Size = new System.Drawing.Size(41, 21);
+            this.cboDatumPlacanjaMESEC.Size = new System.Drawing.Size(50, 24);
             this.cboDatumPlacanjaMESEC.TabIndex = 19;
             // 
             // cboDatumPlacanjaDAN
@@ -251,7 +251,7 @@ namespace ProgramZaPlatu
             "31"});
             this.cboDatumPlacanjaDAN.Location = new System.Drawing.Point(402, 61);
             this.cboDatumPlacanjaDAN.Name = "cboDatumPlacanjaDAN";
-            this.cboDatumPlacanjaDAN.Size = new System.Drawing.Size(41, 21);
+            this.cboDatumPlacanjaDAN.Size = new System.Drawing.Size(50, 24);
             this.cboDatumPlacanjaDAN.TabIndex = 18;
             // 
             // cboDatumNastankaGODINA
@@ -262,9 +262,9 @@ namespace ProgramZaPlatu
             "2013",
             "2014",
             "2015"});
-            this.cboDatumNastankaGODINA.Location = new System.Drawing.Point(322, 61);
+            this.cboDatumNastankaGODINA.Location = new System.Drawing.Point(331, 61);
             this.cboDatumNastankaGODINA.Name = "cboDatumNastankaGODINA";
-            this.cboDatumNastankaGODINA.Size = new System.Drawing.Size(50, 21);
+            this.cboDatumNastankaGODINA.Size = new System.Drawing.Size(60, 24);
             this.cboDatumNastankaGODINA.TabIndex = 17;
             // 
             // cboDatumNastankaMESEC
@@ -286,7 +286,7 @@ namespace ProgramZaPlatu
             "12"});
             this.cboDatumNastankaMESEC.Location = new System.Drawing.Point(275, 61);
             this.cboDatumNastankaMESEC.Name = "cboDatumNastankaMESEC";
-            this.cboDatumNastankaMESEC.Size = new System.Drawing.Size(41, 21);
+            this.cboDatumNastankaMESEC.Size = new System.Drawing.Size(50, 24);
             this.cboDatumNastankaMESEC.TabIndex = 16;
             // 
             // cboDatumNastankaDAN
@@ -325,9 +325,9 @@ namespace ProgramZaPlatu
             "29",
             "30",
             "31"});
-            this.cboDatumNastankaDAN.Location = new System.Drawing.Point(228, 61);
+            this.cboDatumNastankaDAN.Location = new System.Drawing.Point(219, 61);
             this.cboDatumNastankaDAN.Name = "cboDatumNastankaDAN";
-            this.cboDatumNastankaDAN.Size = new System.Drawing.Size(41, 21);
+            this.cboDatumNastankaDAN.Size = new System.Drawing.Size(50, 24);
             this.cboDatumNastankaDAN.TabIndex = 15;
             // 
             // cboObracunskaGodina
@@ -340,7 +340,7 @@ namespace ProgramZaPlatu
             "2015"});
             this.cboObracunskaGodina.Location = new System.Drawing.Point(149, 61);
             this.cboObracunskaGodina.Name = "cboObracunskaGodina";
-            this.cboObracunskaGodina.Size = new System.Drawing.Size(50, 21);
+            this.cboObracunskaGodina.Size = new System.Drawing.Size(50, 24);
             this.cboObracunskaGodina.TabIndex = 12;
             // 
             // cboObracunskiMesec
@@ -360,9 +360,9 @@ namespace ProgramZaPlatu
             "10",
             "11",
             "12"});
-            this.cboObracunskiMesec.Location = new System.Drawing.Point(98, 61);
+            this.cboObracunskiMesec.Location = new System.Drawing.Point(93, 61);
             this.cboObracunskiMesec.Name = "cboObracunskiMesec";
-            this.cboObracunskiMesec.Size = new System.Drawing.Size(45, 21);
+            this.cboObracunskiMesec.Size = new System.Drawing.Size(50, 24);
             this.cboObracunskiMesec.TabIndex = 14;
             // 
             // lblDatumPlacanja
@@ -371,7 +371,7 @@ namespace ProgramZaPlatu
             this.lblDatumPlacanja.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDatumPlacanja.Location = new System.Drawing.Point(402, 81);
             this.lblDatumPlacanja.Name = "lblDatumPlacanja";
-            this.lblDatumPlacanja.Size = new System.Drawing.Size(160, 17);
+            this.lblDatumPlacanja.Size = new System.Drawing.Size(172, 17);
             this.lblDatumPlacanja.TabIndex = 13;
             this.lblDatumPlacanja.Text = "дд      -      мм      -      гггг";
             this.lblDatumPlacanja.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -380,22 +380,22 @@ namespace ProgramZaPlatu
             // 
             this.lblmmgggg.BackColor = System.Drawing.Color.Transparent;
             this.lblmmgggg.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblmmgggg.Location = new System.Drawing.Point(95, 84);
+            this.lblmmgggg.Location = new System.Drawing.Point(93, 86);
             this.lblmmgggg.Name = "lblmmgggg";
-            this.lblmmgggg.Size = new System.Drawing.Size(120, 15);
+            this.lblmmgggg.Size = new System.Drawing.Size(106, 15);
             this.lblmmgggg.TabIndex = 13;
-            this.lblmmgggg.Text = "мм  -     гггг";
+            this.lblmmgggg.Text = "мм      -     гггг";
             this.lblmmgggg.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblddmmgggg
             // 
             this.lblddmmgggg.BackColor = System.Drawing.Color.Transparent;
             this.lblddmmgggg.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblddmmgggg.Location = new System.Drawing.Point(228, 82);
+            this.lblddmmgggg.Location = new System.Drawing.Point(219, 83);
             this.lblddmmgggg.Name = "lblddmmgggg";
-            this.lblddmmgggg.Size = new System.Drawing.Size(160, 16);
+            this.lblddmmgggg.Size = new System.Drawing.Size(172, 16);
             this.lblddmmgggg.TabIndex = 12;
-            this.lblddmmgggg.Text = "дд       -     мм       -       гггг";
+            this.lblddmmgggg.Text = "дд      -    мм      -      гггг";
             this.lblddmmgggg.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // cboVrstaPrijave
@@ -410,7 +410,7 @@ namespace ProgramZaPlatu
             "5"});
             this.cboVrstaPrijave.Location = new System.Drawing.Point(29, 61);
             this.cboVrstaPrijave.Name = "cboVrstaPrijave";
-            this.cboVrstaPrijave.Size = new System.Drawing.Size(30, 21);
+            this.cboVrstaPrijave.Size = new System.Drawing.Size(45, 24);
             this.cboVrstaPrijave.TabIndex = 8;
             // 
             // lblDatumNastankaPoreskeObaveze
@@ -460,9 +460,9 @@ namespace ProgramZaPlatu
             this.panel3.Controls.Add(this.txtPIBiliJMBG);
             this.panel3.Controls.Add(this.txtPIBIsplatioca);
             this.panel3.Controls.Add(this.lblTipIsplatioca);
-            this.panel3.Location = new System.Drawing.Point(2, 173);
+            this.panel3.Location = new System.Drawing.Point(2, 194);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(987, 46);
+            this.panel3.Size = new System.Drawing.Size(984, 46);
             this.panel3.TabIndex = 3;
             // 
             // cboRadnoVreme
@@ -473,9 +473,9 @@ namespace ProgramZaPlatu
             "1",
             "2",
             "3"});
-            this.cboRadnoVreme.Location = new System.Drawing.Point(496, 14);
+            this.cboRadnoVreme.Location = new System.Drawing.Point(501, 14);
             this.cboRadnoVreme.Name = "cboRadnoVreme";
-            this.cboRadnoVreme.Size = new System.Drawing.Size(30, 21);
+            this.cboRadnoVreme.Size = new System.Drawing.Size(45, 24);
             this.cboRadnoVreme.TabIndex = 22;
             // 
             // cboTipIsplatioca
@@ -490,17 +490,17 @@ namespace ProgramZaPlatu
             "5",
             "6",
             "7"});
-            this.cboTipIsplatioca.Location = new System.Drawing.Point(111, 15);
+            this.cboTipIsplatioca.Location = new System.Drawing.Point(102, 12);
             this.cboTipIsplatioca.Name = "cboTipIsplatioca";
-            this.cboTipIsplatioca.Size = new System.Drawing.Size(30, 21);
+            this.cboTipIsplatioca.Size = new System.Drawing.Size(45, 24);
             this.cboTipIsplatioca.TabIndex = 21;
             // 
             // txtJMBGPodnosiocaPrijave
             // 
             this.txtJMBGPodnosiocaPrijave.Enabled = false;
-            this.txtJMBGPodnosiocaPrijave.Location = new System.Drawing.Point(825, 19);
+            this.txtJMBGPodnosiocaPrijave.Location = new System.Drawing.Point(837, 13);
             this.txtJMBGPodnosiocaPrijave.Name = "txtJMBGPodnosiocaPrijave";
-            this.txtJMBGPodnosiocaPrijave.Size = new System.Drawing.Size(116, 20);
+            this.txtJMBGPodnosiocaPrijave.Size = new System.Drawing.Size(116, 22);
             this.txtJMBGPodnosiocaPrijave.TabIndex = 7;
             this.txtJMBGPodnosiocaPrijave.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -527,7 +527,7 @@ namespace ProgramZaPlatu
             this.txtPIBiliJMBG.Enabled = false;
             this.txtPIBiliJMBG.Location = new System.Drawing.Point(275, 14);
             this.txtPIBiliJMBG.Name = "txtPIBiliJMBG";
-            this.txtPIBiliJMBG.Size = new System.Drawing.Size(113, 20);
+            this.txtPIBiliJMBG.Size = new System.Drawing.Size(113, 22);
             this.txtPIBiliJMBG.TabIndex = 3;
             // 
             // txtPIBIsplatioca
@@ -541,9 +541,9 @@ namespace ProgramZaPlatu
             // 
             // lblTipIsplatioca
             // 
-            this.lblTipIsplatioca.Location = new System.Drawing.Point(3, 12);
+            this.lblTipIsplatioca.Location = new System.Drawing.Point(10, 5);
             this.lblTipIsplatioca.Name = "lblTipIsplatioca";
-            this.lblTipIsplatioca.Size = new System.Drawing.Size(102, 24);
+            this.lblTipIsplatioca.Size = new System.Drawing.Size(91, 36);
             this.lblTipIsplatioca.TabIndex = 0;
             this.lblTipIsplatioca.Text = "Тип исплатиоца";
             this.lblTipIsplatioca.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -563,30 +563,30 @@ namespace ProgramZaPlatu
             this.panel4.Controls.Add(this.lblTelefonKontaktOsobe);
             this.panel4.Controls.Add(this.txtMaticniBroj);
             this.panel4.Controls.Add(this.lblMaticniBroj);
-            this.panel4.Location = new System.Drawing.Point(2, 225);
+            this.panel4.Location = new System.Drawing.Point(2, 246);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(987, 51);
+            this.panel4.Size = new System.Drawing.Size(987, 58);
             this.panel4.TabIndex = 4;
             // 
             // txtEmail
             // 
             this.txtEmail.Enabled = false;
-            this.txtEmail.Location = new System.Drawing.Point(795, 26);
+            this.txtEmail.Location = new System.Drawing.Point(795, 32);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(108, 20);
+            this.txtEmail.Size = new System.Drawing.Size(108, 22);
             this.txtEmail.TabIndex = 11;
             // 
             // txtSediste
             // 
             this.txtSediste.Enabled = false;
-            this.txtSediste.Location = new System.Drawing.Point(795, 3);
+            this.txtSediste.Location = new System.Drawing.Point(795, 5);
             this.txtSediste.Name = "txtSediste";
-            this.txtSediste.Size = new System.Drawing.Size(63, 20);
+            this.txtSediste.Size = new System.Drawing.Size(63, 22);
             this.txtSediste.TabIndex = 10;
             // 
             // lblEmail
             // 
-            this.lblEmail.Location = new System.Drawing.Point(726, 22);
+            this.lblEmail.Location = new System.Drawing.Point(726, 32);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(63, 23);
             this.lblEmail.TabIndex = 9;
@@ -595,7 +595,7 @@ namespace ProgramZaPlatu
             // 
             // lblSediste
             // 
-            this.lblSediste.Location = new System.Drawing.Point(620, 3);
+            this.lblSediste.Location = new System.Drawing.Point(620, 4);
             this.lblSediste.Name = "lblSediste";
             this.lblSediste.Size = new System.Drawing.Size(169, 23);
             this.lblSediste.TabIndex = 8;
@@ -605,47 +605,47 @@ namespace ProgramZaPlatu
             // txtUlicaiBroj
             // 
             this.txtUlicaiBroj.Enabled = false;
-            this.txtUlicaiBroj.Location = new System.Drawing.Point(450, 24);
+            this.txtUlicaiBroj.Location = new System.Drawing.Point(450, 32);
             this.txtUlicaiBroj.Name = "txtUlicaiBroj";
-            this.txtUlicaiBroj.Size = new System.Drawing.Size(156, 20);
+            this.txtUlicaiBroj.Size = new System.Drawing.Size(156, 22);
             this.txtUlicaiBroj.TabIndex = 7;
             // 
             // txtNaziv
             // 
             this.txtNaziv.Enabled = false;
-            this.txtNaziv.Location = new System.Drawing.Point(450, 2);
+            this.txtNaziv.Location = new System.Drawing.Point(450, 4);
             this.txtNaziv.Name = "txtNaziv";
-            this.txtNaziv.Size = new System.Drawing.Size(156, 20);
+            this.txtNaziv.Size = new System.Drawing.Size(156, 22);
             this.txtNaziv.TabIndex = 6;
             // 
             // lblUlicaIBroj
             // 
-            this.lblUlicaIBroj.Location = new System.Drawing.Point(275, 26);
+            this.lblUlicaIBroj.Location = new System.Drawing.Point(347, 33);
             this.lblUlicaIBroj.Name = "lblUlicaIBroj";
-            this.lblUlicaIBroj.Size = new System.Drawing.Size(99, 20);
+            this.lblUlicaIBroj.Size = new System.Drawing.Size(97, 20);
             this.lblUlicaIBroj.TabIndex = 5;
             this.lblUlicaIBroj.Text = "Улица и број";
             this.lblUlicaIBroj.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblNazivImeIPrezime
             // 
-            this.lblNazivImeIPrezime.Location = new System.Drawing.Point(275, 3);
+            this.lblNazivImeIPrezime.Location = new System.Drawing.Point(292, 4);
             this.lblNazivImeIPrezime.Name = "lblNazivImeIPrezime";
-            this.lblNazivImeIPrezime.Size = new System.Drawing.Size(133, 23);
+            this.lblNazivImeIPrezime.Size = new System.Drawing.Size(152, 23);
             this.lblNazivImeIPrezime.TabIndex = 4;
             this.lblNazivImeIPrezime.Text = "Назив/Име и презиме";
             this.lblNazivImeIPrezime.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // txtmaskTelefonKontakOsobe
             // 
-            this.txtmaskTelefonKontakOsobe.Location = new System.Drawing.Point(146, 25);
+            this.txtmaskTelefonKontakOsobe.Location = new System.Drawing.Point(146, 32);
             this.txtmaskTelefonKontakOsobe.Name = "txtmaskTelefonKontakOsobe";
-            this.txtmaskTelefonKontakOsobe.Size = new System.Drawing.Size(100, 20);
+            this.txtmaskTelefonKontakOsobe.Size = new System.Drawing.Size(100, 22);
             this.txtmaskTelefonKontakOsobe.TabIndex = 3;
             // 
             // lblTelefonKontaktOsobe
             // 
-            this.lblTelefonKontaktOsobe.Location = new System.Drawing.Point(3, 24);
+            this.lblTelefonKontaktOsobe.Location = new System.Drawing.Point(3, 32);
             this.lblTelefonKontaktOsobe.Name = "lblTelefonKontaktOsobe";
             this.lblTelefonKontaktOsobe.Size = new System.Drawing.Size(137, 23);
             this.lblTelefonKontaktOsobe.TabIndex = 2;
@@ -655,15 +655,15 @@ namespace ProgramZaPlatu
             // txtMaticniBroj
             // 
             this.txtMaticniBroj.Enabled = false;
-            this.txtMaticniBroj.Location = new System.Drawing.Point(146, 3);
+            this.txtMaticniBroj.Location = new System.Drawing.Point(146, 4);
             this.txtMaticniBroj.Name = "txtMaticniBroj";
-            this.txtMaticniBroj.Size = new System.Drawing.Size(90, 20);
+            this.txtMaticniBroj.Size = new System.Drawing.Size(90, 22);
             this.txtMaticniBroj.TabIndex = 1;
             this.txtMaticniBroj.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lblMaticniBroj
             // 
-            this.lblMaticniBroj.Location = new System.Drawing.Point(3, 3);
+            this.lblMaticniBroj.Location = new System.Drawing.Point(3, 5);
             this.lblMaticniBroj.Name = "lblMaticniBroj";
             this.lblMaticniBroj.Size = new System.Drawing.Size(108, 23);
             this.lblMaticniBroj.TabIndex = 0;
@@ -675,25 +675,25 @@ namespace ProgramZaPlatu
             this.panel5.BackColor = System.Drawing.SystemColors.Info;
             this.panel5.Controls.Add(this.textBox1);
             this.panel5.Controls.Add(this.lblNajnizaOsnovica);
-            this.panel5.Location = new System.Drawing.Point(778, 128);
+            this.panel5.Location = new System.Drawing.Point(743, 159);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(211, 38);
+            this.panel5.Size = new System.Drawing.Size(246, 29);
             this.panel5.TabIndex = 5;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(134, 8);
+            this.textBox1.Location = new System.Drawing.Point(150, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(34, 20);
+            this.textBox1.Size = new System.Drawing.Size(34, 22);
             this.textBox1.TabIndex = 12;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lblNajnizaOsnovica
             // 
             this.lblNajnizaOsnovica.BackColor = System.Drawing.Color.Transparent;
-            this.lblNajnizaOsnovica.Location = new System.Drawing.Point(19, 3);
+            this.lblNajnizaOsnovica.Location = new System.Drawing.Point(3, 5);
             this.lblNajnizaOsnovica.Name = "lblNajnizaOsnovica";
-            this.lblNajnizaOsnovica.Size = new System.Drawing.Size(100, 28);
+            this.lblNajnizaOsnovica.Size = new System.Drawing.Size(141, 18);
             this.lblNajnizaOsnovica.TabIndex = 11;
             this.lblNajnizaOsnovica.Text = "Најнижа основица";
             this.lblNajnizaOsnovica.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -707,25 +707,25 @@ namespace ProgramZaPlatu
             this.panel6.Controls.Add(this.txtBrojResenjaOdlukeSuda);
             this.panel6.Controls.Add(this.lblIDBrojIzmenePrijave);
             this.panel6.Controls.Add(this.txtIDBrojIzmenePrijave);
-            this.panel6.Location = new System.Drawing.Point(619, 74);
+            this.panel6.Location = new System.Drawing.Point(619, 84);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(370, 48);
+            this.panel6.Size = new System.Drawing.Size(370, 69);
             this.panel6.TabIndex = 6;
             // 
             // txtOsnov
             // 
-            this.txtOsnov.Location = new System.Drawing.Point(330, 6);
+            this.txtOsnov.Location = new System.Drawing.Point(308, 6);
             this.txtOsnov.Name = "txtOsnov";
-            this.txtOsnov.Size = new System.Drawing.Size(28, 20);
+            this.txtOsnov.Size = new System.Drawing.Size(28, 22);
             this.txtOsnov.TabIndex = 11;
             this.txtOsnov.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lblOsnov
             // 
             this.lblOsnov.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOsnov.Location = new System.Drawing.Point(322, 25);
+            this.lblOsnov.Location = new System.Drawing.Point(300, 38);
             this.lblOsnov.Name = "lblOsnov";
-            this.lblOsnov.Size = new System.Drawing.Size(45, 20);
+            this.lblOsnov.Size = new System.Drawing.Size(59, 20);
             this.lblOsnov.TabIndex = 11;
             this.lblOsnov.Text = "Основ";
             this.lblOsnov.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -734,9 +734,9 @@ namespace ProgramZaPlatu
             // 
             this.lblBrojResenjaOdlukeSuda.BackColor = System.Drawing.Color.Transparent;
             this.lblBrojResenjaOdlukeSuda.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblBrojResenjaOdlukeSuda.Location = new System.Drawing.Point(170, 27);
+            this.lblBrojResenjaOdlukeSuda.Location = new System.Drawing.Point(162, 31);
             this.lblBrojResenjaOdlukeSuda.Name = "lblBrojResenjaOdlukeSuda";
-            this.lblBrojResenjaOdlukeSuda.Size = new System.Drawing.Size(146, 15);
+            this.lblBrojResenjaOdlukeSuda.Size = new System.Drawing.Size(146, 34);
             this.lblBrojResenjaOdlukeSuda.TabIndex = 10;
             this.lblBrojResenjaOdlukeSuda.Text = "Број решења / одлуке суда";
             this.lblBrojResenjaOdlukeSuda.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -745,7 +745,7 @@ namespace ProgramZaPlatu
             // 
             this.txtBrojResenjaOdlukeSuda.Location = new System.Drawing.Point(186, 6);
             this.txtBrojResenjaOdlukeSuda.Name = "txtBrojResenjaOdlukeSuda";
-            this.txtBrojResenjaOdlukeSuda.Size = new System.Drawing.Size(100, 20);
+            this.txtBrojResenjaOdlukeSuda.Size = new System.Drawing.Size(100, 22);
             this.txtBrojResenjaOdlukeSuda.TabIndex = 9;
             this.txtBrojResenjaOdlukeSuda.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -753,9 +753,9 @@ namespace ProgramZaPlatu
             // 
             this.lblIDBrojIzmenePrijave.BackColor = System.Drawing.Color.Transparent;
             this.lblIDBrojIzmenePrijave.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblIDBrojIzmenePrijave.Location = new System.Drawing.Point(3, 27);
+            this.lblIDBrojIzmenePrijave.Location = new System.Drawing.Point(21, 31);
             this.lblIDBrojIzmenePrijave.Name = "lblIDBrojIzmenePrijave";
-            this.lblIDBrojIzmenePrijave.Size = new System.Drawing.Size(169, 15);
+            this.lblIDBrojIzmenePrijave.Size = new System.Drawing.Size(143, 34);
             this.lblIDBrojIzmenePrijave.TabIndex = 8;
             this.lblIDBrojIzmenePrijave.Text = "Идентификациони број пријаве";
             this.lblIDBrojIzmenePrijave.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -764,7 +764,7 @@ namespace ProgramZaPlatu
             // 
             this.txtIDBrojIzmenePrijave.Location = new System.Drawing.Point(37, 6);
             this.txtIDBrojIzmenePrijave.Name = "txtIDBrojIzmenePrijave";
-            this.txtIDBrojIzmenePrijave.Size = new System.Drawing.Size(100, 20);
+            this.txtIDBrojIzmenePrijave.Size = new System.Drawing.Size(100, 22);
             this.txtIDBrojIzmenePrijave.TabIndex = 1;
             this.txtIDBrojIzmenePrijave.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -790,9 +790,9 @@ namespace ProgramZaPlatu
             this.columnHeader17,
             this.columnHeader18});
             this.listView1.GridLines = true;
-            this.listView1.Location = new System.Drawing.Point(2, 299);
+            this.listView1.Location = new System.Drawing.Point(2, 310);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(984, 151);
+            this.listView1.Size = new System.Drawing.Size(1168, 151);
             this.listView1.TabIndex = 7;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -899,7 +899,7 @@ namespace ProgramZaPlatu
             // 
             // lblIzmenaPrijave
             // 
-            this.lblIzmenaPrijave.Location = new System.Drawing.Point(3, 4);
+            this.lblIzmenaPrijave.Location = new System.Drawing.Point(3, 7);
             this.lblIzmenaPrijave.Name = "lblIzmenaPrijave";
             this.lblIzmenaPrijave.Size = new System.Drawing.Size(100, 19);
             this.lblIzmenaPrijave.TabIndex = 0;
@@ -910,7 +910,7 @@ namespace ProgramZaPlatu
             // 
             this.txtIzmenaPrijave.Location = new System.Drawing.Point(109, 5);
             this.txtIzmenaPrijave.Name = "txtIzmenaPrijave";
-            this.txtIzmenaPrijave.Size = new System.Drawing.Size(28, 20);
+            this.txtIzmenaPrijave.Size = new System.Drawing.Size(28, 22);
             this.txtIzmenaPrijave.TabIndex = 9;
             this.txtIzmenaPrijave.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -922,12 +922,12 @@ namespace ProgramZaPlatu
             this.panel7.Controls.Add(this.txtIzmenaPrijave);
             this.panel7.Location = new System.Drawing.Point(619, 45);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(370, 27);
+            this.panel7.Size = new System.Drawing.Size(370, 33);
             this.panel7.TabIndex = 10;
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(159, 3);
+            this.label2.Location = new System.Drawing.Point(145, 5);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(208, 23);
             this.label2.TabIndex = 10;
@@ -946,7 +946,7 @@ namespace ProgramZaPlatu
             // FormaPPPpd
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(984, 485);
+            this.ClientSize = new System.Drawing.Size(1182, 485);
             this.Controls.Add(this.lblUkupno);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.listView1);
@@ -957,8 +957,8 @@ namespace ProgramZaPlatu
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(1200, 800);
-            this.MinimumSize = new System.Drawing.Size(1000, 500);
+            this.MaximumSize = new System.Drawing.Size(1400, 800);
+            this.MinimumSize = new System.Drawing.Size(1200, 500);
             this.Name = "FormaPPPpd";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

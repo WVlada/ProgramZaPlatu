@@ -7,18 +7,18 @@ namespace ProgramZaPlatu
 	/// </summary>
 	public class Racunica
 	{
-		decimal NetoIznos;
-		decimal StopaPoreza; 						
-		decimal StopaPIOZaposleni;			
-		decimal StopaZdravstvoZaposleni;		
-		decimal StopaNezaposlenostZaposleni;	
-		decimal StopaPIOPoslodavac;		
-		decimal StopaZdravstvoPoslodavac;	
-		decimal StopaNezaposlenostPoslodavac;
-		decimal NajnizaOsnovica;
-		decimal NajvisaOsnovica;		
-			
-		decimal PoreskoOslobodjenje;
+		decimal OvdeNetoIznos;
+		decimal OvdeStopaPoreza;
+        decimal OvdeStopaPIOZaposleni;
+        decimal OvdeStopaZdravstvoZaposleni;
+        decimal OvdeStopaNezaposlenostZaposleni;
+        decimal OvdeStopaPIOPoslodavac;
+        decimal OvdeStopaZdravstvoPoslodavac;
+        decimal OvdeStopaNezaposlenostPoslodavac;
+        decimal OvdeNajnizaOsnovica;
+        decimal OvdeNajvisaOsnovica;
+
+        decimal OvdePoreskoOslobodjenje;
 		
 		// ovi iznosi se vracaju MAIN formi
 		public decimal IznosNetoIznos;
@@ -33,82 +33,84 @@ namespace ProgramZaPlatu
 						
 		public Racunica(decimal x, decimal y, decimal z, decimal u, decimal v, decimal w, decimal a, decimal b, decimal c,decimal m,decimal n)
 		{
-		NetoIznos 						= x;
-		StopaPoreza 					= y; 						
-		StopaPIOZaposleni				= z;			
-		StopaZdravstvoZaposleni			= u;
-		StopaNezaposlenostZaposleni		= v;
-		StopaPIOPoslodavac				= w;		
-		StopaZdravstvoPoslodavac		= a;	
-		StopaNezaposlenostPoslodavac	= b; 	
-		PoreskoOslobodjenje				= c;
-		NajnizaOsnovica 				= m;
-		NajvisaOsnovica					= n;
+            OvdeNetoIznos                       = x;
+            OvdeStopaPoreza                     = y / 100;
+            OvdeStopaPIOZaposleni               = z / 100;
+            OvdeStopaZdravstvoZaposleni         = u / 100;
+            OvdeStopaNezaposlenostZaposleni     = v / 100;
+            OvdeStopaPIOPoslodavac              = w / 100;
+            OvdeStopaZdravstvoPoslodavac        = a / 100;
+            OvdeStopaNezaposlenostPoslodavac    = b / 100;
+            OvdePoreskoOslobodjenje             = c;
+            OvdeNajnizaOsnovica                 = m;
+            OvdeNajvisaOsnovica                 = n;
 		
 		// OVDE SE DODAJU SLUCAJEVI OBRACUNA
-		if (x > NajnizaOsnovica && x < NajvisaOsnovica) 
+            if (x > OvdeNajnizaOsnovica && x < OvdeNajvisaOsnovica) 
 			{ZaNetoNormalno();}
-		else if (x <= NajnizaOsnovica)
+            else if (x <= OvdeNajnizaOsnovica)
 			{ZaNetoIspodNajnize();}
-		else if (x >= NajvisaOsnovica)
+            else if (x >= OvdeNajvisaOsnovica)
 			{ZaNetoIznadNajvise();}
 		
 		}
 		public void ZaNetoNormalno()
 		//OVO JE NAJOBICNIJI SLUCAJ
 		{
-			decimal KoeficijentPoreskogOslobodjenja = PoreskoOslobodjenje*StopaPoreza;
-			decimal Koeficijent = 1 - (StopaPIOZaposleni + StopaZdravstvoZaposleni + StopaNezaposlenostZaposleni + StopaPoreza);
-			
-			IznosBrutoIznos = Decimal.Round(((NetoIznos - KoeficijentPoreskogOslobodjenja)/Koeficijent),2);
-		
-			IznosPoreza 		 =  Decimal.Round(((IznosBrutoIznos - PoreskoOslobodjenje)*StopaPoreza),2);
-		
-			IznosPIOZaposleni 	 =  Decimal.Round((IznosBrutoIznos * StopaPIOZaposleni),2);
-			IznosZdravstvoZaposleni  =  Decimal.Round((IznosBrutoIznos * StopaZdravstvoZaposleni),2);
-			IznosNezaposlenostZaposleni  =  Decimal.Round((IznosBrutoIznos * StopaNezaposlenostZaposleni),2);
-			
-			IznosPIOPoslodavac 	 = Decimal.Round((IznosBrutoIznos * StopaPIOPoslodavac),2);
-			IznosZdravstvoPoslodavac = Decimal.Round((IznosBrutoIznos * StopaZdravstvoPoslodavac),2);
-			IznosNezaposlenostPoslodavac = Decimal.Round((IznosBrutoIznos * StopaNezaposlenostPoslodavac),2);
+            decimal KoeficijentPoreskogOslobodjenja = OvdePoreskoOslobodjenje * OvdeStopaPoreza;// ovo je 1.100 (11.000*10%)
+            decimal Koeficijent = 1 - (OvdeStopaPIOZaposleni + OvdeStopaZdravstvoZaposleni + OvdeStopaNezaposlenostZaposleni + OvdeStopaPoreza);// ovo je 0.701 (1 - (10 + 13 + 6.15 + 0.75))
+
+            IznosBrutoIznos = Decimal.Round(((OvdeNetoIznos - KoeficijentPoreskogOslobodjenja) / Koeficijent), 2);
+
+            IznosPoreza = Decimal.Round(((IznosBrutoIznos - OvdePoreskoOslobodjenje) * OvdeStopaPoreza), 2);
+
+            IznosPIOZaposleni = Decimal.Round((IznosBrutoIznos * OvdeStopaPIOZaposleni), 2);
+            IznosZdravstvoZaposleni = Decimal.Round((IznosBrutoIznos * OvdeStopaZdravstvoZaposleni), 2);
+            IznosNezaposlenostZaposleni = Decimal.Round((IznosBrutoIznos * OvdeStopaNezaposlenostZaposleni), 2);
+
+            IznosPIOPoslodavac = Decimal.Round((IznosBrutoIznos * OvdeStopaPIOPoslodavac), 2);
+            IznosZdravstvoPoslodavac = Decimal.Round((IznosBrutoIznos * OvdeStopaZdravstvoPoslodavac), 2);
+            IznosNezaposlenostPoslodavac = Decimal.Round((IznosBrutoIznos * OvdeStopaNezaposlenostPoslodavac), 2);
 		}
 		//OVO JE SLUCAJ ISPOD NAJNIZE
 		public void ZaNetoIspodNajnize()
 			{
-			decimal KoeficijentPoreskogOslobodjenja = PoreskoOslobodjenje*StopaPoreza;
-			decimal Koeficijent = 1 - (StopaPIOZaposleni + StopaZdravstvoZaposleni + StopaNezaposlenostZaposleni + StopaPoreza);
+                decimal KoeficijentPoreskogOslobodjenja = OvdePoreskoOslobodjenje * OvdeStopaPoreza;
+                decimal Koeficijent = 1 - OvdeStopaPoreza;
+
+                decimal SD = OvdeNajnizaOsnovica * (OvdeStopaNezaposlenostPoslodavac + OvdeStopaNezaposlenostZaposleni + OvdeStopaPIOPoslodavac + OvdeStopaPIOZaposleni + OvdeStopaZdravstvoPoslodavac + OvdeStopaZdravstvoZaposleni);
 			
-			IznosBrutoIznos = Decimal.Round(((NajnizaOsnovica - KoeficijentPoreskogOslobodjenja)/Koeficijent),2);
-			IznosNetoIznos 	= Decimal.Round(NetoIznos);
-			IznosPoreza 		 =  Decimal.Round(((IznosBrutoIznos - PoreskoOslobodjenje)*StopaPoreza),2);
-		
-			IznosPIOZaposleni 	 =  Decimal.Round((IznosBrutoIznos * StopaPIOZaposleni),2);
-			IznosZdravstvoZaposleni  =  Decimal.Round((IznosBrutoIznos * StopaZdravstvoZaposleni),2);
-			IznosNezaposlenostZaposleni  =  Decimal.Round((IznosBrutoIznos * StopaNezaposlenostZaposleni),2);
-			
-			IznosPIOPoslodavac 	 = Decimal.Round((IznosBrutoIznos * StopaPIOPoslodavac),2);
-			IznosZdravstvoPoslodavac = Decimal.Round((IznosBrutoIznos * StopaZdravstvoPoslodavac),2);
-			IznosNezaposlenostPoslodavac = Decimal.Round((IznosBrutoIznos * StopaNezaposlenostPoslodavac),2);
+			IznosBrutoIznos = Decimal.Round(((OvdeNajnizaOsnovica - KoeficijentPoreskogOslobodjenja + SD)/Koeficijent),2);
+			IznosNetoIznos 	= Decimal.Round(OvdeNetoIznos);
+            IznosPoreza = Decimal.Round(((OvdeNetoIznos - OvdePoreskoOslobodjenje) * OvdeStopaPoreza), 2);
+
+            IznosPIOZaposleni = Decimal.Round((IznosBrutoIznos * OvdeStopaPIOZaposleni), 2);
+            IznosZdravstvoZaposleni = Decimal.Round((IznosBrutoIznos * OvdeStopaZdravstvoZaposleni), 2);
+            IznosNezaposlenostZaposleni = Decimal.Round((IznosBrutoIznos * OvdeStopaNezaposlenostZaposleni), 2);
+
+            IznosPIOPoslodavac = Decimal.Round((IznosBrutoIznos * OvdeStopaPIOPoslodavac), 2);
+            IznosZdravstvoPoslodavac = Decimal.Round((IznosBrutoIznos * OvdeStopaZdravstvoPoslodavac), 2);
+            IznosNezaposlenostPoslodavac = Decimal.Round((IznosBrutoIznos * OvdeStopaNezaposlenostPoslodavac), 2);
 			}
 		//OVO JE SLUCAJ IZNAD NAJVISE
 		public void ZaNetoIznadNajvise()
 			{
-			decimal KoeficijentPoreskogOslobodjenja = PoreskoOslobodjenje*StopaPoreza;
-			decimal Koeficijent = 1 - (StopaPIOZaposleni + StopaZdravstvoZaposleni + StopaNezaposlenostZaposleni + StopaPoreza);
-			
-			decimal BrutozaRacunicu = Decimal.Round(((NajvisaOsnovica - KoeficijentPoreskogOslobodjenja)/Koeficijent),2);
-			IznosBrutoIznos = Decimal.Round(((BrutozaRacunicu + NetoIznos- NajvisaOsnovica)),2);
-			IznosNetoIznos 	= Decimal.Round(NetoIznos);
-			//za porez ide IznosBrutoIznos jer on enma granicu nego mora da raste zajendo sa njim
-			IznosPoreza 		 =  Decimal.Round(((IznosBrutoIznos - PoreskoOslobodjenje)*StopaPoreza),2);
-		
-			IznosPIOZaposleni 	 =  Decimal.Round((BrutozaRacunicu * StopaPIOZaposleni),2);
-			IznosZdravstvoZaposleni  =  Decimal.Round((BrutozaRacunicu * StopaZdravstvoZaposleni),2);
-			IznosNezaposlenostZaposleni  =  Decimal.Round((BrutozaRacunicu * StopaNezaposlenostZaposleni),2);
-			
-			IznosPIOPoslodavac 	 = Decimal.Round((BrutozaRacunicu * StopaPIOPoslodavac),2);
-			IznosZdravstvoPoslodavac = Decimal.Round((BrutozaRacunicu * StopaZdravstvoPoslodavac),2);
-			IznosNezaposlenostPoslodavac = Decimal.Round((BrutozaRacunicu * StopaNezaposlenostPoslodavac),2);
-			}
+                decimal KoeficijentPoreskogOslobodjenja = OvdePoreskoOslobodjenje * OvdeStopaPoreza;
+                decimal Koeficijent = 1 - OvdeStopaPoreza;
+
+                decimal SD = OvdeNajvisaOsnovica * (OvdeStopaNezaposlenostPoslodavac + OvdeStopaNezaposlenostZaposleni + OvdeStopaPIOPoslodavac + OvdeStopaPIOZaposleni + OvdeStopaZdravstvoPoslodavac + OvdeStopaZdravstvoZaposleni);
+
+                IznosBrutoIznos = Decimal.Round(((OvdeNajvisaOsnovica - KoeficijentPoreskogOslobodjenja + SD) / Koeficijent), 2);
+                IznosNetoIznos = Decimal.Round(OvdeNetoIznos);
+                IznosPoreza = Decimal.Round(((OvdeNetoIznos - OvdePoreskoOslobodjenje) * OvdeStopaPoreza), 2);
+
+                IznosPIOZaposleni = Decimal.Round((IznosBrutoIznos * OvdeStopaPIOZaposleni), 2);
+                IznosZdravstvoZaposleni = Decimal.Round((IznosBrutoIznos * OvdeStopaZdravstvoZaposleni), 2);
+                IznosNezaposlenostZaposleni = Decimal.Round((IznosBrutoIznos * OvdeStopaNezaposlenostZaposleni), 2);
+
+                IznosPIOPoslodavac = Decimal.Round((IznosBrutoIznos * OvdeStopaPIOPoslodavac), 2);
+                IznosZdravstvoPoslodavac = Decimal.Round((IznosBrutoIznos * OvdeStopaZdravstvoPoslodavac), 2);
+                IznosNezaposlenostPoslodavac = Decimal.Round((IznosBrutoIznos * OvdeStopaNezaposlenostPoslodavac), 2);
+            }
 	}
 }

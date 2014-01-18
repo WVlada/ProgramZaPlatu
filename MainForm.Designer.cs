@@ -57,7 +57,7 @@ namespace ProgramZaPlatu
             this.lblNezapPosl = new System.Windows.Forms.Label();
             this.btnIzracunaj = new System.Windows.Forms.Button();
             this.btnOtvoriFormu = new System.Windows.Forms.Button();
-            this.btnSnimiStope = new System.Windows.Forms.Button();
+            this.btnPromeniStope = new System.Windows.Forms.Button();
             this.txtIznosPorezaDESNO = new System.Windows.Forms.TextBox();
             this.lblIznosporeza = new System.Windows.Forms.Label();
             this.txtIznosPioZaposleniDESNO = new System.Windows.Forms.TextBox();
@@ -140,12 +140,12 @@ namespace ProgramZaPlatu
             // 
             // txtNetoIznosLEVO
             // 
-            this.txtNetoIznosLEVO.Location = new System.Drawing.Point(161, 18);
+            this.txtNetoIznosLEVO.Location = new System.Drawing.Point(153, 2);
             this.txtNetoIznosLEVO.Margin = new System.Windows.Forms.Padding(2);
             this.txtNetoIznosLEVO.Name = "txtNetoIznosLEVO";
             this.txtNetoIznosLEVO.Size = new System.Drawing.Size(117, 23);
             this.txtNetoIznosLEVO.TabIndex = 0;
-            this.txtNetoIznosLEVO.Text = "0";
+            this.txtNetoIznosLEVO.Text = "0.00";
             this.txtNetoIznosLEVO.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtNetoIznosLEVO.TextChanged += new System.EventHandler(this.TxtNetoIznosLEVOTextChanged);
             this.txtNetoIznosLEVO.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtNetoIznosLEVOKeyPress);
@@ -154,7 +154,7 @@ namespace ProgramZaPlatu
             // lblNetoIznosTab
             // 
             this.lblNetoIznosTab.Font = new System.Drawing.Font("Arial", 10F);
-            this.lblNetoIznosTab.Location = new System.Drawing.Point(2, 18);
+            this.lblNetoIznosTab.Location = new System.Drawing.Point(3, 1);
             this.lblNetoIznosTab.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNetoIznosTab.Name = "lblNetoIznosTab";
             this.lblNetoIznosTab.Size = new System.Drawing.Size(123, 22);
@@ -355,7 +355,7 @@ namespace ProgramZaPlatu
             this.btnIzracunaj.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIzracunaj.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnIzracunaj.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnIzracunaj.Location = new System.Drawing.Point(358, 133);
+            this.btnIzracunaj.Location = new System.Drawing.Point(405, 136);
             this.btnIzracunaj.Margin = new System.Windows.Forms.Padding(2);
             this.btnIzracunaj.Name = "btnIzracunaj";
             this.btnIzracunaj.Size = new System.Drawing.Size(138, 84);
@@ -381,22 +381,23 @@ namespace ProgramZaPlatu
             this.btnOtvoriFormu.UseVisualStyleBackColor = false;
             this.btnOtvoriFormu.Click += new System.EventHandler(this.BtnUnesiUFormuClick);
             // 
-            // btnSnimiStope
+            // btnPromeniStope
             // 
-            this.btnSnimiStope.BackColor = System.Drawing.Color.Transparent;
-            this.btnSnimiStope.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSnimiStope.BackgroundImage")));
-            this.btnSnimiStope.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSnimiStope.FlatAppearance.BorderSize = 2;
-            this.btnSnimiStope.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSnimiStope.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnSnimiStope.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnSnimiStope.Location = new System.Drawing.Point(5, 431);
-            this.btnSnimiStope.Margin = new System.Windows.Forms.Padding(2);
-            this.btnSnimiStope.Name = "btnSnimiStope";
-            this.btnSnimiStope.Size = new System.Drawing.Size(80, 40);
-            this.btnSnimiStope.TabIndex = 27;
-            this.btnSnimiStope.Text = "Промени стопе";
-            this.btnSnimiStope.UseVisualStyleBackColor = false;
+            this.btnPromeniStope.BackColor = System.Drawing.Color.Transparent;
+            this.btnPromeniStope.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPromeniStope.BackgroundImage")));
+            this.btnPromeniStope.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnPromeniStope.FlatAppearance.BorderSize = 2;
+            this.btnPromeniStope.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPromeniStope.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnPromeniStope.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnPromeniStope.Location = new System.Drawing.Point(10, 276);
+            this.btnPromeniStope.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPromeniStope.Name = "btnPromeniStope";
+            this.btnPromeniStope.Size = new System.Drawing.Size(104, 40);
+            this.btnPromeniStope.TabIndex = 27;
+            this.btnPromeniStope.Text = "Промени стопе";
+            this.btnPromeniStope.UseVisualStyleBackColor = false;
+            this.btnPromeniStope.Click += new System.EventHandler(this.btnPromeniStope_Click);
             // 
             // txtIznosPorezaDESNO
             // 
@@ -733,7 +734,7 @@ namespace ProgramZaPlatu
             this.tabNetoBruto.Location = new System.Drawing.Point(12, 129);
             this.tabNetoBruto.Name = "tabNetoBruto";
             this.tabNetoBruto.SelectedIndex = 0;
-            this.tabNetoBruto.Size = new System.Drawing.Size(326, 86);
+            this.tabNetoBruto.Size = new System.Drawing.Size(291, 56);
             this.tabNetoBruto.TabIndex = 57;
             // 
             // tabPage1
@@ -745,7 +746,7 @@ namespace ProgramZaPlatu
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(318, 57);
+            this.tabPage1.Size = new System.Drawing.Size(283, 27);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "За познат НЕТО";
             // 
@@ -758,13 +759,13 @@ namespace ProgramZaPlatu
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(318, 57);
+            this.tabPage2.Size = new System.Drawing.Size(283, 27);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "За познат БРУТО";
             // 
             // txtBrutoIznosLEVO
             // 
-            this.txtBrutoIznosLEVO.Location = new System.Drawing.Point(160, 18);
+            this.txtBrutoIznosLEVO.Location = new System.Drawing.Point(153, 2);
             this.txtBrutoIznosLEVO.Name = "txtBrutoIznosLEVO";
             this.txtBrutoIznosLEVO.Size = new System.Drawing.Size(117, 23);
             this.txtBrutoIznosLEVO.TabIndex = 1;
@@ -775,7 +776,7 @@ namespace ProgramZaPlatu
             // 
             this.lblBrutoIznosTab.BackColor = System.Drawing.Color.Transparent;
             this.lblBrutoIznosTab.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBrutoIznosTab.Location = new System.Drawing.Point(2, 18);
+            this.lblBrutoIznosTab.Location = new System.Drawing.Point(3, 1);
             this.lblBrutoIznosTab.Name = "lblBrutoIznosTab";
             this.lblBrutoIznosTab.Size = new System.Drawing.Size(140, 23);
             this.lblBrutoIznosTab.TabIndex = 0;
@@ -1257,7 +1258,7 @@ namespace ProgramZaPlatu
             this.Controls.Add(this.txtNajvisaOsnovicaLEVO);
             this.Controls.Add(this.tabNetoBruto);
             this.Controls.Add(this.lblNajvisaOsnovica);
-            this.Controls.Add(this.btnSnimiStope);
+            this.Controls.Add(this.btnPromeniStope);
             this.Controls.Add(this.btnIzracunaj);
             this.Controls.Add(this.lblStopaPoreza);
             this.Controls.Add(this.txtStopaPorezaLEVO);
@@ -1358,7 +1359,7 @@ namespace ProgramZaPlatu
 		private System.Windows.Forms.TextBox txtIznosPioZaposleniDESNO;
 		private System.Windows.Forms.Label lblIznosporeza;
 		private System.Windows.Forms.TextBox txtIznosPorezaDESNO;
-		private System.Windows.Forms.Button btnSnimiStope;
+		private System.Windows.Forms.Button btnPromeniStope;
 		private System.Windows.Forms.Button btnOtvoriFormu;
 		private System.Windows.Forms.Button btnIzracunaj;
 		private System.Windows.Forms.Label lblNezapPosl;

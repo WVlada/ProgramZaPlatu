@@ -128,6 +128,12 @@
       <DependentUpon>OdabirFirmeiPodnosioca.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="PromeniStope.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PromeniStope.Designer.cs">
+      <DependentUpon>PromeniStope.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -141,9 +147,10 @@
     <Compile Include="SpisakZaposlenih.Designer.cs">
       <DependentUpon>SpisakZaposlenih.cs</DependentUpon>
     </Compile>
-    <Compile Include="SpisakZaposlenih.Designer1.cs">
-      <DependentUpon>SpisakZaposlenih.resx</DependentUpon>
+    <Compile Include="SpisakZaposlenih1.Designer.cs">
       <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SpisakZaposlenih.resx</DependentUpon>
     </Compile>
     <Compile Include="SviPodaci.cs" />
   </ItemGroup>
@@ -169,14 +176,18 @@
     <EmbeddedResource Include="OdabirFirmeiPodnosioca.resx">
       <DependentUpon>OdabirFirmeiPodnosioca.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PromeniStope.resx">
+      <DependentUpon>PromeniStope.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="SpisakZaposlenih.resx">
       <DependentUpon>SpisakZaposlenih.cs</DependentUpon>
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>SpisakZaposlenih.Designer1.cs</LastGenOutput>
+      <LastGenOutput>SpisakZaposlenih1.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -233,6 +244,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="slike\nazad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plava pozadina.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\podnosilac.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

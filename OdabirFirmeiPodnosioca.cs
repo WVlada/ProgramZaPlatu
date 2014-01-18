@@ -78,13 +78,11 @@ namespace ProgramZaPlatu
         {
             string mb = mb0;
             string pib = pib0;
-
             bool y = true;
 
             foreach (ListViewItem item in lstViewFirma.Items)
             {
-
-                if (item.SubItems[2].Text == pib || item.SubItems[3].Text == mb)
+                    if (item.SubItems[2].Text == pib || item.SubItems[3].Text == mb)
                 {
                     y = true;
                     break;
