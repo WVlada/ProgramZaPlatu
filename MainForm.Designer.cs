@@ -164,7 +164,7 @@ namespace ProgramZaPlatu
             // 
             // txtStopaPorezaLEVO
             // 
-            this.txtStopaPorezaLEVO.Location = new System.Drawing.Point(35, 220);
+            this.txtStopaPorezaLEVO.Location = new System.Drawing.Point(12, 195);
             this.txtStopaPorezaLEVO.Margin = new System.Windows.Forms.Padding(2);
             this.txtStopaPorezaLEVO.Name = "txtStopaPorezaLEVO";
             this.txtStopaPorezaLEVO.ReadOnly = true;
@@ -177,7 +177,7 @@ namespace ProgramZaPlatu
             // 
             this.lblStopaPoreza.BackColor = System.Drawing.Color.Transparent;
             this.lblStopaPoreza.Font = new System.Drawing.Font("Arial", 10F);
-            this.lblStopaPoreza.Location = new System.Drawing.Point(12, 247);
+            this.lblStopaPoreza.Location = new System.Drawing.Point(66, 195);
             this.lblStopaPoreza.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblStopaPoreza.Name = "lblStopaPoreza";
             this.lblStopaPoreza.Size = new System.Drawing.Size(102, 23);
@@ -349,20 +349,22 @@ namespace ProgramZaPlatu
             // btnIzracunaj
             // 
             this.btnIzracunaj.BackColor = System.Drawing.Color.Transparent;
-            this.btnIzracunaj.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnIzracunaj.BackgroundImage")));
+            this.btnIzracunaj.BackgroundImage = global::ProgramZaPlatu.Properties.Resources.suivant_desactive;
             this.btnIzracunaj.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnIzracunaj.FlatAppearance.BorderSize = 2;
-            this.btnIzracunaj.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIzracunaj.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnIzracunaj.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnIzracunaj.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnIzracunaj.Location = new System.Drawing.Point(405, 136);
+            this.btnIzracunaj.Location = new System.Drawing.Point(415, 145);
             this.btnIzracunaj.Margin = new System.Windows.Forms.Padding(2);
             this.btnIzracunaj.Name = "btnIzracunaj";
-            this.btnIzracunaj.Size = new System.Drawing.Size(138, 84);
+            this.btnIzracunaj.Size = new System.Drawing.Size(118, 73);
             this.btnIzracunaj.TabIndex = 25;
             this.btnIzracunaj.Text = "Израчунај";
+            this.btnIzracunaj.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnIzracunaj.UseVisualStyleBackColor = false;
             this.btnIzracunaj.Click += new System.EventHandler(this.BtnIzracunajClick);
+            this.btnIzracunaj.MouseLeave += new System.EventHandler(this.btnIzracunaj_MouseLeave);
+            this.btnIzracunaj.MouseHover += new System.EventHandler(this.btnIzracunaj_MouseHover);
             // 
             // btnOtvoriFormu
             // 
@@ -384,20 +386,22 @@ namespace ProgramZaPlatu
             // btnPromeniStope
             // 
             this.btnPromeniStope.BackColor = System.Drawing.Color.Transparent;
-            this.btnPromeniStope.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPromeniStope.BackgroundImage")));
+            this.btnPromeniStope.BackgroundImage = global::ProgramZaPlatu.Properties.Resources.db_comit_copy;
             this.btnPromeniStope.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnPromeniStope.FlatAppearance.BorderSize = 2;
-            this.btnPromeniStope.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPromeniStope.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnPromeniStope.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnPromeniStope.Location = new System.Drawing.Point(10, 276);
+            this.btnPromeniStope.Location = new System.Drawing.Point(10, 222);
             this.btnPromeniStope.Margin = new System.Windows.Forms.Padding(2);
             this.btnPromeniStope.Name = "btnPromeniStope";
-            this.btnPromeniStope.Size = new System.Drawing.Size(104, 40);
+            this.btnPromeniStope.Size = new System.Drawing.Size(104, 94);
             this.btnPromeniStope.TabIndex = 27;
             this.btnPromeniStope.Text = "Промени стопе";
+            this.btnPromeniStope.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnPromeniStope.UseVisualStyleBackColor = false;
             this.btnPromeniStope.Click += new System.EventHandler(this.btnPromeniStope_Click);
+            this.btnPromeniStope.MouseLeave += new System.EventHandler(this.btnPromeniStope_MouseLeave);
+            this.btnPromeniStope.MouseHover += new System.EventHandler(this.btnPromeniStope_MouseHover);
             // 
             // txtIznosPorezaDESNO
             // 
@@ -633,17 +637,18 @@ namespace ProgramZaPlatu
             // btnSpisakZaposlenih
             // 
             this.btnSpisakZaposlenih.BackColor = System.Drawing.Color.Transparent;
-            this.btnSpisakZaposlenih.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSpisakZaposlenih.BackgroundImage")));
+            this.btnSpisakZaposlenih.BackgroundImage = global::ProgramZaPlatu.Properties.Resources.SNOW_E_PUBLIC;
             this.btnSpisakZaposlenih.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSpisakZaposlenih.FlatAppearance.BorderSize = 2;
-            this.btnSpisakZaposlenih.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnSpisakZaposlenih.Location = new System.Drawing.Point(546, 11);
+            this.btnSpisakZaposlenih.FlatAppearance.BorderSize = 0;
+            this.btnSpisakZaposlenih.Location = new System.Drawing.Point(533, 2);
             this.btnSpisakZaposlenih.Margin = new System.Windows.Forms.Padding(2);
             this.btnSpisakZaposlenih.Name = "btnSpisakZaposlenih";
-            this.btnSpisakZaposlenih.Size = new System.Drawing.Size(80, 70);
+            this.btnSpisakZaposlenih.Size = new System.Drawing.Size(94, 90);
             this.btnSpisakZaposlenih.TabIndex = 49;
             this.btnSpisakZaposlenih.UseVisualStyleBackColor = false;
             this.btnSpisakZaposlenih.Click += new System.EventHandler(this.btnSpisakZaposlenihClick);
+            this.btnSpisakZaposlenih.MouseLeave += new System.EventHandler(this.btnSpisakZaposlenih_MouseLeave);
+            this.btnSpisakZaposlenih.MouseHover += new System.EventHandler(this.btnSpisakZaposlenih_MouseHover);
             // 
             // txtNajnizaOsnovicaLEVO
             // 
@@ -697,7 +702,7 @@ namespace ProgramZaPlatu
             // 
             this.lblBazaZaposlenih.BackColor = System.Drawing.Color.Transparent;
             this.lblBazaZaposlenih.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBazaZaposlenih.Location = new System.Drawing.Point(530, 83);
+            this.lblBazaZaposlenih.Location = new System.Drawing.Point(530, 94);
             this.lblBazaZaposlenih.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblBazaZaposlenih.Name = "lblBazaZaposlenih";
             this.lblBazaZaposlenih.Size = new System.Drawing.Size(109, 21);
@@ -756,10 +761,10 @@ namespace ProgramZaPlatu
             this.tabPage2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage2.BackgroundImage")));
             this.tabPage2.Controls.Add(this.txtBrutoIznosLEVO);
             this.tabPage2.Controls.Add(this.lblBrutoIznosTab);
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(283, 27);
+            this.tabPage2.Size = new System.Drawing.Size(283, 30);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "За познат БРУТО";
             // 

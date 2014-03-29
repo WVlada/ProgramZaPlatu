@@ -206,6 +206,41 @@ namespace ProgramZaPlatu
 				btnPromeniPodatkeSelektovanog.PerformClick();
 				}
 		}
+
+        private void btnDodajNovog_MouseHover(object sender, EventArgs e)
+        {
+            this.btnDodajNovog.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.budymancopy));
+        }
+        private void btnDodajNovog_MouseLeave(object sender, EventArgs e)
+        {
+            this.btnDodajNovog.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.budyman));
+        }
+        private void btnIzbrisiOznacenog_MouseHover(object sender, EventArgs e)
+        {
+            this.btnIzbrisiOznacenog.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.budymanbrisanjeboja));
+        }
+        private void btnIzbrisiOznacenog_MouseLeave(object sender, EventArgs e)
+        {
+            this.btnIzbrisiOznacenog.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.budymanbrisanje));
+        }
+        private void btnPromeniPodatkeSelektovanog_MouseHover(object sender, EventArgs e)
+        {
+            this.btnPromeniPodatkeSelektovanog.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.budymanedibojat));
+        }
+        private void btnPromeniPodatkeSelektovanog_MouseLeave(object sender, EventArgs e)
+        {
+            this.btnPromeniPodatkeSelektovanog.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.budymanedit));
+        }
+
+        private void btnNazad_MouseHover(object sender, EventArgs e)
+        {
+            this.btnNazad.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.backbutton));
+        }
+
+        private void btnNazad_MouseLeave(object sender, EventArgs e)
+        {
+            this.btnNazad.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.backbuttonBlackWhite));
+        }
 		
 	}
 }

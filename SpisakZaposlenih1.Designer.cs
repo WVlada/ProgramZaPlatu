@@ -61,46 +61,6 @@ namespace ProgramZaPlatu {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap btnDodajNovog_BackgroundImage {
-            get {
-                object obj = ResourceManager.GetObject("btnDodajNovog.BackgroundImage", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap btnIzbrisiOznacenog_BackgroundImage {
-            get {
-                object obj = ResourceManager.GetObject("btnIzbrisiOznacenog.BackgroundImage", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap btnNazad_BackgroundImage {
-            get {
-                object obj = ResourceManager.GetObject("btnNazad.BackgroundImage", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap btnPromeniPodatkeSelektovanog_BackgroundImage {
-            get {
-                object obj = ResourceManager.GetObject("btnPromeniPodatkeSelektovanog.BackgroundImage", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Point similar to {X=17,Y=17}.
         /// </summary>
         internal static System.Drawing.Point contextMenuStripZaposleni_TrayLocation {

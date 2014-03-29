@@ -121,11 +121,12 @@
   <data name="podnosilac" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\podnosilac.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  
   <data name="nazad" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\slike\nazad.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  
+  <data name="budymanbrisanjeboja" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\budymanbrisanjeboja.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="OkChange" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\slike\OkChange.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -135,10 +136,49 @@
   <data name="minus2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\slike\minus2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="6685.image_2599AB36" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\plava pozadina.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="budymanedit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\budymanedit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="backbutton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backbutton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="db_comit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\db_comit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="plava pozadina1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\plava pozadina.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  </root>
+  <data name="SNOW E PUBLIC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SNOW E PUBLIC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="6685.image_2599AB36" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plava pozadina.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="budymanbrisanje" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\budymanbrisanje.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="budymancopy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\budymancopy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SNOW E AQUA PUBLIC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SNOW E AQUA PUBLIC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="budymanedibojat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\budymanedibojat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="backbuttonBlackWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backbuttonBlackWhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="budyman" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\budyman.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="db_comit copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\db_comit copy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="suivant-desactive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\suivant-desactive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="suivant" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\suivant.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

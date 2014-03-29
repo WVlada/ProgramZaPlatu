@@ -562,5 +562,35 @@ namespace ProgramZaPlatu
             
         }
 
+        private void btnSpisakZaposlenih_MouseHover(object sender, EventArgs e)
+        {
+            this.btnSpisakZaposlenih.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.SNOW_E_AQUA_PUBLIC));
+        }
+
+        private void btnSpisakZaposlenih_MouseLeave(object sender, EventArgs e)
+        {
+            this.btnSpisakZaposlenih.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.SNOW_E_PUBLIC));
+        }
+
+        private void btnPromeniStope_MouseHover(object sender, EventArgs e)
+        {
+            this.btnPromeniStope.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.db_comit));
+        }
+
+        private void btnPromeniStope_MouseLeave(object sender, EventArgs e)
+        {
+            this.btnPromeniStope.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.db_comit_copy));
+        }
+
+        private void btnIzracunaj_MouseHover(object sender, EventArgs e)
+        {
+            this.btnIzracunaj.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.suivant));
+        }
+
+        private void btnIzracunaj_MouseLeave(object sender, EventArgs e)
+        {
+            this.btnIzracunaj.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.suivant_desactive));
+        }
+
     }
 }

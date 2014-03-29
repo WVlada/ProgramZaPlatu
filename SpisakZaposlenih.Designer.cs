@@ -75,9 +75,9 @@ namespace ProgramZaPlatu
             this.lstSpisakZaposlenih.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lstSpisakZaposlenih.FullRowSelect = true;
             this.lstSpisakZaposlenih.GridLines = true;
-            this.lstSpisakZaposlenih.Location = new System.Drawing.Point(13, 79);
+            this.lstSpisakZaposlenih.Location = new System.Drawing.Point(12, 64);
             this.lstSpisakZaposlenih.Name = "lstSpisakZaposlenih";
-            this.lstSpisakZaposlenih.Size = new System.Drawing.Size(705, 222);
+            this.lstSpisakZaposlenih.Size = new System.Drawing.Size(705, 237);
             this.lstSpisakZaposlenih.TabIndex = 0;
             this.lstSpisakZaposlenih.UseCompatibleStateImageBehavior = false;
             this.lstSpisakZaposlenih.View = System.Windows.Forms.View.Details;
@@ -132,60 +132,68 @@ namespace ProgramZaPlatu
             // 
             // btnPromeniPodatkeSelektovanog
             // 
-            this.btnPromeniPodatkeSelektovanog.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPromeniPodatkeSelektovanog.BackgroundImage")));
+            this.btnPromeniPodatkeSelektovanog.BackgroundImage = global::ProgramZaPlatu.Properties.Resources.budymanedit;
             this.btnPromeniPodatkeSelektovanog.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnPromeniPodatkeSelektovanog.Location = new System.Drawing.Point(13, 388);
+            this.btnPromeniPodatkeSelektovanog.Location = new System.Drawing.Point(12, 392);
             this.btnPromeniPodatkeSelektovanog.Name = "btnPromeniPodatkeSelektovanog";
-            this.btnPromeniPodatkeSelektovanog.Size = new System.Drawing.Size(50, 50);
+            this.btnPromeniPodatkeSelektovanog.Size = new System.Drawing.Size(70, 70);
             this.btnPromeniPodatkeSelektovanog.TabIndex = 2;
             this.btnPromeniPodatkeSelektovanog.UseVisualStyleBackColor = true;
             this.btnPromeniPodatkeSelektovanog.Click += new System.EventHandler(this.BtnPromeniPodatkeSelektovanogClick);
+            this.btnPromeniPodatkeSelektovanog.MouseLeave += new System.EventHandler(this.btnPromeniPodatkeSelektovanog_MouseLeave);
+            this.btnPromeniPodatkeSelektovanog.MouseHover += new System.EventHandler(this.btnPromeniPodatkeSelektovanog_MouseHover);
             // 
             // btnIzbrisiOznacenog
             // 
-            this.btnIzbrisiOznacenog.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnIzbrisiOznacenog.BackgroundImage")));
+            this.btnIzbrisiOznacenog.BackgroundImage = global::ProgramZaPlatu.Properties.Resources.budymanbrisanje;
             this.btnIzbrisiOznacenog.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnIzbrisiOznacenog.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnIzbrisiOznacenog.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnIzbrisiOznacenog.Location = new System.Drawing.Point(248, 324);
+            this.btnIzbrisiOznacenog.Location = new System.Drawing.Point(292, 307);
             this.btnIzbrisiOznacenog.Name = "btnIzbrisiOznacenog";
-            this.btnIzbrisiOznacenog.Size = new System.Drawing.Size(50, 50);
+            this.btnIzbrisiOznacenog.Size = new System.Drawing.Size(70, 70);
             this.btnIzbrisiOznacenog.TabIndex = 4;
             this.btnIzbrisiOznacenog.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnIzbrisiOznacenog.UseVisualStyleBackColor = true;
             this.btnIzbrisiOznacenog.Click += new System.EventHandler(this.BtnIzbrisiOznacenogClick);
+            this.btnIzbrisiOznacenog.MouseLeave += new System.EventHandler(this.btnIzbrisiOznacenog_MouseLeave);
+            this.btnIzbrisiOznacenog.MouseHover += new System.EventHandler(this.btnIzbrisiOznacenog_MouseHover);
             // 
             // btnNazad
             // 
-            this.btnNazad.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnNazad.BackgroundImage")));
+            this.btnNazad.BackgroundImage = global::ProgramZaPlatu.Properties.Resources.backbuttonBlackWhite;
             this.btnNazad.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnNazad.Location = new System.Drawing.Point(667, 345);
+            this.btnNazad.Location = new System.Drawing.Point(589, 336);
             this.btnNazad.Name = "btnNazad";
-            this.btnNazad.Size = new System.Drawing.Size(50, 50);
+            this.btnNazad.Size = new System.Drawing.Size(76, 73);
             this.btnNazad.TabIndex = 5;
             this.btnNazad.UseVisualStyleBackColor = true;
             this.btnNazad.Click += new System.EventHandler(this.BtnNazadClick);
+            this.btnNazad.MouseLeave += new System.EventHandler(this.btnNazad_MouseLeave);
+            this.btnNazad.MouseHover += new System.EventHandler(this.btnNazad_MouseHover);
             // 
             // btnDodajNovog
             // 
-            this.btnDodajNovog.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDodajNovog.BackgroundImage")));
+            this.btnDodajNovog.BackgroundImage = global::ProgramZaPlatu.Properties.Resources.budyman;
             this.btnDodajNovog.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnDodajNovog.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnDodajNovog.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnDodajNovog.Location = new System.Drawing.Point(13, 324);
+            this.btnDodajNovog.Location = new System.Drawing.Point(12, 307);
             this.btnDodajNovog.Name = "btnDodajNovog";
-            this.btnDodajNovog.Size = new System.Drawing.Size(50, 50);
+            this.btnDodajNovog.Size = new System.Drawing.Size(70, 70);
             this.btnDodajNovog.TabIndex = 3;
             this.btnDodajNovog.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnDodajNovog.UseVisualStyleBackColor = true;
             this.btnDodajNovog.Click += new System.EventHandler(this.BtnDodajNovogClick);
+            this.btnDodajNovog.MouseLeave += new System.EventHandler(this.btnDodajNovog_MouseLeave);
+            this.btnDodajNovog.MouseHover += new System.EventHandler(this.btnDodajNovog_MouseHover);
             // 
             // lblDodajNovog
             // 
             this.lblDodajNovog.BackColor = System.Drawing.Color.Transparent;
             this.lblDodajNovog.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
             this.lblDodajNovog.ForeColor = System.Drawing.Color.Black;
-            this.lblDodajNovog.Location = new System.Drawing.Point(69, 336);
+            this.lblDodajNovog.Location = new System.Drawing.Point(88, 336);
             this.lblDodajNovog.Name = "lblDodajNovog";
             this.lblDodajNovog.Size = new System.Drawing.Size(100, 23);
             this.lblDodajNovog.TabIndex = 6;
@@ -196,7 +204,7 @@ namespace ProgramZaPlatu
             // 
             this.lblObrisiOznacenog.BackColor = System.Drawing.Color.Transparent;
             this.lblObrisiOznacenog.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
-            this.lblObrisiOznacenog.Location = new System.Drawing.Point(304, 336);
+            this.lblObrisiOznacenog.Location = new System.Drawing.Point(368, 336);
             this.lblObrisiOznacenog.Name = "lblObrisiOznacenog";
             this.lblObrisiOznacenog.Size = new System.Drawing.Size(152, 23);
             this.lblObrisiOznacenog.TabIndex = 7;
@@ -208,7 +216,7 @@ namespace ProgramZaPlatu
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(69, 405);
+            this.label2.Location = new System.Drawing.Point(88, 416);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(212, 23);
             this.label2.TabIndex = 8;
@@ -219,7 +227,7 @@ namespace ProgramZaPlatu
             // 
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(665, 398);
+            this.label3.Location = new System.Drawing.Point(601, 416);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 23);
             this.label3.TabIndex = 9;
@@ -260,7 +268,7 @@ namespace ProgramZaPlatu
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ProgramZaPlatu.Properties.Resources._6685_image_2599AB36;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(733, 445);
+            this.ClientSize = new System.Drawing.Size(733, 472);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblObrisiOznacenog);
@@ -271,6 +279,7 @@ namespace ProgramZaPlatu
             this.Controls.Add(this.btnPromeniPodatkeSelektovanog);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lstSpisakZaposlenih);
+            this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Spisakzaposlenih";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;

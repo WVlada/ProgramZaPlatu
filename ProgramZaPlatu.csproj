@@ -251,5 +251,22 @@
   <ItemGroup>
     <None Include="Resources\podnosilac.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suivant.png" />
+    <None Include="Resources\suivant-desactive.png" />
+    <None Include="Resources\backbutton.png" />
+    <None Include="Resources\backbuttonBlackWhite.png" />
+    <None Include="Resources\budymanedit.png" />
+    <None Include="Resources\budymanedibojat.png" />
+    <None Include="Resources\budymanbrisanjeboja.png" />
+    <None Include="Resources\budymanbrisanje.png" />
+    <None Include="Resources\budymancopy.png" />
+    <None Include="Resources\budyman.png" />
+    <None Include="Resources\db_comit.png" />
+    <None Include="Resources\db_comit copy.png" />
+    <Content Include="Resources\plavi.png" />
+    <None Include="Resources\SNOW E PUBLIC.png" />
+    <None Include="Resources\SNOW E AQUA PUBLIC.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
